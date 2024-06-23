@@ -1,0 +1,53 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 68px 103px;
+  height: var(--header-y);
+  display: flex;
+  align-items: center;
+  position: absolute;
+  z-index: 1000;
+}
+.center {
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 992px) {
+  .center {
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.nav_items {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  line-height: 22.68px;
+  text-align: left;
+}
+
+.nav_items li {
+  color: #fff;
+  cursor: pointer;
+}
+
+.contact_button {
+  padding: 15px 55px;
+  border-radius: 32px;
+  font-family: "Plus Jakarta Sans";
+  font-weight: 600;
+  background-color: #DAB289;
+  font-size: 16px;
+  border: none;
+  opacity: 0px;
+  cursor: pointer;
+}
