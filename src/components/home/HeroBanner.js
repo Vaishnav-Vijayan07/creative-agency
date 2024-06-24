@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const HeroBanner = () => {
   return (
-    <div>
+    <div style={{height:"100%"}}>
       <div className={styles.video_container}>
         <video autoPlay muted loop className={styles.video} id="background-video">
           <source src="/video/bg_video.mp4" type="video/mp4" />
@@ -13,10 +13,18 @@ const HeroBanner = () => {
 
       <div className={styles.collage_container}>
         <div className={styles.collage_sub_container}>
-          <Image src="/images/collage_1.png" width="280" height="280" id="image1" />
-          <Image src="/images/collage_2.png" width="280" height="280" id="image2" />
-          <Image src="/images/collage_3.png" width="280" height="280" id="image3" />
-          <Image src="/images/collage_4.png" width="280" height="280" id="image4" />
+          <div className={styles.image_1}>
+            <Image src="/images/collage_1.png" width="280" height="280" />
+          </div>
+          <div className={styles.image_2}>
+            <Image src="/images/collage_2.png" width="280" height="280" />
+          </div>
+          <div className={styles.image_3}>
+            <Image src="/images/collage_3.png" width="280" height="280" />
+          </div>
+          <div className={styles.image_4}>
+            <Image src="/images/collage_4.png" width="280" height="280" />
+          </div>
         </div>
       </div>
 
