@@ -1,0 +1,130 @@
+.container {
+  position: relative;
+}
+
+.video {
+  object-fit: cover;
+  // clip-path: polygon(0 80%, 100% 100%, 100% 0, 0 0);
+}
+
+.video_container {
+  min-width: 100vw;
+  width: 100%;
+  height: calc(100vh + 150px);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+  overflow: hidden;
+
+  &::before,
+  &::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, #00000006 1px, transparent 1px),
+      linear-gradient(to bottom, #00000008 1px, transparent 1px);
+    background-size: 120px 120px; // Size of the grid
+    pointer-events: none; // Allow clicks to pass through
+  }
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 600px;
+
+  @media (max-width: 768px) {
+    min-width: unset;
+    width: 100%;
+    padding: 0 30px;
+  }
+
+  h1,
+  h3,
+  p {
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 5px;
+
+    @media (max-width: 768px) {
+      font-size: 50px;
+    }
+
+    @media (max-width: 580px) {
+      font-size: 40px;
+    }
+  }
+
+  h3 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 10px;
+
+    @media (max-width: 768px) {
+      font-size: 24px;
+    }
+  }
+
+  p {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+}
+
+.collage_container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.collage_sub_container {
+  position: absolute;
+  top: -100px;
+  display: flex;
+}
+
+.image_1,
+.image_2,
+.image_3,
+.image_4 {
+  margin: -50px;
+
+  &.image_1 {
+    margin-right: -68px;
+    margin-top: -80px;
+    z-index: 10;
+  }
+
+  &.image_2 {
+    margin-top: -50px;
+    margin-right: -60px;
+  }
+
+  &.image_3 {
+    margin-top: -80px;
+    margin-right: -70px;
+  }
+
+  &.image_4 {
+    margin-top: -50px;
+  }
+}

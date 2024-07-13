@@ -1,0 +1,72 @@
+.aboutus_section {
+  margin-top: 180px;
+  padding: 100px;
+}
+
+.aboutus_heading {
+  display: flex;
+  width: 100%;
+  gap: 100px;
+}
+
+.aboutus_heading h4 {
+  width: 40%;
+  font-family: "Poppins";
+  font-size: 28px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.aboutus_heading p {
+  width: 60%;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-weight: 200;
+  text-align: left;
+  line-height: 24px;
+}
+
+.aboutus_content {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.content_left_wrapper {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px
+}
+
+.content_right_wrapper {
+  width: 40%;
+}
+
+#aboutus_image1 {
+  width: 100%;
+  object-fit: contain;
+}
+
+#aboutus_image2 {
+  width: 100%;
+  object-fit: contain;
+}
+
+#about_us_button {
+  padding: 10px 22px;
+  width: max-content;
+  background: transparent;
+  border: 1px solid black;
+  border-radius: 30px;
+
+  font-family: Plus Jakarta Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22.68px;
+  text-align: left;
+
+}

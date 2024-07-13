@@ -9,11 +9,17 @@
   align-items: center;
   position: absolute;
   z-index: 1000;
+
+  @media (max-width: 1200px) {
+    padding: 68px 60px;
+  }
 }
+
 .center {
   justify-content: space-between;
   align-items: center;
 }
+
 @media (min-width: 992px) {
   .center {
     justify-content: space-between;
@@ -33,11 +39,27 @@
   font-weight: 300;
   line-height: 22.68px;
   text-align: left;
-}
 
-.nav_items li {
-  color: #fff;
-  cursor: pointer;
+  @media (max-width: 1440px) {
+    font-size: 16px;
+    gap: 50px;
+
+  }
+
+  @media (max-width: 1200px) {
+    font-size: 14px;
+    gap: 40px;
+
+  }
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
+
+  li {
+    color: #fff;
+    cursor: pointer;
+  }
 }
 
 .contact_button {
@@ -50,4 +72,20 @@
   border: none;
   opacity: 0px;
   cursor: pointer;
+
+  @media (max-width: 1200px) {
+    font-size: 14px;
+  }
+  @media (max-width: 1024px) {
+    display: none;
+  }
+
+}
+
+.menu_button {
+  display: none;
+
+  @media (max-width: 1024px) {
+    display: block;
+  }
 }
