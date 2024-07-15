@@ -14,15 +14,16 @@ const AboutUs = () => {
         </p>
       </div>
 
+      <img src="/images/aboutus_1.png" alt="" id={styles.aboutus_image1_mob} />
       <div className={styles.aboutus_content}>
         <div className={styles.content_left_wrapper}>
-          <img src="/images/aboutus_1.png" alt="" id={styles.aboutus_image1}/>
+          <img src="/images/aboutus_1.png" alt="" id={styles.aboutus_image1} />
           <p>
             Through strategic digital marketing, including SEO, social media, and influencer campaigns, we help you
             achieve long-term success. Our advertising and production team crafts impactful video productions, digital
             ads, and promotional campaigns tailored to your needs.
           </p>
-          <button id={styles.about_us_button}>Know more about us</button>
+          <button id={styles.about_us_button}>Know more about us <img src="/icons/arrow.png" id={styles.arrow_icon} /></button>
         </div>
         <div className={styles.content_right_wrapper}>
           <img src="/images/aboutus_2.png" alt="" id={styles.aboutus_image2} />

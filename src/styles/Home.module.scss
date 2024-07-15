@@ -1,29 +1,46 @@
 .aboutus_section {
   margin-top: 180px;
   padding: 100px;
+
+  @media (max-width: 768px) {
+    padding: 40px;
+  }
 }
 
 .aboutus_heading {
   display: flex;
   width: 100%;
   gap: 100px;
-}
 
-.aboutus_heading h4 {
-  width: 40%;
-  font-family: "Poppins";
-  font-size: 28px;
-  font-weight: 600;
-  text-align: left;
-}
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 10px;
+  }
 
-.aboutus_heading p {
-  width: 60%;
-  font-family: "Plus Jakarta Sans";
-  font-size: 16px;
-  font-weight: 200;
-  text-align: left;
-  line-height: 24px;
+  h4 {
+    width: 40%;
+    font-family: "Poppins";
+    font-size: 28px;
+    font-weight: 600;
+    text-align: left;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  p {
+    width: 60%;
+    font-family: "Plus Jakarta Sans";
+    font-size: 16px;
+    font-weight: 200;
+    text-align: left;
+    line-height: 24px;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
 }
 
 .aboutus_content {
@@ -33,27 +50,82 @@
   gap: 40px;
   box-sizing: border-box;
   align-items: center;
+
+  @media (max-width: 768px) {
+    gap: 20px;
+  }
 }
 
 .content_left_wrapper {
   width: 60%;
   display: flex;
   flex-direction: column;
-  gap: 40px
+  gap: 40px;
+
+  p {
+    font-family: Archivo;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 34px;
+    letter-spacing: -0.01em;
+    text-align: left;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+      line-height: 28px;
+
+    }
+
+    @media (max-width: 600px) {
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    @media (max-width: 500px) {
+      font-size: 12px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 50%;
+  }
 }
 
 .content_right_wrapper {
   width: 40%;
+
+  @media (max-width: 768px) {
+    width: 50%;
+  }
 }
 
 #aboutus_image1 {
   width: 100%;
   object-fit: contain;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+#aboutus_image1_mob {
+  object-fit: contain;
+  display: none;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    display: block;
+    margin-top: 40px;
+  }
 }
 
 #aboutus_image2 {
   width: 100%;
   object-fit: contain;
+}
+
+#arrow_icon {
+  margin-left: 5px;
 }
 
 #about_us_button {
@@ -69,4 +141,9 @@
   line-height: 22.68px;
   text-align: left;
 
+  @media (max-width: 500px) {
+    font-size: 12px;
+    padding: 12px 16px;
+    line-height: normal;
+  }
 }
