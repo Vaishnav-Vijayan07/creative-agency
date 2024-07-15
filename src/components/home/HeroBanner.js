@@ -14,16 +14,20 @@ const HeroBanner = () => {
       <div className={styles.collage_container}>
         <div className={styles.collage_sub_container}>
           <div className={styles.image_1}>
-            <Image src="/images/collage_1.png" width="380" height="380" />
+            <img src="/images/collage_1.png" />
+            {/* <Image src="/images/collage_1.png" width="380" height="380" /> */}
           </div>
           <div className={styles.image_2}>
-            <Image src="/images/collage_2.png" width="380" height="380" />
+            <img src="/images/collage_2.png" />
+            {/* <Image src="/images/collage_2.png" width="380" height="380" /> */}
           </div>
           <div className={styles.image_3}>
-            <Image src="/images/collage_3.png" width="380" height="380" />
+            <img src="/images/collage_3.png" />
+            {/* <Image src="/images/collage_3.png" width="380" height="380" /> */}
           </div>
           <div className={styles.image_4}>
-            <Image src="/images/collage_4.png" width="380" height="380" />
+            <img src="/images/collage_4.png" />
+            {/* <Image src="/images/collage_4.png" width="380" height="380" /> */}
           </div>
         </div>
       </div>

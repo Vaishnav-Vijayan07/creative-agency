@@ -93,38 +93,44 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  display: none;
 }
 
 .collage_sub_container {
   position: absolute;
-  top: -100px;
-  display: flex;
+  top: -230px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  overflow: hidden;
+
+
+  img{
+    width: 100%;
+  }
 }
 
 .image_1,
 .image_2,
 .image_3,
 .image_4 {
-  margin: -50px;
+  // margin: -50px;
+  width: 110%;
+  overflow: hidden;
 
   &.image_1 {
-    margin-right: -68px;
-    margin-top: -80px;
     z-index: 10;
+    transform: translate(60px, -20px);
   }
 
   &.image_2 {
-    margin-top: -50px;
-    margin-right: -60px;
+    transform: translate(-30px, 20px);
   }
 
   &.image_3 {
-    margin-top: -80px;
-    margin-right: -70px;
+    transform: translate(-25px, -20px);
   }
 
   &.image_4 {
-    margin-top: -50px;
+    // margin-top: -50px;
+    transform: translate(-60px, 0px);
   }
 }
