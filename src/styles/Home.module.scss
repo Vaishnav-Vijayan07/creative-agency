@@ -170,8 +170,9 @@
     flex-wrap: wrap;
 
     :first-child {
-      margin-left: 20px; /* Adjust the margin as needed */
-  }
+      margin-left: 20px;
+      /* Adjust the margin as needed */
+    }
 
     .capsule {
       background-color: #fff;
@@ -184,4 +185,52 @@
       border-radius: 50px;
     }
   }
+}
+
+.our_solutions {
+  background-color: #6C3E24;
+  clip-path: polygon(100% 0%, 100% 100%, 0 100%, 0% 8%);
+  padding: 130px;
+
+  &::before {
+    background-color: #B2987D;
+    display: flex;
+    clip-path: polygon(100% 0%, 100% 100%, 0 100%, 0% 8%);
+    width: 100%;
+    height: 100px;
+  }
+
+  h3 {
+    font-family: Poppins;
+    color: #fff;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 56px;
+    text-align: center;
+
+    div {
+      display: inline-block;
+      background: #DAB289;
+      transform: skew(-20deg);
+      font-style: normal;
+      padding: 0px 10px;
+
+      span {
+        transform: skew(20deg);
+      }
+    }
+  }
+
+  p {
+    font-family: Plus Jakarta Sans;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: -0.01em;
+    text-align: center;
+
+  }
+
+
 }
