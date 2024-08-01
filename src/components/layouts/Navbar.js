@@ -5,13 +5,9 @@ import Image from "next/image";
 const Navbar = () => {
   return (
     <nav className={styles.navbar}>
-      <Image
+      <img
         src={"/images/logo.png"}
         alt={"logo"}
-        priority
-        width={100}
-        height={100}
-        objectFit={"contain"}
       />
       <ul className={styles.nav_items}>
         <li>Home</li>

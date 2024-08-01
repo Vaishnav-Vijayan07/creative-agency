@@ -13,6 +13,21 @@
   @media (max-width: 1200px) {
     padding: 68px 60px;
   }
+
+  @media only screen and (max-width: 768px) {
+    padding: 40px 60px;
+
+  }
+
+  img {
+    width: 100px;
+    object-fit: contain;
+
+    @media only screen and (max-width: 768px) {
+      width: 80px;
+    }
+
+  }
 }
 
 .center {
@@ -76,6 +91,7 @@
   @media (max-width: 1200px) {
     font-size: 14px;
   }
+
   @media (max-width: 1024px) {
     display: none;
   }

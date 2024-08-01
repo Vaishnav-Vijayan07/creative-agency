@@ -4,7 +4,7 @@ import styles from "../../styles/Home.module.scss";
 const AboutUs = () => {
   return (
     <div className={styles.aboutus_section}>
-      <div className={styles.aboutus_heading}>
+      <div className={styles.aboutus_heading} data-aos="fade-up">
         <h4>Empower Your Vision with Tailored Creative Solutions</h4>
         <p>
           At Minari Creatives, we partner with businesses of all sizes and visionary individuals to bring your ideas to
@@ -14,19 +14,19 @@ const AboutUs = () => {
         </p>
       </div>
 
-      <img src="/images/aboutus_1.png" alt="" id={styles.aboutus_image1_mob} />
+      <img src="/images/aboutus_1.png" alt="" id={styles.aboutus_image1_mob} data-aos="fade-right" />
       <div className={styles.aboutus_content}>
         <div className={styles.content_left_wrapper}>
-          <img src="/images/aboutus_1.png" alt="" id={styles.aboutus_image1} />
-          <p>
+          <img src="/images/aboutus_1.png" alt="" id={styles.aboutus_image1} data-aos="fade-right" />
+          <p data-aos="fade-up">
             Through strategic digital marketing, including SEO, social media, and influencer campaigns, we help you
             achieve long-term success. Our advertising and production team crafts impactful video productions, digital
             ads, and promotional campaigns tailored to your needs.
           </p>
-          <button id={styles.about_us_button}>Know more about us <img src="/icons/arrow.png" id={styles.arrow_icon} /></button>
+          <button id={styles.about_us_button} data-aos="fade-up">Know more about us <img src="/icons/arrow.png" id={styles.arrow_icon} /></button>
         </div>
         <div className={styles.content_right_wrapper}>
-          <img src="/images/aboutus_2.png" alt="" id={styles.aboutus_image2} />
+          <img src="/images/aboutus_2.png" alt="" id={styles.aboutus_image2} data-aos="fade-left" />
         </div>
       </div>
     </div>

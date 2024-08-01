@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
   --main_color: #6c3e24;
   --sec_color: #ede4df;
@@ -25,8 +26,67 @@
 
 body {
   color: var(--black_color);
-  background-color: #EDE4DF;
+  background-color: #EDE4DF !important;
   overflow-x: hidden;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
+}
+
+.accordion {
+  background: #EDE4DF;
+}
+
+.accordion-body {
+  background: #EDE4DF;
+  border-top: 1px solid #908d8d98;
+  border-bottom: 1px solid #908d8d98;
+
+}
+button.accordion-button.collapsed{
+  border-bottom: 1px solid #908d8d98;
+
+}
+
+.accordion-collapse.collapse.show {
+  background: #EDE4DF;
+}
+
+.accordion-item {
+  background: #EDE4DF;
+}
+
+.button.accordion-button {
+  background: #EDE4DF;
+}
+
+.accordion-button {
+  background: #EDE4DF !important;
+
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #EDE4DF !important;
+}
+
+.accordion-button:focus {
+  outline: none !important; /* Removes the blue focus outline */
+  box-shadow: none !important; /* Removes the box-shadow applied by Bootstrap */
+}
+
+
+.accordion-button::after{
+  background-image: url('/icons/plus_icon.png') !important;
+  width: 24px;
+  height: 24px;
+}
+
+.accordion-button:not(.collapsed)::after {
+  transform: rotate(135deg) !important;
+}
+
+.swiper-slide.swiper-slide-active {
+  opacity: 1 !important;
+  background-color: #38261C;
+  /* margin-top: 0px !important; */
+  transform: translateY(0) !important; 
 }

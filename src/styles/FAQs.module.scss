@@ -1,0 +1,44 @@
+.faqs_cotainer {
+    padding: 70px 100px;
+
+    @media only screen and (max-width: 768px) {
+        padding: 50px;
+
+    }
+
+    h3 {
+        text-align: center;
+        font-family: Poppins;
+        font-size: 34px;
+        font-weight: 600;
+        line-height: 72px;
+        text-align: center;
+
+        @media only screen and (max-width: 768px) {
+            line-height: 52px;
+            font-size: 26px;
+        }
+
+    }
+
+    .faqs_accordion {
+        .accordion_heading {
+            font-family: Plus Jakarta Sans;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            text-align: left;
+
+        }
+
+        .accordion_paragraph {
+            font-family: Plus Jakarta Sans;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 28.8px;
+            text-align: left;
+
+            color: #3c3c43cd;
+        }
+    }
+}

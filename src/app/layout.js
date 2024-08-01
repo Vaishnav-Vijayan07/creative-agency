@@ -7,6 +7,11 @@ const Navbar = dynamic(() => import("@/components/layouts/Navbar"), {
   ssr: false,
 });
 
+const Footer = dynamic(() => import("@/components/home/Footer"), {
+  loading: () => <></>,
+  ssr: false,
+});
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -21,7 +26,8 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <Navbar />
         {children}
-        </body>
+        <Footer />
+      </body>
     </html>
   );
 }
