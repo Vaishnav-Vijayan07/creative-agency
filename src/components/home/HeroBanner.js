@@ -8,6 +8,7 @@ const HeroBanner = () => {
       <div className={styles.video_container}>
         <video muted autoPlay loop playsInline preload="metadata" aria-label="Video player" className={styles.video} id="background-video">
           <source src="/video/bg_video.mp4" type="video/mp4" />
+          This video is not supported in this browser
         </video>
       </div>
 

@@ -78,6 +78,11 @@
   li {
     color: #fff;
     cursor: pointer;
+
+    a {
+      text-decoration: none;
+      color: #FAFAFAFA;
+    }
   }
 }
 
@@ -110,14 +115,20 @@
   }
 }
 
-.nav_items_2{
+.nav_items_2 {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
+  padding: 20px 40px;
 
-  li{
+  li {
     font-size: 18px;
     cursor: pointer;
+
+    a {
+      text-decoration: none;
+      color: #000000;
+    }
   }
 }

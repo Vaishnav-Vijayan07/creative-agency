@@ -4,6 +4,7 @@ import styles from "../../styles/Navbar.module.scss";
 import Image from "next/image";
 import { Sidebar } from "primereact/sidebar";
 import "primereact/resources/themes/lara-light-cyan/theme.css";
+import Link from "next/link";
 
 
 const Navbar = () => {
@@ -15,11 +16,11 @@ const Navbar = () => {
         alt={"logo"}
       />
       <ul className={styles.nav_items}>
-        <li>Home</li>
-        <li>About Us</li>
-        <li>Services</li>
-        <li>Portfolio</li>
-        <li>Blogs</li>
+      <li><Link key={'home-nav'} href={"/"} >Home</Link></li>
+          <li><Link key={'about-nav'} href={"/about-us"} >About Us</Link></li>
+          <li><Link key={'services-nav'} href={"/services"} >Services</Link></li>
+          <li><Link key={'portfolio-nav'} href={"/portfolio"} >Portfolio</Link></li>
+          <li><Link key={'blog-nav'} href={"/blogs"} >Blog</Link></li>
       </ul>
       <button className={styles.contact_button}>Contact us</button>
       <Image src={"/icons/menu.png"}
@@ -32,11 +33,11 @@ const Navbar = () => {
 
       <Sidebar visible={visible} onHide={() => setVisible(false)}>
         <ul className={styles.nav_items_2}>
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Services</li>
-          <li>Portfolio</li>
-          <li>Blogs</li>
+          <li><Link key={'home-nav'} href={"/"} >Home</Link></li>
+          <li><Link key={'about-nav'} href={"/about-us"} >About Us</Link></li>
+          <li><Link key={'services-nav'} href={"/services"} >Services</Link></li>
+          <li><Link key={'portfolio-nav'} href={"/portfolio"} >Portfolio</Link></li>
+          <li><Link key={'blog-nav'} href={"/blogs"} >Blog</Link></li>
         </ul>
       </Sidebar>
     </nav>
