@@ -45,7 +45,7 @@
             top: 0;
             z-index: -1;
             background: #6C3E24;
-            clip-path: polygon(100% 0%, 100% 92%, 0 98%, 0% 4%);
+            clip-path: polygon(100% 0%, 100% 95%, 0 98%, 0% 3%);
 
         }
 
@@ -59,7 +59,8 @@
             z-index: -1;
             // background: #FAFAFA;
             background: linear-gradient(to bottom, #FAFAFA, #B2987D);
-            clip-path: polygon(100% 0%, 100% 91%, 0% 100%, 0% 0%);
+            // clip-path: polygon(100% 0%, 100% 94%, 0% 100%, 0% 0%);
+            clip-path: polygon(100% 0%, 100% 93%, 0% 100%, 0% 0%);
 
         }
 

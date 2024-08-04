@@ -3,6 +3,7 @@ import React from 'react'
 import styles from "../../styles/Portfolio.module.scss";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
+import { Sidebar } from 'primereact/sidebar';
 
 const Portfolio = () => {
     return (
