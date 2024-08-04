@@ -90,3 +90,8 @@ button.accordion-button.collapsed{
   /* margin-top: 0px !important; */
   transform: translateY(0) !important; 
 }
+.services_container .swiper-wrapper{
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
