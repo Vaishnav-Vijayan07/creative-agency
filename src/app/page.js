@@ -14,17 +14,17 @@ import { useEffect } from "react";
 
 const HeroBanner = dynamic(() => import("@/components/home/HeroBanner"), {
   loading: () => <></>,
-  ssr: false,
+  ssr: true,
 });
 
 const AboutUs = dynamic(() => import("@/components/home/AboutUs"), {
   loading: () => <></>,
-  ssr: false,
+  ssr: true,
 });
 
 const WeServe = dynamic(() => import("@/components/home/WeServe"), {
   loading: () => <></>,
-  ssr: false,
+  ssr: true,
 });
 
 const OurSolutions = dynamic(() => import("@/components/home/OurSolutions"), {
