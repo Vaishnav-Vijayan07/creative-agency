@@ -26,6 +26,11 @@
       linear-gradient(to bottom, #00000008 1px, transparent 1px);
     background-size: 120px 120px; // Size of the grid
     pointer-events: none; // Allow clicks to pass through
+
+    @media only screen and (max-width: 600px) {
+      background-image: none;
+      background-size: cover;
+    }
   }
 }
 
