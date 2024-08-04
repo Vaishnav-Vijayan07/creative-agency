@@ -5,7 +5,7 @@ const page = () => {
     return (
         <section className={styles.blogs_container}>
             <div className={styles.video_container}>
-                <video autoPlay muted loop className={styles.video} id="background-video">
+                <video autoPlay muted loop  playsInline className={styles.video} id="background-video">
                     <source src="/video/bg_video.mp4" type="video/mp4" />
                 </video>
             </div>

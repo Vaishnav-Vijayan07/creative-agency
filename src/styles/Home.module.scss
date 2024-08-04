@@ -306,10 +306,15 @@
       ;
       clip-path: polygon(100% 0%, 100% 92%, 0% 96%, 0% 5%);
 
+      @media only screen and (max-width: 800px) {
+        clip-path: polygon(100% 0%, 100% 92%, 0% 96%, 0% 4%);
+      }
+
     }
 
     h3 {
-      padding-top: 100px;
+      // padding-top: 100px;
+      padding-top: 25px;
       font-family: Poppins;
       color: #fff;
       font-size: 38px;
@@ -317,9 +322,9 @@
       line-height: 56px;
       text-align: center;
 
-    @media only screen and (max-width: 500px) {
-      font-size: 32px;
-    }
+      @media only screen and (max-width: 500px) {
+        font-size: 32px;
+      }
 
       div {
         display: inline-block;

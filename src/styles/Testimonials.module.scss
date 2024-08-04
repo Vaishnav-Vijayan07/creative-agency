@@ -47,6 +47,10 @@
             background: #6C3E24;
             clip-path: polygon(100% 0%, 100% 95%, 0 98%, 0% 3%);
 
+            @media only screen and (max-width: 900px) {
+                clip-path: polygon(100% 0, 100% 97%, 0% 99%, 0% 2%);
+            }
+
         }
 
         &::before {
@@ -62,6 +66,9 @@
             // clip-path: polygon(100% 0%, 100% 94%, 0% 100%, 0% 0%);
             clip-path: polygon(100% 0%, 100% 93%, 0% 100%, 0% 0%);
 
+            @media only screen and (max-width: 900px) {
+                clip-path: polygon(100% 0%, 100% 96%, 0% 100%, 0% 0%);
+            }
         }
 
         h3 {
@@ -107,9 +114,10 @@
             justify-content: center;
             gap: 30px;
             margin-top: 60px;
+
             @media only screen and (max-width: 992px) {
                 padding: 20px;
-                
+
             }
 
             .swiper_custom_btns {
