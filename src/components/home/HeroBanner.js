@@ -6,7 +6,7 @@ const HeroBanner = () => {
   return (
     <div style={{ height: "100%" }}>
       <div className={styles.video_container}>
-        <video muted loop playsInline preload="metadata" aria-label="Video player" className={styles.video} id="background-video">
+        <video muted autoPlay loop playsInline preload="metadata" poster="/images/background.png" aria-label="Video player" className={styles.video} id="background-video">
           <source src="/video/bg_video.mp4" type="video/mp4" />
           This video is not supported in this browser
         </video>
