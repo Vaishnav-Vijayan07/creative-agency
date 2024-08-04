@@ -9,7 +9,7 @@ const Portfolio = () => {
         <main className={styles.portfolio_container}>
             <div style={{ height: "100%" }}>
                 <div className={styles.video_container}>
-                    <video autoPlay muted  playsInline loop className={styles.video} id="background-video">
+                    <video autoPlay muted  playsInline loop poster="/images/background.png" className={styles.video} id="background-video">
                         <source src="/video/bg_video.mp4" type="video/mp4" />
                     </video>
                 </div>
