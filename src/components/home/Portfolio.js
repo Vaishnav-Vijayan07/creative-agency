@@ -10,7 +10,7 @@ const Portfolio = () => {
         <div className={styles.portfolio_container}>
             <div className={styles.top_section}>
 
-                <div className={styles.header_container}><h3>Journey Through <br /> Our<div><span>Work</span></div></h3> <button>See More <img src='/icons/arrow.png' alt="icon" width={30}></img></button></div>
+                <div className={styles.header_container}><h3 data-aos="fade-up">Journey Through <br /> Our<div><span>Work</span></div></h3> <button>See More <img src='/icons/arrow.png' alt="icon" width={30}></img></button></div>
             </div>
             <div className={styles.slider_container}>
                 <Swiper

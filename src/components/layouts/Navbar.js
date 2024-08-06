@@ -5,15 +5,24 @@ import Image from "next/image";
 import { Sidebar } from "primereact/sidebar";
 import "primereact/resources/themes/lara-light-cyan/theme.css";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+
 
 
 const Navbar = () => {
   const [visible, setVisible] = useState(false)
+  const router = useRouter()
+
+  const handleClick = (e) => {
+      e.preventDefault()
+      router.push('/'); // Navigate to the /about page
+  };
   return (
     <nav className={styles.navbar}>
       <img
         src={"/images/logo.png"}
         alt={"logo"}
+        onClick={handleClick}
       />
       <ul className={styles.nav_items}>
       <li><Link key={'home-nav'} href={"/"} >Home</Link></li>
@@ -22,7 +31,7 @@ const Navbar = () => {
           <li><Link key={'portfolio-nav'} href={"/portfolio"} >Portfolio</Link></li>
           <li><Link key={'blog-nav'} href={"/blogs"} >Blog</Link></li>
       </ul>
-      <button className={styles.contact_button}>Contact us</button>
+      <Link key={'blog-nav'} href={"/contact"} className={styles.contact_button}>Contact us</Link>
       <Image src={"/icons/menu.png"}
         className={styles.menu_button}
         alt={"logo"}

@@ -2,10 +2,9 @@
     display: block;
 
     .top_section {
-        height: 400px;
-
         .header_container {
             padding: 100px;
+            padding-bottom: 0;
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
@@ -74,38 +73,9 @@
     }
 
     .slider_container {
-        height: 400px;
         width: 100%;
         background: transparent;
         position: relative;
-
-        @media only screen and (max-width: 1200px) {
-            height: 320px;
-        }
-
-        @media only screen and (max-width: 1024px) {
-            height: 250px;
-        }
-
-        @media only screen and (max-width: 950px) {
-            height: 220px;
-        }
-
-        @media only screen and (max-width: 850px) {
-            height: 180px;
-        }
-
-        // @media only screen and (max-width: 640px) {
-        //     height: 400px;
-        // }
-
-        // @media (max-width: 500px) {
-        //     height: 350px;
-        // }
-
-        // @media (max-width: 450px) {
-        //     height: 300px;
-        // }
 
 
         &::after {
@@ -116,24 +86,23 @@
             left: 0;
             top: 0;
             z-index: -1;
-            clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
+            // clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 40%, 100% 30%, 100% 100%, 0% 100%);
             background: #FAFAFA;
 
         }
 
         .slider {
             padding: 100px;
+            padding-top: 50px;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-column-gap: 16px;
             grid-row-gap: 16px;
             z-index: 100;
-            top: -250px;
-            left: 0;
 
             @media only screen and (max-width: 768px) {
                 padding: 50px;
-                margin-top: 50px;
             }
 
             .card {
@@ -148,6 +117,7 @@
                     top: 20px;
                     right: 0;
 
+                    z-index: 1;
                     span {
                         padding: 6px 16px;
                         margin-right: 20px;
@@ -166,9 +136,14 @@
 
                 img {
                     width: 100%;
-                    max-width: 800px;
+                    max-width: unset !important;
                     height: 100%;
                     object-fit: cover;
+                    transition: transform 0.3s ease-in-out;
+
+                    &:hover {
+                        transform: scale(1.05);
+                    }
                 }
             }
 
@@ -219,6 +194,12 @@
             img {
                 height: 30px;
                 object-fit: contain;
+                transition: transform 0.3s ease-in-out;
+                cursor: pointer;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
 
                 @media only screen and (max-width: 850px) {
                     height: 20px;

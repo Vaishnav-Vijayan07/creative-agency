@@ -107,6 +107,12 @@
   width: 100%;
   object-fit: contain;
 
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
   @media (max-width: 768px) {
     display: none;
   }
@@ -115,6 +121,12 @@
 #aboutus_image1_mob {
   object-fit: contain;
   display: none;
+
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 
   @media (max-width: 768px) {
     width: 100%;
@@ -131,6 +143,11 @@
 #aboutus_image2 {
   width: 100%;
   object-fit: contain;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 
 #arrow_icon {
@@ -272,6 +289,7 @@
 
     @media only screen and (max-width: 1250px) {
       padding: 100px 60px;
+      padding-bottom: 0;
     }
 
     @media only screen and (max-width: 1024px) {
@@ -369,6 +387,7 @@
         background-color: #B1977C;
         border-radius: 35px;
         padding-top: 30px;
+        box-sizing: border-box;
         padding-bottom: 30px;
 
         @media only screen and (max-width: 1250px) {
@@ -393,7 +412,14 @@
 
         img {
           width: 100%;
-          max-width: 400px;
+          object-fit: cover;
+          // max-width: 400px;
+          transition: transform 0.3s ease-in-out;
+
+          &:hover {
+            transform: scale(1.05);
+          }
+
         }
 
         h6 {

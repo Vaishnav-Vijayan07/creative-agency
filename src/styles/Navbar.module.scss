@@ -20,11 +20,12 @@
   }
 
   img {
-    width: 100px;
+    width: 80px;
     object-fit: contain;
+    cursor: pointer;
 
     @media only screen and (max-width: 768px) {
-      width: 70px;
+      width: 60px;
     }
 
     @media only screen and (max-width: 600px) {
@@ -92,10 +93,12 @@
   font-family: "Plus Jakarta Sans";
   font-weight: 600;
   background-color: #DAB289;
+  color: #000000;
   font-size: 16px;
   border: none;
   opacity: 0px;
   cursor: pointer;
+  text-decoration: none;
 
   @media (max-width: 1200px) {
     font-size: 14px;

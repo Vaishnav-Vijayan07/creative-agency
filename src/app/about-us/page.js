@@ -8,7 +8,7 @@ const page = () => {
       <AboutUsBanner />
       <section className={styles.aboutus_description}>
 
-        <img src="/images/logo.png" alt="" className={styles.logo_image} />
+        <img src="/images/logoDark.png" alt="" className={styles.logo_image} />
         <h3>Who We Are</h3>
         <p>At Minari Creatives, we partner with businesses of all sizes and visionary individuals to bring your ideas to life. We specialize in transforming your vision into compelling stories, whether through engaging articles, captivating blogs, or dynamic website content. Our evocative designs, from graphic illustrations to animations, ensure your brand stands out. </p>
 

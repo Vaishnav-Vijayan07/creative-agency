@@ -18,7 +18,7 @@ const Testimonials = () => {
             <div className={styles.testimonials_container}>
                 <div className={styles.side_header}>Testimonials</div>
 
-                <h3>In Their Own Words: Stories of Impact, <br /> Innovation, and Enduring <div><span>Partnership</span></div></h3>
+                <h3 data-aos="fade-up">In Their Own Words: Stories of Impact, <br /> Innovation, and Enduring <div><span>Partnership</span></div></h3>
                 <p>Dive into the experiences of those who have journeyed with Minari Creatives, where inspiration meets <br /> exceptional results.</p>
 
                 {/* <div className={styles.slider_container}> */}

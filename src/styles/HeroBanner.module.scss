@@ -4,6 +4,8 @@
 
 .video {
   object-fit: cover;
+  width: 100%;
+  height: calc(100vh + 150px);
 }
 
 .video_container {

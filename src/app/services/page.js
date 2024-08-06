@@ -1,11 +1,20 @@
-"use client"
+'use client'
+
 import React, { useEffect, useState } from 'react'
 import styles from '@/styles/Services.module.scss'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination } from 'swiper/modules';
+import { useRouter } from 'next/navigation';
 
 const page = () => {
+    // const router = useRouter();
+    const router = useRouter()
     const [isSwiperActive, setIsSwiperActive] = useState(false);
+
+    const handleClick = (e) => {
+        e.preventDefault()
+        router.push('/services/1'); // Navigate to the /about page
+    };
 
     useEffect(() => {
         const handleResize = () => {
@@ -28,7 +37,7 @@ const page = () => {
     return (
         <main className={`${styles.services_container} services_container`}>
             <div className={styles.video_container}>
-                <video autoPlay muted loop  playsInline className={styles.video} poster="/images/background.png" id="background-video">
+                <video autoPlay muted loop playsInline className={styles.video} poster="/images/background.png" id="background-video">
                     <source src="/video/bg_video.mp4" type="video/mp4" />
                 </video>
             </div>
@@ -49,42 +58,42 @@ const page = () => {
 
                     {!isSwiperActive && <div className={styles.card_container}>
 
-                        <div className={styles.card}>
+                        <div className={styles.card} onClick={handleClick}>
                             <h5><span>01 &nbsp;</span> Content Writing</h5>
                             <img src='/images/our_solutions/1.png' alt='' />
                             <h6>Molding Ideas into Powerful Stories</h6>
                             <p>Our content writing services encompass a wide spectrum of needs, ensuring every word captivates and communicates effectively.</p>
                         </div>
 
-                        <div className={styles.card}>
+                        <div className={styles.card} onClick={handleClick}>
                             <h5><span>02 &nbsp;</span> Digital Marketing</h5>
                             <img src='/images/our_solutions/2.png' alt='' />
                             <h6>Strategically Amplifying Your Reach</h6>
                             <p>In the digital age, effective marketing is about more than visibility—it's about meaningful engagement and sustainable growth.</p>
                         </div>
 
-                        <div className={styles.card}>
+                        <div className={styles.card} onClick={handleClick}>
                             <h5><span>03 &nbsp;</span> Advertising & Production</h5>
                             <img src='/images/our_solutions/3.png' alt='' />
                             <h6>From Concept to Captivation</h6>
                             <p>Our advertising and production services are designed to turn your concepts into captivating campaigns.</p>
                         </div>
 
-                        <div className={styles.card}>
+                        <div className={styles.card} onClick={handleClick}>
                             <h5><span>04 &nbsp;</span> Consulting Services</h5>
                             <img src='/images/our_solutions/4.png' alt='' />
                             <h6>Guiding Creativity to Success</h6>
                             <p>Our consulting services offer invaluable guidance in creative direction and campaign development.</p>
                         </div>
 
-                        <div className={styles.card}>
+                        <div className={styles.card} onClick={handleClick}>
                             <h5><span>05 &nbsp;</span> Design and Animation</h5>
                             <img src='/images/our_solutions/5.png' alt='' />
                             <h6>Visual Storytelling at Its Finest</h6>
                             <p>Our design and animation services are dedicated to bringing your brand's visual identity to life.</p>
                         </div>
 
-                        <div className={styles.card}>
+                        <div className={styles.card} onClick={handleClick}>
                             <h5><span>06 &nbsp;</span> Crafting a Lasting Impression</h5>
                             <img src='/images/our_solutions/6.png' alt='' />
                             <h6>Molding Ideas into Powerful Stories</h6>
@@ -136,37 +145,37 @@ const page = () => {
                                 },
                             }}
                         >
-                            <SwiperSlide key={"1"} className={styles.card}>
+                            <SwiperSlide key={"1"} className={styles.card} onClick={handleClick}>
                                 <h5><span>06 &nbsp;</span> Crafting a Lasting Impression</h5>
                                 <img src='/images/our_solutions/6.png' alt='' />
                                 <h6>Molding Ideas into Powerful Stories</h6>
                                 <p>In the competitive landscape of today, effective branding is essential for differentiation and recognition.</p>
                             </SwiperSlide>
-                            <SwiperSlide key={"1"} className={styles.card}>
+                            <SwiperSlide key={"1"} className={styles.card} onClick={handleClick}>
                                 <h5><span>06 &nbsp;</span> Crafting a Lasting Impression</h5>
                                 <img src='/images/our_solutions/6.png' alt='' />
                                 <h6>Molding Ideas into Powerful Stories</h6>
                                 <p>In the competitive landscape of today, effective branding is essential for differentiation and recognition.</p>
                             </SwiperSlide>
-                            <SwiperSlide key={"1"} className={styles.card}>
+                            <SwiperSlide key={"1"} className={styles.card} onClick={handleClick}>
                                 <h5><span>06 &nbsp;</span> Crafting a Lasting Impression</h5>
                                 <img src='/images/our_solutions/6.png' alt='' />
                                 <h6>Molding Ideas into Powerful Stories</h6>
                                 <p>In the competitive landscape of today, effective branding is essential for differentiation and recognition.</p>
                             </SwiperSlide>
-                            <SwiperSlide key={"1"} className={styles.card}>
+                            <SwiperSlide key={"1"} className={styles.card} onClick={handleClick}>
                                 <h5><span>06 &nbsp;</span> Crafting a Lasting Impression</h5>
                                 <img src='/images/our_solutions/6.png' alt='' />
                                 <h6>Molding Ideas into Powerful Stories</h6>
                                 <p>In the competitive landscape of today, effective branding is essential for differentiation and recognition.</p>
                             </SwiperSlide>
-                            <SwiperSlide key={"1"} className={styles.card}>
+                            <SwiperSlide key={"1"} className={styles.card} onClick={handleClick}>
                                 <h5><span>06 &nbsp;</span> Crafting a Lasting Impression</h5>
                                 <img src='/images/our_solutions/6.png' alt='' />
                                 <h6>Molding Ideas into Powerful Stories</h6>
                                 <p>In the competitive landscape of today, effective branding is essential for differentiation and recognition.</p>
                             </SwiperSlide>
-                            <SwiperSlide key={"1"} className={styles.card}>
+                            <SwiperSlide key={"1"} className={styles.card} onClick={handleClick}>
                                 <h5><span>06 &nbsp;</span> Crafting a Lasting Impression</h5>
                                 <img src='/images/our_solutions/6.png' alt='' />
                                 <h6>Molding Ideas into Powerful Stories</h6>

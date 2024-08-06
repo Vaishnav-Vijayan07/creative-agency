@@ -32,7 +32,7 @@ const OurSolutions = () => {
       <div className={styles.side_header}>OUR SOLUTIONS</div>
 
       <div className={styles.our_solutions}>
-        <h3>
+        <h3 data-aos="fade-up">
           The Art of <div><span>Strategic</span></div> <br /> Creativity
         </h3>
         <p className={styles.our_solutions_description}>Creative Studio follows a collaborative and iterative approach to creation, with a <br />

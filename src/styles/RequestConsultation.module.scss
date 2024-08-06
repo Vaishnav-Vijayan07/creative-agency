@@ -136,6 +136,7 @@
         .avatar_container {
             display: flex;
             align-items: center;
+            flex: 1;
 
             img {
                 width: 180px;
@@ -146,7 +147,9 @@
 
         .form {
             margin-left: 58px;
-
+            display: flex;
+            flex-direction: column;
+            flex: 14;
             @media only screen and (max-width: 1100px) {
                 margin-left: 0;
             }
@@ -176,6 +179,7 @@
 
             .form_group {
                 display: flex;
+                width: 100%;
                 gap: 25px;
 
                 @media only screen and (max-width: 900px) {
@@ -202,7 +206,7 @@
                     input {
                         background-color: transparent;
                         border: none;
-                        border-bottom: 1px solid #FFFFFF;
+                        border-bottom: 1px solid #D9D8C5;
                         color: #FFFFFF;
                         width: 100%;
 
