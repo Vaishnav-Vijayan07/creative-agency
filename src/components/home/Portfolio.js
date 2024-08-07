@@ -56,9 +56,9 @@ const Portfolio = () => {
                         },
                     }}
                 >
-                    <SwiperSlide key={"1"} className={styles.card}>
+                    <SwiperSlide key={"1"} className={styles.card} >
 
-                        <div className={styles.card_content}>
+                        <div className={styles.card_content} data-aos="fade-up">
                             <span>Branding</span>
                             <span>Digital Marketing</span>
                         </div>
@@ -68,7 +68,7 @@ const Portfolio = () => {
                     </SwiperSlide>
 
                     <SwiperSlide key={"2"} className={styles.card}>
-                        <div className={styles.card_content}>
+                        <div className={styles.card_content} data-aos="fade-up">
                             <span>Design</span>
                             <span>Content Writing</span>
                         </div>

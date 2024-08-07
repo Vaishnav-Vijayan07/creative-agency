@@ -5,13 +5,15 @@
 .video {
   object-fit: cover;
   width: 100%;
-  height: calc(100vh + 150px);
+  height: calc(98vh);
+  // height: calc(100vh + 150px);
 }
 
 .video_container {
   min-width: 100vw;
   width: 100%;
-  height: calc(100vh + 150px);
+  // height: calc(100vh + 150px);
+  height: calc(98vh);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
   overflow: hidden;
 

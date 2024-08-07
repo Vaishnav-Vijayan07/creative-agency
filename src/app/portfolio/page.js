@@ -1,10 +1,17 @@
-import React from 'react'
+
+'use client'
+import React, { useEffect } from 'react'
 import styles from '@/styles/PortfolioPage.module.scss'
-// import Swiper from 'swiper'
-// import SwiperSlide from 'swiper/react'
+import AOS from 'aos'
+import "aos/dist/aos.css";
 
 
 const Portfolio = () => {
+
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
     return (
         <main className={styles.portfolio_container}>
             <div style={{ height: "100%" }}>
@@ -14,7 +21,7 @@ const Portfolio = () => {
                     </video>
                 </div>
 
-                <div className={styles.content}>
+                <div className={styles.content} >
                     <p className={styles.aboutus_para}>Journey Through Our Work</p>
                     <h1>Portfolio</h1>
                 </div>
@@ -23,13 +30,13 @@ const Portfolio = () => {
 
             <div className={styles.portfolio_container}>
                 <div className={styles.top_section}>
-                    <div className={styles.header_container}><h3>Journey Through <br /> Our<div><span>Work</span></div></h3></div>
-                    <p>Creative Studio follows a collaborative and iterative approach to creation, with a focus on understanding and meeting the unique needs of each client.</p>
+                    <div className={styles.header_container} data-aos="fade-up"><h3>Journey Through <br /> Our<div><span>Work</span></div></h3></div>
+                    <p data-aos="fade-up">Creative Studio follows a collaborative and iterative approach to creation, with a focus on understanding and meeting the unique needs of each client.</p>
                 </div>
                 <div className={styles.slider_container}>
                     <div className={styles.slider}>
                         <div>
-                            <div key={"1"} className={styles.card}>
+                            <div key={"1"} className={styles.card} >
 
                                 <div className={styles.card_content}>
                                     <span>Branding</span>

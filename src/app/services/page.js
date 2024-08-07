@@ -5,6 +5,8 @@ import styles from '@/styles/Services.module.scss'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination } from 'swiper/modules';
 import { useRouter } from 'next/navigation';
+import AOS from 'aos'
+import "aos/dist/aos.css";
 
 const page = () => {
     // const router = useRouter();
@@ -15,6 +17,11 @@ const page = () => {
         e.preventDefault()
         router.push('/services/1'); // Navigate to the /about page
     };
+
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
 
     useEffect(() => {
         const handleResize = () => {
@@ -50,10 +57,10 @@ const page = () => {
 
             <div className={styles.our_solutions_container}>
                 <div className={styles.our_solutions}>
-                    <h3>
+                    <h3 data-aos="fade-up">
                         The Art of <div><span>Strategic</span></div> <br /> Creativity
                     </h3>
-                    <p className={styles.our_solutions_description}>Creative Studio follows a collaborative and iterative approach to creation, with a <br />
+                    <p data-aos="fade-up" className={styles.our_solutions_description}>Creative Studio follows a collaborative and iterative approach to creation, with a <br />
                         focus on understanding and meeting the unique needs of each client.</p>
 
                     {!isSwiperActive && <div className={styles.card_container}>
