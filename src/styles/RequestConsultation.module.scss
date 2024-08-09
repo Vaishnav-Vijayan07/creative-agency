@@ -17,7 +17,6 @@
 
             }
 
-
             img {
                 width: 26px;
 
@@ -150,6 +149,7 @@
             display: flex;
             flex-direction: column;
             flex: 14;
+
             @media only screen and (max-width: 1100px) {
                 margin-left: 0;
             }
@@ -163,9 +163,9 @@
                 color: #FFFFFF;
                 margin: 0;
 
-            @media only screen and (max-width: 1100px) {
-                text-align: center;
-            }
+                @media only screen and (max-width: 1100px) {
+                    text-align: center;
+                }
 
             }
 
