@@ -3,8 +3,7 @@ import styles from "../../styles/Home.module.scss";
 export default function Home() {
     return (
         <div className={styles.container}>
-            <h3 data-aos="fade-up">Industries <br />
-                We Serve
+            <h3 data-aos="fade-up">Industries We Serve
             </h3>
 
             <div className={styles.capsule_container}>

@@ -88,6 +88,10 @@
         padding-bottom: 3%;
         border-bottom: 1px solid #000000;
 
+        @media only screen and (max-width: 600px) {
+            margin: 30px;
+        }
+
 
         img {
             width: 100%;
@@ -101,6 +105,11 @@
             line-height: 34px;
             text-align: left;
 
+            @media only screen and (max-width: 600px) {
+                font-size: 28px;
+                margin-top: 30px;
+            }
+
         }
 
         h6 {
@@ -112,6 +121,11 @@
             text-align: left;
             color: #6C3E24;
 
+            @media only screen and (max-width: 600px) {
+                margin-top: 15px;
+
+            }
+
         }
 
         p {
@@ -122,12 +136,19 @@
             line-height: 26px;
             text-align: left;
 
+            @media only screen and (max-width: 600px) {
+                margin-top: 15px;
+            }
         }
     }
 
     .recent_blogs {
         margin: 5%;
         margin-top: 0;
+
+        @media only screen and (max-width: 600px) {
+            margin: 30px;
+        }
 
         h3 {
             font-family: Poppins;
@@ -159,18 +180,24 @@
                 cursor: pointer;
 
                 &:hover {
-                  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.599);
+                    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.599);
                 }
+
                 img {
                     width: 100%;
                 }
 
                 h5 {
+                    margin-top: 20px;
                     font-family: Poppins;
                     font-size: 16px;
                     font-weight: 600;
                     text-align: left;
                     line-height: unset;
+
+                    @media only screen and (max-width: 600px) {
+                        margin-top: 10px;
+                    }
                 }
 
                 h6 {
