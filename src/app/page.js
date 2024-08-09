@@ -10,7 +10,8 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { Router } from "next/router";
 
 const HeroBanner = dynamic(() => import("@/components/home/HeroBanner"), {
   loading: () => <></>,
@@ -57,6 +58,8 @@ export default function Home() {
     AOS.init();
     AOS.refresh();
   }, []);
+
+
   return (
     <>
       <main className={styles.container}>

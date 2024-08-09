@@ -29,8 +29,8 @@ const RequestConsulation = () => {
                 </div>
 
                 <form className={styles.form}>
-                    <h3>Request a consultation</h3>
-                    <p>Fill in the following details to have discussion with us about your idea. We will get in touch.</p>
+                    <h3>Request a Consultation</h3>
+                    <p>Take the first step towards empowering your vision. Fill in the following details and we will get in touch at the earliest!</p>
 
                     <div className={styles.form_group}>
                         <div className={styles.input_group}>

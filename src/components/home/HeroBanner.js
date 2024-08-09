@@ -13,7 +13,7 @@ const HeroBanner = () => {
       </div>
 
       <div className={styles.content}>
-        <h1>The Creators' Cafe</h1>
+        <h1>THE CREATORS’ CAFÉ</h1>
         <h3>Crafting Digital Excellence</h3>
         <p>
           The Creators' Cafe is a multi-service agency that transforms visions into reality through innovative

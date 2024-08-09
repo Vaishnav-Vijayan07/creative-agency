@@ -31,7 +31,7 @@ const Portfolio = () => {
             <div className={styles.portfolio_container}>
                 <div className={styles.top_section}>
                     <div className={styles.header_container} data-aos="fade-up"><h3>Journey Through <br /> Our<div><span>Work</span></div></h3></div>
-                    <p data-aos="fade-up">Creative Studio follows a collaborative and iterative approach to creation, with a focus on understanding and meeting the unique needs of each client.</p>
+                    {/* <p data-aos="fade-up">Creative Studio follows a collaborative and iterative approach to creation, with a focus on understanding and meeting the unique needs of each client.</p> */}
                 </div>
                 <div className={styles.slider_container}>
                     <div className={styles.slider}>

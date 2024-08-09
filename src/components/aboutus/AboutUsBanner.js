@@ -12,8 +12,8 @@ const AboutUsBanner = () => {
       </div>
 
       <div className={styles.content}>
-        <p className={styles.aboutus_para}>About Creaters' Cafe</p>
-        <h1>Our Story</h1>
+        <p className={styles.aboutus_para}>About The Creators’ Café </p>
+        <h1>Behind the Scenes</h1>
       </div>
     </div>
   );

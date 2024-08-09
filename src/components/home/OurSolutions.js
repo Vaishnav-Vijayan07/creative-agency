@@ -33,60 +33,59 @@ const OurSolutions = () => {
 
       <div className={styles.our_solutions}>
         <h3 data-aos="fade-up">
-          The Art of <div><span>Strategic</span></div> <br /> Creativity
+          The Art of <br /> <div><span>Strategic</span></div> Creativity
         </h3>
-        <p data-aos="fade-up" className={styles.our_solutions_description}>Creative Studio follows a collaborative and iterative approach to creation, with a <br />
-          focus on understanding and meeting the unique needs of each client.</p>
+        <p data-aos="fade-up" className={styles.our_solutions_description}>The Creators’ Café follows a collaborative and iterative approach to creation, with a focus on understanding and meeting the unique needs of each client. </p>
 
         {!isSwiperActive && <div className={styles.card_container}>
 
-          <div className={styles.card} data-aos="fade-up">
+          <div className={styles.card}>
             <h5><span>01 &nbsp;</span> Content Writing</h5>
             <img src='/images/our_solutions/1.png' alt='' />
             <h6>Molding Ideas into Powerful Stories</h6>
             <p>Our content writing services encompass a wide spectrum of needs, ensuring every word captivates and communicates effectively.</p>
           </div>
 
-          <div className={styles.card} data-aos="fade-up">
+          <div className={styles.card}>
             <h5><span>02 &nbsp;</span> Digital Marketing</h5>
             <img src='/images/our_solutions/2.png' alt='' />
             <h6>Strategically Amplifying Your Reach</h6>
             <p>In the digital age, effective marketing is about more than visibility—it's about meaningful engagement and sustainable growth.</p>
           </div>
 
-          <div className={styles.card} data-aos="fade-up">
+          <div className={styles.card}>
             <h5><span>03 &nbsp;</span> Advertising & Production</h5>
             <img src='/images/our_solutions/3.png' alt='' />
             <h6>From Concept to Captivation</h6>
             <p>Our advertising and production services are designed to turn your concepts into captivating campaigns.</p>
           </div>
 
-          <div className={styles.card} data-aos="fade-up">
+          <div className={styles.card}>
             <h5><span>04 &nbsp;</span> Consulting Services</h5>
             <img src='/images/our_solutions/4.png' alt='' />
             <h6>Guiding Creativity to Success</h6>
             <p>Our consulting services offer invaluable guidance in creative direction and campaign development.</p>
           </div>
 
-          <div className={styles.card} data-aos="fade-up">
+          <div className={styles.card}>
             <h5><span>05 &nbsp;</span> Design and Animation</h5>
             <img src='/images/our_solutions/5.png' alt='' />
             <h6>Visual Storytelling at Its Finest</h6>
             <p>Our design and animation services are dedicated to bringing your brand's visual identity to life.</p>
           </div>
 
-          <div className={styles.card} data-aos="fade-up">
-            <h5><span>06 &nbsp;</span> Crafting a Lasting Impression</h5>
+          <div className={styles.card}>
+            <h5><span>06 &nbsp;</span> Branding</h5>
             <img src='/images/our_solutions/6.png' alt='' />
-            <h6>Molding Ideas into Powerful Stories</h6>
-            <p>In the competitive landscape of today, effective branding is essential for differentiation and recognition.</p>
+            <h6>Crafting a Lasting Impression</h6>
+            <p>We craft tailor-made branding solutions that elevate your identity, ensuring your brand stands out with authenticity and impact. </p>
           </div>
         </div>}
 
         {isSwiperActive &&
           <Swiper
             key={"solutionsSwiper"}
-            loop={false}
+            loop={true}
             className={styles.card_container}
             spaceBetween={10}
             slidesPerView={1}
@@ -127,41 +126,41 @@ const OurSolutions = () => {
               },
             }}
           >
-            <SwiperSlide key={"1"} className={styles.card} data-aos="fade-up">
-              <h5><span>06 &nbsp;</span> Crafting a Lasting Impression</h5>
-              <img src='/images/our_solutions/6.png' alt='' />
-              <h6>Molding Ideas into Powerful Stories</h6>
-              <p>In the competitive landscape of today, effective branding is essential for differentiation and recognition.</p>
+            <SwiperSlide key={"1"} className={styles.card}>
+            <h5><span>01 &nbsp;</span> Content Writing</h5>
+            <img src='/images/our_solutions/1.png' alt='' />
+            <h6>Molding Ideas into Powerful Stories</h6>
+            <p>Our content writing services encompass a wide spectrum of needs, ensuring every word captivates and communicates effectively.</p>
             </SwiperSlide>
-            <SwiperSlide key={"1"} className={styles.card} data-aos="fade-up">
-              <h5><span>06 &nbsp;</span> Crafting a Lasting Impression</h5>
-              <img src='/images/our_solutions/6.png' alt='' />
-              <h6>Molding Ideas into Powerful Stories</h6>
-              <p>In the competitive landscape of today, effective branding is essential for differentiation and recognition.</p>
+            <SwiperSlide key={"1"} className={styles.card}>
+            <h5><span>02 &nbsp;</span> Digital Marketing</h5>
+            <img src='/images/our_solutions/2.png' alt='' />
+            <h6>Strategically Amplifying Your Reach</h6>
+            <p>In the digital age, effective marketing is about more than visibility—it's about meaningful engagement and sustainable growth.</p>
             </SwiperSlide>
-            <SwiperSlide key={"1"} className={styles.card} data-aos="fade-up">
-              <h5><span>06 &nbsp;</span> Crafting a Lasting Impression</h5>
-              <img src='/images/our_solutions/6.png' alt='' />
-              <h6>Molding Ideas into Powerful Stories</h6>
-              <p>In the competitive landscape of today, effective branding is essential for differentiation and recognition.</p>
+            <SwiperSlide key={"1"} className={styles.card}>
+            <h5><span>03 &nbsp;</span> Advertising & Production</h5>
+            <img src='/images/our_solutions/3.png' alt='' />
+            <h6>From Concept to Captivation</h6>
+            <p>Our advertising and production services are designed to turn your concepts into captivating campaigns.</p>
             </SwiperSlide>
-            <SwiperSlide key={"1"} className={styles.card} data-aos="fade-up">
-              <h5><span>06 &nbsp;</span> Crafting a Lasting Impression</h5>
-              <img src='/images/our_solutions/6.png' alt='' />
-              <h6>Molding Ideas into Powerful Stories</h6>
-              <p>In the competitive landscape of today, effective branding is essential for differentiation and recognition.</p>
+            <SwiperSlide key={"1"} className={styles.card}>
+            <h5><span>04 &nbsp;</span> Consulting Services</h5>
+            <img src='/images/our_solutions/4.png' alt='' />
+            <h6>Guiding Creativity to Success</h6>
+            <p>Our consulting services offer invaluable guidance in creative direction and campaign development.</p>
             </SwiperSlide>
-            <SwiperSlide key={"1"} className={styles.card} data-aos="fade-up">
-              <h5><span>06 &nbsp;</span> Crafting a Lasting Impression</h5>
-              <img src='/images/our_solutions/6.png' alt='' />
-              <h6>Molding Ideas into Powerful Stories</h6>
-              <p>In the competitive landscape of today, effective branding is essential for differentiation and recognition.</p>
+            <SwiperSlide key={"1"} className={styles.card}>
+            <h5><span>05 &nbsp;</span> Design and Animation</h5>
+            <img src='/images/our_solutions/5.png' alt='' />
+            <h6>Visual Storytelling at Its Finest</h6>
+            <p>Our design and animation services are dedicated to bringing your brand's visual identity to life.</p>
             </SwiperSlide>
-            <SwiperSlide key={"1"} className={styles.card} data-aos="fade-up">
-              <h5><span>06 &nbsp;</span> Crafting a Lasting Impression</h5>
-              <img src='/images/our_solutions/6.png' alt='' />
-              <h6>Molding Ideas into Powerful Stories</h6>
-              <p>In the competitive landscape of today, effective branding is essential for differentiation and recognition.</p>
+            <SwiperSlide key={"1"} className={styles.card}>
+            <h5><span>06 &nbsp;</span> Branding</h5>
+            <img src='/images/our_solutions/6.png' alt='' />
+            <h6>Crafting a Lasting Impression</h6>
+            <p>We craft tailor-made branding solutions that elevate your identity, ensuring your brand stands out with authenticity and impact. </p>
             </SwiperSlide>
           </Swiper>
         }

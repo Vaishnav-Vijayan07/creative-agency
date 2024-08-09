@@ -1,24 +1,25 @@
 import React from 'react'
 // import styles from "/styles/Footer.module.scss"
 import styles from '../../styles/Footer.module.scss'
+import Link from 'next/link'
 
 const Footer = () => {
     return (
         <section className={styles.footer_container}>
             <div className={styles.details_container}>
                 <img src="/images/logo.png" alt="" />
-                <h6> Let’s start together.</h6>
-                <h5>+91-835-6847683 // hello@minaricreatives.com</h5>
+                <h6> Let’s get started.</h6>
+                <h5>+91-8356847683 / hello@thecreatorscafe.in</h5>
                 <div className={styles.under_line}></div>
             </div>
 
             <ul className={styles.nav_items}>
-                <li>Home</li>
-                <li>About Us</li>
-                <li>Services</li>
-                <li>Portfolio</li>
-                <li>Blogs</li>
-                <li>Contact Us</li>
+                <Link href={"/"}><li>Home</li></Link>
+                <Link href={"/about-us"}><li>About Us</li></Link>
+                <Link href={"/services"}><li>Services</li></Link>
+                <Link href={"/portfolio"}><li>Portfolio</li></Link>
+                <Link href={"/blogs"}><li>Blogs</li></Link>
+                <Link href={"/contact"}><li>Contact Us</li></Link>
             </ul>
 
             <p className={styles.copyright_text}>Copyright © 2024 Minari Creatives. All Rights Reserved.</p>

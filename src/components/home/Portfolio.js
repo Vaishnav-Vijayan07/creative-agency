@@ -4,13 +4,18 @@ import styles from "../../styles/Portfolio.module.scss";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import { Sidebar } from 'primereact/sidebar';
+import { useRouter } from 'next/navigation';
 
 const Portfolio = () => {
+    const router = useRouter()
+    const handleClick = () => {
+        router.push('/portfolio'); // Navigate to the /about page
+    }
     return (
         <div className={styles.portfolio_container}>
             <div className={styles.top_section}>
 
-                <div className={styles.header_container}><h3 data-aos="fade-up">Journey Through <br /> Our<div><span>Work</span></div></h3> <button>See More <img src='/icons/arrow.png' alt="icon" width={30}></img></button></div>
+                <div className={styles.header_container}><h3 data-aos="fade-up">Journey Through <br /> Our<div><span>Work</span></div></h3> <button onClick={handleClick}>See More <img src='/icons/arrow.png' alt="icon" width={30}></img></button></div>
             </div>
             <div className={styles.slider_container}>
                 <Swiper

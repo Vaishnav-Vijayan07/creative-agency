@@ -1,16 +1,19 @@
+"use client"
 import React from "react";
 import styles from "../../styles/Home.module.scss";
+import { useRouter } from "next/navigation";
 
 const AboutUs = () => {
+  const router = useRouter()
+  const handleClick = () =>{
+      router.push('/about-us'); // Navigate to the /about page
+  }
   return (
     <div className={styles.aboutus_section}>
       <div className={styles.aboutus_heading} data-aos="fade-up">
-        <h4>Empower Your Vision with Tailored Creative Solutions</h4>
+        <h4>Bespoke Creative Solutions</h4>
         <p>
-          At Minari Creatives, we partner with businesses of all sizes and visionary individuals to bring your ideas to
-          life. We specialize in transforming your vision into compelling stories, whether through engaging articles,
-          captivating blogs, or dynamic website content. Our evocative designs, from graphic illustrations to
-          animations, ensure your brand stands out.
+          We are a multi-service creative agency, partnering with individuals and businesses of all sizes to bring your ideas to life. We offer the right support to transform your vision into a compelling, marketable solution.
         </p>
       </div>
 
@@ -19,11 +22,9 @@ const AboutUs = () => {
         <div className={styles.content_left_wrapper}>
           <img src="/images/aboutus_1.png" alt="" id={styles.aboutus_image1} data-aos="fade-right" />
           <p data-aos="fade-up">
-            Through strategic digital marketing, including SEO, social media, and influencer campaigns, we help you
-            achieve long-term success. Our advertising and production team crafts impactful video productions, digital
-            ads, and promotional campaigns tailored to your needs.
+          Let’s make your brand stand out through evocative content and designs, strategic digital marketing, and impactful video production services tailored to your needs.
           </p>
-          <button id={styles.about_us_button} data-aos="fade-up">Know more about us <img src="/icons/arrow.png" id={styles.arrow_icon} /></button>
+          <button id={styles.about_us_button} data-aos="fade-up">Know more about us <img src="/icons/arrow.png" id={styles.arrow_icon} onClick={handleClick} /></button>
         </div>
         <div className={styles.content_right_wrapper}>
           <img src="/images/aboutus_2.png" alt="" id={styles.aboutus_image2} data-aos="fade-left" />

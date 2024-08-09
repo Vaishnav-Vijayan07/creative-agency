@@ -18,21 +18,21 @@ const Testimonials = () => {
             <div className={styles.testimonials_container}>
                 <div className={styles.side_header}>Testimonials</div>
 
-                <h3 data-aos="fade-up">In Their Own Words: Stories of Impact, <br /> Innovation, and Enduring <div><span>Partnership</span></div></h3>
-                <p>Dive into the experiences of those who have journeyed with Minari Creatives, where inspiration meets <br /> exceptional results.</p>
+                <h3 data-aos="fade-up">Stories of Impact, <br /> Innovation, and Enduring <div><span>Partnership</span></div></h3>
+                <p>Dive into the experiences of those who have journeyed with The Creators’ Café, where inspiration meets results.</p>
 
                 {/* <div className={styles.slider_container}> */}
                 <Swiper
                     key={"courseSwiper"}
                     ref={swiperRef}
-                    loop={false}
+                    loop={true}
                     className={styles.slider_container}
                     spaceBetween={10}
                     slidesPerView={1}
                     modules={[Pagination, Navigation]}
                     preventClicksPropagation={false}
                     centeredSlides={true}
-                    speed={1000}
+                    speed={1500}
                     preventClicks={false}
                     pagination={{
                         el: '.swiper-pagination',
@@ -107,6 +107,25 @@ const Testimonials = () => {
                     </SwiperSlide>
 
                     <SwiperSlide key={"3"} className={styles.card}>
+
+                        {/* <div className={`${styles.card} ${styles.card_active}`}> */}
+                        <div className={styles.avatar_container}>
+                            <div className={styles.avatar_image}>
+                                <img src='/images/testimonials/testimonial1.png' alt="" />
+                            </div>
+                            <div className={styles.username_container}>
+                                <span>Alan Baker</span>
+                                <p>CEO of Redbird Company</p>
+                            </div>
+
+                            <div className={styles.icon_container}></div>
+                        </div>
+
+                        <p>Working with Katalyst Studio has been an incredible experience. They truly listened to our needs and delivered a stunning design that exceeded our expectations. We couldn't be happier with the final product!</p>
+                        {/* </div> */}
+                    </SwiperSlide>
+
+                    <SwiperSlide key={"4"} className={styles.card}>
 
                         {/* <div className={`${styles.card} ${styles.card_active}`}> */}
                         <div className={styles.avatar_container}>

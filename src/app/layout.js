@@ -1,6 +1,8 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import dynamic from "next/dynamic";
+import { Suspense } from "react";
+import Loading from "./loading";
 
 const Navbar = dynamic(() => import("@/components/layouts/Navbar"), {
   loading: () => <></>,
@@ -24,9 +26,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head></head>
       <body className={inter.className}>
-        <Navbar />
-        {children}
-        <Footer />
+        <Suspense fallback={<Loading />}>
+          <Navbar />
+          {children}
+          <Footer />
+        </Suspense>
       </body>
     </html>
   );

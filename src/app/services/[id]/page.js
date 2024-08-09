@@ -74,28 +74,28 @@ const page = () => {
 
 
           <section className={styles.work_flow}>
-            <h3>Work Flow</h3>
+            <h3>Our Workflow in 3 Steps</h3>
             <div className={styles.card_container}>
 
               <div className={styles.card_wrapper}>
                 <img src="/images/services/1.png" alt="" />
                 <span>Step 1</span>
-                <h6>Ideation</h6>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                <h6>Discovery and Planning </h6>
+                <p>First, we dive deep into understanding your goals, challenges, and vision. This phase involves comprehensive research, client consultations, and identifying key objectives. We collaborate closely with you to outline project milestones, establish timelines, and define deliverables.</p>
               </div>
 
               <div className={styles.card_wrapper}>
                 <img src="/images/services/2.png" alt="" />
-                <span>Step 1</span>
-                <h6>Ideation</h6>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                <span>Step 2</span>
+                <h6>Execution and Creativity </h6>
+                <p>With a solid plan in place, we move into the execution phase. Whether it’s crafting compelling content, designing captivating visuals, or developing strategic campaigns, we work diligently to meet and exceed expectations.</p>
               </div>
 
               <div className={styles.card_wrapper}>
                 <img src="/images/services/3.png" alt="" />
-                <span>Step 1</span>
-                <h6>Ideation</h6>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                <span>Step 3</span>
+                <h6>Review and Refinement </h6>
+                <p>We prioritize feedback and iteration to ensure we’re on track to achieve the desired outcomes. During this phase, we conduct thorough reviews, gather insights, and refine our work based on your input. Our goal is to deliver polished, high-quality results that resonate with your audience and align with your brand’s objectives.</p>
               </div>
 
             </div>
