@@ -83,6 +83,11 @@
     a {
       text-decoration: none;
       color: #FAFAFAFA;
+
+      .active{
+
+        border-bottom: 1px solid black;
+      }
     }
   }
 }

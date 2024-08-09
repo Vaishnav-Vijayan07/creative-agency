@@ -169,12 +169,6 @@
       // gap: 20px;
 
       div {
-        transition: transform 0.5s ease-in-out;
-        cursor: pointer;
-
-        &:hover{
-          transform: scale(1.02);
-        }
         img {
           max-width: calc(100% - 10px);
           /* Adjust max-width to account for spacing */
@@ -437,6 +431,13 @@
       align-items: flex-end;
       justify-content: center;
       background: linear-gradient(to bottom, #8E8D79, #DAB289);
+
+      transition: transform 0.5s ease-in-out;
+      cursor: pointer;
+
+      &:hover{
+        transform: scale(1.02);
+      }
 
       @media only screen and (max-width: 900px) {
         width: 60%;

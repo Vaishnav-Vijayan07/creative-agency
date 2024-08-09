@@ -16,6 +16,7 @@ const Navbar = () => {
   const handleClick = (e) => {
       e.preventDefault()
       router.push('/'); // Navigate to the /about page
+
   };
   return (
     <nav className={styles.navbar}>
@@ -25,7 +26,7 @@ const Navbar = () => {
         onClick={handleClick}
       />
       <ul className={styles.nav_items}>
-      <li><Link key={'home-nav'} href={"/"} >Home</Link></li>
+      <li><Link key={'home-nav'} href={"/"} className={router.pathname === '/' ? styles.active : ''} >Home</Link></li>
           <li><Link key={'about-nav'} href={"/about-us"} >About Us</Link></li>
           <li><Link key={'services-nav'} href={"/services"} >Services</Link></li>
           <li><Link key={'portfolio-nav'} href={"/portfolio"} >Portfolio</Link></li>
