@@ -29,10 +29,10 @@ const Testimonials = () => {
                     className={styles.slider_container}
                     spaceBetween={10}
                     slidesPerView={1}
-                    modules={[Pagination, Navigation]}
+                    modules={[Pagination, Navigation, Autoplay]}
                     preventClicksPropagation={false}
                     centeredSlides={true}
-                    speed={1500}
+                    speed={1000}
                     preventClicks={false}
                     pagination={{
                         el: '.swiper-pagination',
@@ -43,6 +43,11 @@ const Testimonials = () => {
                         prevEl: `#next_2`,
                     }}
                     initialSlide={1}
+                    autoplay={{
+                        delay: 5000, // Delay between slides in ms
+                        disableOnInteraction: false, // Continue autoplay after user interactions
+                        pauseOnMouseEnter: true
+                    }}
                     breakpoints={{
                         320: {
                             slidesPerView: 1,

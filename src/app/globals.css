@@ -95,3 +95,7 @@ button.accordion-button.collapsed{
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+.accordion-button:not(.collapsed){
+  color: #6C3E24 !important;
+}

@@ -173,6 +173,7 @@
       grid-column-gap: 16px;
       grid-row-gap: 16px;
       z-index: 100;
+      padding-bottom: 15px;
 
       .card {
         padding: 20px 30px;
@@ -226,6 +227,13 @@
           font-weight: 600;
           text-align: left;
           color: #fff;
+
+          @media only screen and (max-width: 1200px) {
+            margin-top: 10px;
+          }
+
+
+
 
         }
 

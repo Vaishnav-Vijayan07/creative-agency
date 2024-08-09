@@ -169,6 +169,12 @@
       // gap: 20px;
 
       div {
+        transition: transform 0.5s ease-in-out;
+        cursor: pointer;
+
+        &:hover{
+          transform: scale(1.02);
+        }
         img {
           max-width: calc(100% - 10px);
           /* Adjust max-width to account for spacing */

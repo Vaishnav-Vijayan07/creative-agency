@@ -90,6 +90,11 @@
         a{
             text-decoration: none;
             color: #FAFAFA;
+            transition: .5s color ease;
+
+            &:hover{
+                color: #B2987D;
+            }
         }
 
         li {
