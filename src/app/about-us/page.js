@@ -39,14 +39,14 @@ const page = () => {
           <div className={styles.text_wrapper} data-aos="fade-left">
             <b>Our Vision</b> <br />
             At The Creators' Cafe, we believe that the greatest wonders can be built when free-flowing creativity seamlessly integrates with strategic planning. We strive to be the go-to destination for innovative minds seeking to make a significant impact through their creative endeavours.
-            <b> Our Mission</b> <br />
+            <br /> <b> Our Mission</b> <br />
             Our mission is to act as your trusted source of support, guidance, and expertise to help transform your ideas into compelling, marketable solutions. We are committed to delivering high-quality, customized creative services that make you stand out in a competitive market.
-            <b>Our Values</b> <br />
-            Trust: We believe trust is the foundation of all successful relationships. We build trust through transparency, honesty, and consistent delivery of high-quality results.
-            Growth: We are committed to fostering continuous growth, both for our clients and our team. We strive to push boundaries, embrace new challenges, and constantly evolve our skills and services to stay ahead in a dynamic industry. Your growth is our growth.
-            Respect: We value diverse perspectives and foster an inclusive environment where every idea is heard and valued. By respecting each other's contributions, we create a culture of mutual understanding and shared success.
-            Creativity: We are passionate about turning imaginative ideas into reality and believe that creativity has the power to transform brands and businesses.
-            Collaboration: We work closely with our clients, blending our expertise with their vision to create exceptional results. By fostering open communication and teamwork, we ensure that every project is a true partnership, achieving greater outcomes together.
+            <br /><b>Our Values</b> <br />
+            <b>Trust:</b> We believe trust is the foundation of all successful relationships. We build trust through transparency, honesty, and consistent delivery of high-quality results.
+            <br /><b>Growth:</b> We are committed to fostering continuous growth, both for our clients and our team. We strive to push boundaries, embrace new challenges, and constantly evolve our skills and services to stay ahead in a dynamic industry. Your growth is our growth.
+            <br /><b>Respect:</b> We value diverse perspectives and foster an inclusive environment where every idea is heard and valued. By respecting each other's contributions, we create a culture of mutual understanding and shared success.
+            <br /><b>Creativity:</b> We are passionate about turning imaginative ideas into reality and believe that creativity has the power to transform brands and businesses.
+            <br /><b>Collaboration:</b> We work closely with our clients, blending our expertise with their vision to create exceptional results. By fostering open communication and teamwork, we ensure that every project is a true partnership, achieving greater outcomes together.
 
           </div>
         </div>

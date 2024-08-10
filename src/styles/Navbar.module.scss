@@ -15,7 +15,7 @@
   }
 
   @media only screen and (max-width: 768px) {
-    padding: 40px 60px;
+    padding: 40px;
 
   }
 
@@ -83,11 +83,14 @@
     a {
       text-decoration: none;
       color: #FAFAFAFA;
+    }
+  }
 
-      .active{
+  .active {
+    border-bottom: 2px solid #DE8D60;
 
-        border-bottom: 1px solid black;
-      }
+    a {
+      color: #DAB289;
     }
   }
 }

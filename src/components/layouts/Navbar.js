@@ -5,7 +5,7 @@ import Image from "next/image";
 import { Sidebar } from "primereact/sidebar";
 import "primereact/resources/themes/lara-light-cyan/theme.css";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 
 
@@ -13,9 +13,14 @@ const Navbar = () => {
   const [visible, setVisible] = useState(false)
   const router = useRouter()
 
+  const pathname = usePathname()
+
+  console.log("pathname", pathname);
+
+
   const handleClick = (e) => {
-      e.preventDefault()
-      router.push('/'); // Navigate to the /about page
+    e.preventDefault()
+    router.push('/'); // Navigate to the /about page
 
   };
   return (
@@ -26,11 +31,11 @@ const Navbar = () => {
         onClick={handleClick}
       />
       <ul className={styles.nav_items}>
-      <li><Link key={'home-nav'} href={"/"} className={router.pathname === '/' ? styles.active : ''} >Home</Link></li>
-          <li><Link key={'about-nav'} href={"/about-us"} >About Us</Link></li>
-          <li><Link key={'services-nav'} href={"/services"} >Services</Link></li>
-          <li><Link key={'portfolio-nav'} href={"/portfolio"} >Portfolio</Link></li>
-          <li><Link key={'blog-nav'} href={"/blogs"} >Blog</Link></li>
+        <li className={pathname == '/' ? styles.active : ''}><Link key={'home-nav'} href={"/"} >Home</Link></li>
+        <li className={pathname == "/about-us" ? styles.active : ''}><Link key={'about-nav'} href={"/about-us"} >About Us</Link></li>
+        <li className={pathname == '/services' ? styles.active : ''}><Link key={'services-nav'} href={"/services"} >Services</Link></li>
+        <li className={pathname == '/portfolio' ? styles.active : ''}><Link key={'portfolio-nav'} href={"/portfolio"} >Portfolio</Link></li>
+        <li className={pathname == '/blogs' ? styles.active : ''}><Link key={'blog-nav'} href={"/blogs"} >Blog</Link></li>
       </ul>
       <Link key={'blog-nav'} href={"/contact"} className={styles.contact_button}>Contact us</Link>
       <Image src={"/icons/menu.png"}
