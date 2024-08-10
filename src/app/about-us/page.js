@@ -13,7 +13,7 @@ const page = () => {
     AOS.refresh();
   }, []);
   return (
-    <div>
+    <div className={styles.about_us_section}>
       <AboutUsBanner />
       <section className={styles.aboutus_description}>
 
