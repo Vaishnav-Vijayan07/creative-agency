@@ -17,6 +17,7 @@
     "react-bootstrap": "^2.10.4",
     "react-countup": "^6.5.3",
     "react-dom": "^18",
+    "react-type-animation": "^3.2.0",
     "sass": "^1.77.8",
     "swiper": "^11.1.8"
   }

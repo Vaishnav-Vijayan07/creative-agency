@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../../styles/HeroBanner.module.scss";
 import Image from "next/image";
+import { TypeAnimation } from "react-type-animation";
 
 const HeroBanner = () => {
   return (
@@ -14,10 +15,29 @@ const HeroBanner = () => {
 
       <div className={styles.content}>
         <h1>THE CREATORS’ CAFÉ</h1>
-        <h3>Crafting Digital Excellence</h3>
+        <TypeAnimation
+      sequence={[
+        // Same substring at the start will only be typed out once, initially
+        'Dreamers',
+        1000, // wait 1s before replacing "Mice" with "Hamsters"
+        'Doers',
+        1000,
+        'Visionaries',
+        1000,
+        'Innovators',
+        1000,
+        'Hustlers',
+        1000
+      ]}
+      wrapper="h3"
+      speed={50}
+      style={{ fontSize: '3em', color: '#fff', textAlign: 'center', fontWeight: '600'
+       }}
+      repeat={Infinity}
+    />
+        <h3>Serving Creators Of Every Kind</h3>
         <p>
-          The Creators' Cafe is a multi-service agency that transforms visions into reality through innovative
-          storytelling, evocative designs, and strategic creativity.
+        The Creators' Cafe is a multi-service agency that transforms visions into reality through innovative storytelling, evocative designs, and strategic creativity.
         </p>
       </div>
 
