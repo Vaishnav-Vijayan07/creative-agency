@@ -37,7 +37,7 @@ const Navbar = () => {
         <li className={pathname == '/portfolio' ? styles.active : ''}><Link key={'portfolio-nav'} href={"/portfolio"} >Portfolio</Link></li>
         <li className={pathname == '/blogs' ? styles.active : ''}><Link key={'blog-nav'} href={"/blogs"} >Blog</Link></li>
       </ul>
-      <Link key={'blog-nav'} href={"/contact"} className={styles.contact_button}>Contact us</Link>
+      <Link key={'blog-nav'} href={"/contact"} className={styles.contact_button}>Contact Us</Link>
       <Image src={"/icons/menu.png"}
         className={styles.menu_button}
         alt={"logo"}
@@ -48,11 +48,11 @@ const Navbar = () => {
 
       <Sidebar visible={visible} onHide={() => setVisible(false)}>
         <ul className={styles.nav_items_2}>
-          <li><Link key={'home-nav'} href={"/"} >Home</Link></li>
-          <li><Link key={'about-nav'} href={"/about-us"} >About Us</Link></li>
-          <li><Link key={'services-nav'} href={"/services"} >Services</Link></li>
-          <li><Link key={'portfolio-nav'} href={"/portfolio"} >Portfolio</Link></li>
-          <li><Link key={'blog-nav'} href={"/blogs"} >Blog</Link></li>
+          <li><Link key={'home-nav'} onClick={() => setVisible(false)} href={"/"} >Home</Link></li>
+          <li><Link key={'about-nav'} href={"/about-us"} onClick={() => setVisible(false)} >About Us</Link></li>
+          <li><Link key={'services-nav'} href={"/services"}onClick={() => setVisible(false)} >Services</Link></li>
+          <li><Link key={'portfolio-nav'} href={"/portfolio"}onClick={() => setVisible(false)} >Portfolio</Link></li>
+          <li><Link key={'blog-nav'} href={"/blogs"} onClick={() => setVisible(false)}>Blog</Link></li>
         </ul>
       </Sidebar>
     </nav>

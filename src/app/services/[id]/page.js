@@ -44,22 +44,22 @@ const page = () => {
               </div>
 
               <div className={styles.card_wrapper}>
-                <h3>Content Marketing</h3>
+                <h3>Email Marketing</h3>
                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
               </div>
 
               <div className={styles.card_wrapper}>
-                <h3>Content Marketing</h3>
+                <h3>Social Media Marketing</h3>
                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
               </div>
 
               <div className={styles.card_wrapper}>
-                <h3>Content Marketing</h3>
+                <h3>SEO</h3>
                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
               </div>
 
               <div className={styles.card_wrapper}>
-                <h3>Content Marketing</h3>
+                <h3>Influencer Marketing</h3>
                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
               </div>
 
