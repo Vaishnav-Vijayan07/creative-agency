@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import styles from './styles.module.scss'
 import { useParams } from 'next/navigation'
-import { data } from '@/data/services'
+import { data, lorem } from '@/data/services'
 import AOS from 'aos'
 import "aos/dist/aos.css";
 
@@ -44,7 +44,8 @@ const page = () => {
       <section className={styles.service_description}>
         <h3>{filteredData?.subheading}</h3>
         <p>
-          {filteredData?.card_description}
+          Creative Studio follows a collaborative and iterative approach to creation, with a <br />
+          focus on understanding and meeting the unique needs of each client.
         </p>
 
         <div className={styles.bottom_container}>
@@ -55,8 +56,10 @@ const page = () => {
           </div>
           <div className={styles.bottom_sub}>
 
-            {/* <h5>Solving the Digital Maze for Success</h5> */}
-            <p>{filteredData?.description}</p>
+            <h5>{filteredData?.subheading}</h5>
+            <p>{filteredData?.card_description}</p>
+            {/* <br/> */}
+            <p>{lorem}</p>
           </div>
         </div>
       </section>
@@ -64,13 +67,16 @@ const page = () => {
       <section className={styles.we_offer}>
         <h3 data-aos="fade-up">What we offer ?</h3>
         <div className={styles.card_container}>
+          {
+            filteredData?.card_contents?.map((item) => (
+              <div className={styles.card_wrapper} data-aos="flip-left">
+                <h3>{item?.name}</h3>
+                <p>{item?.description}</p>
+              </div>
+            ))
+          }
 
-          <div className={styles.card_wrapper} data-aos="flip-left">
-            <h3>Content Marketing</h3>
-            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
-          </div>
-
-          <div className={styles.card_wrapper} data-aos="flip-left">
+          {/* <div className={styles.card_wrapper} data-aos="flip-left">
             <h3>Email Marketing</h3>
             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
           </div>
@@ -93,7 +99,7 @@ const page = () => {
           <div className={styles.card_wrapper} data-aos="flip-left">
             <h3>Content Marketing</h3>
             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
-          </div>
+          </div> */}
 
         </div>
 
