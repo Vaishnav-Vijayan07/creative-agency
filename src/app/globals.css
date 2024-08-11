@@ -42,7 +42,8 @@ body {
   border-bottom: 1px solid #908d8d98;
 
 }
-button.accordion-button.collapsed{
+
+button.accordion-button.collapsed {
   border-bottom: 1px solid #908d8d98;
 
 }
@@ -69,12 +70,14 @@ button.accordion-button.collapsed{
 }
 
 .accordion-button:focus {
-  outline: none !important; /* Removes the blue focus outline */
-  box-shadow: none !important; /* Removes the box-shadow applied by Bootstrap */
+  outline: none !important;
+  /* Removes the blue focus outline */
+  box-shadow: none !important;
+  /* Removes the box-shadow applied by Bootstrap */
 }
 
 
-.accordion-button::after{
+.accordion-button::after {
   background-image: url('/icons/plus_icon.png') !important;
   width: 24px;
   height: 24px;
@@ -88,14 +91,21 @@ button.accordion-button.collapsed{
   opacity: 1 !important;
   background-color: #38261C;
   /* margin-top: 0px !important; */
-  transform: translateY(0) !important; 
+  transform: translateY(0) !important;
 }
-.services_container .swiper-wrapper{
+
+.services_container .swiper-wrapper {
   display: flex;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-.accordion-button:not(.collapsed){
+.accordion-button:not(.collapsed) {
   color: #6C3E24 !important;
+}
+
+.loading_container {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 100000;
 }
