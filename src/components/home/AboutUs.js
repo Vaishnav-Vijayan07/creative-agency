@@ -24,7 +24,7 @@ const AboutUs = () => {
           <p data-aos="fade-up">
           Let’s make your brand stand out through evocative content and designs, strategic digital marketing, and impactful video production services tailored to your needs.
           </p>
-          <button id={styles.about_us_button} data-aos="fade-up">Know more about us <img src="/icons/arrow.png" id={styles.arrow_icon} onClick={handleClick} /></button>
+          <button id={styles.about_us_button} onClick={handleClick} data-aos="fade-up">Know more about us <img src="/icons/arrow.png" id={styles.arrow_icon}  /></button>
         </div>
         <div className={styles.content_right_wrapper}>
           <img src="/images/aboutus_2.png" alt="" id={styles.aboutus_image2} data-aos="fade-left" />
