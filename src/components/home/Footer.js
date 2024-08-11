@@ -22,7 +22,7 @@ const Footer = () => {
                 <Link href={"/contact"}><li>Contact Us</li></Link>
             </ul>
 
-            <p className={styles.copyright_text}>Copyright © 2024 Minari Creatives. All Rights Reserved.</p>
+            <p className={styles.copyright_text}>Copyright © 2024 Creators’ Café. All Rights Reserved.</p>
 
             <div className={styles.curved_rectangle}>
                 <img src="/icons/fb.png" alt="" />

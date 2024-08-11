@@ -35,7 +35,7 @@ const Portfolio = () => {
                 </div>
                 <div className={styles.slider_container}>
                     <div className={styles.slider}>
-                        <div>
+                        <div data-aos="flip-left">
                             <div key={"1"} className={styles.card} >
 
                                 <div className={styles.card_content}>
@@ -48,7 +48,7 @@ const Portfolio = () => {
                             <p>Abrevia - Architects Startup </p>
                         </div>
 
-                        <div>
+                        <div data-aos="flip-left">
                             <div key={"2"} className={styles.card}>
                                 <div className={styles.card_content}>
                                     <span>Design</span>
@@ -60,7 +60,7 @@ const Portfolio = () => {
                             <p>Omnihub - Website Solution</p>
                         </div>
 
-                        <div>
+                        <div data-aos="flip-left">
                             <div key={"1"} className={styles.card}>
 
                                 <div className={styles.card_content}>
@@ -73,7 +73,7 @@ const Portfolio = () => {
                             <p>Abrevia - Architects Startup </p>
                         </div>
 
-                        <div>
+                        <div data-aos="flip-left">
                             <div key={"2"} className={styles.card}>
                                 <div className={styles.card_content}>
                                     <span>Design</span>
@@ -85,7 +85,7 @@ const Portfolio = () => {
                             <p>Omnihub - Website Solution</p>
                         </div>
 
-                        <div>
+                        <div data-aos="flip-left">
                             <div key={"1"} className={styles.card}>
 
                                 <div className={styles.card_content}>
@@ -98,7 +98,7 @@ const Portfolio = () => {
                             <p>Abrevia - Architects Startup </p>
                         </div>
 
-                        <div>
+                        <div data-aos="flip-left">
                             <div key={"2"} className={styles.card}>
                                 <div className={styles.card_content}>
                                     <span>Design</span>

@@ -19,7 +19,7 @@ const Testimonials = () => {
                 <div className={styles.side_header}>Testimonials</div>
 
                 <h3 data-aos="fade-up">Stories of Impact, <br /> Innovation, and Enduring <div><span>Partnership</span></div></h3>
-                <p>Dive into the experiences of those who have journeyed with The Creators’ Café, where inspiration meets results.</p>
+                <p data-aos="fade-up">Dive into the experiences of those who have journeyed with The Creators’ Café, where inspiration meets results.</p>
 
                 {/* <div className={styles.slider_container}> */}
                 <Swiper

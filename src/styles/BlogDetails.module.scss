@@ -179,6 +179,7 @@
                 transition: box-shadow 0.3s ease-in-out;
                 cursor: pointer;
                 padding: 15px;
+                border-radius: 15px;
 
                 &:hover {
                     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.185);

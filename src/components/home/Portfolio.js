@@ -3,7 +3,6 @@ import React from 'react'
 import styles from "../../styles/Portfolio.module.scss";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
-import { Sidebar } from 'primereact/sidebar';
 import { useRouter } from 'next/navigation';
 
 const Portfolio = () => {
@@ -19,7 +18,8 @@ const Portfolio = () => {
             </div>
             <div className={styles.slider_container}>
                 <Swiper
-                    key={"portfolioSwiper"}
+                    data-aos="fade-up"
+                    key={"portfolioSwiper1"}
                     loop={false}
                     className={styles.slider}
                     spaceBetween={10}
@@ -61,19 +61,20 @@ const Portfolio = () => {
                         },
                     }}
                 >
-                    <SwiperSlide key={"1"} className={styles.card} >
+                    <SwiperSlide key={"10"} className={styles.card}>
 
-                        <div className={styles.card_content} data-aos="fade-up">
+                        <div className={styles.card_content}>
                             <span>Branding</span>
                             <span>Digital Marketing</span>
                         </div>
                         <img src='/images/portfolio/portfolio_1.png' alt="portfolio" />
                         <p>Abrevia - Architects Startup </p>
 
+
                     </SwiperSlide>
 
                     <SwiperSlide key={"2"} className={styles.card}>
-                        <div className={styles.card_content} data-aos="fade-up">
+                        <div className={styles.card_content}>
                             <span>Design</span>
                             <span>Content Writing</span>
                         </div>

@@ -1,7 +1,9 @@
 'use client'
-import React from 'react'
+import React, { useEffect } from 'react'
 import styles from '@/styles/Blogs.module.scss'
 import { useRouter } from 'next/navigation'
+import AOS from 'aos'
+import "aos/dist/aos.css";
 
 const page = () => {
     const router = useRouter()
@@ -9,6 +11,11 @@ const page = () => {
         e.preventDefault()
         router.push('/blogs/1'); // Navigate to the /about page
     };
+
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
     return (
         <section className={styles.blogs_container}>
             <div className={styles.video_container}>
@@ -27,49 +34,49 @@ const page = () => {
                 {/* <p>Creative Studio follows a collaborative and iterative approach to creation, with a <br /> focus on understanding and meeting the unique needs of each client.</p> */}
 
                 <div className={styles.card_list}>
-                    <div className={styles.card} onClick={handleClick} >
+                    <div className={styles.card} onClick={handleClick} data-aos="flip-left" >
                         <img src='/blogs/1.png' alt='' />
                         <h5>There are many variations of passages </h5>
                         <h6>Jan 03, 2024   |   1 day ago</h6>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ...</p>
                     </div>
 
-                    <div className={styles.card} onClick={handleClick} >
+                    <div className={styles.card} onClick={handleClick} data-aos="flip-left" >
                         <img src='/blogs/1.png' alt='' />
                         <h5>There are many variations of passages </h5>
                         <h6>Jan 03, 2024   |   1 day ago</h6>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ...</p>
                     </div>
 
-                    <div className={styles.card} onClick={handleClick}>
+                    <div className={styles.card} onClick={handleClick} data-aos="flip-left">
                         <img src='/blogs/1.png' alt='' />
                         <h5>There are many variations of passages </h5>
                         <h6>Jan 03, 2024   |   1 day ago</h6>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ...</p>
                     </div>
 
-                    <div className={styles.card} onClick={handleClick}>
+                    <div className={styles.card} onClick={handleClick} data-aos="flip-left">
                         <img src='/blogs/1.png' alt='' />
                         <h5>There are many variations of passages </h5>
                         <h6>Jan 03, 2024   |   1 day ago</h6>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ...</p>
                     </div>
 
-                    <div className={styles.card} onClick={handleClick}>
+                    <div className={styles.card} onClick={handleClick} data-aos="flip-left">
                         <img src='/blogs/1.png' alt='' />
                         <h5>There are many variations of passages </h5>
                         <h6>Jan 03, 2024   |   1 day ago</h6>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ...</p>
                     </div>
 
-                    <div className={styles.card} onClick={handleClick}>
+                    <div className={styles.card} onClick={handleClick} data-aos="flip-left">
                         <img src='/blogs/1.png' alt='' />
                         <h5>There are many variations of passages </h5>
                         <h6>Jan 03, 2024   |   1 day ago</h6>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ...</p>
                     </div>
 
-                    <div className={styles.card} onClick={handleClick}>
+                    <div className={styles.card} onClick={handleClick} data-aos="flip-left">
                         <img src='/blogs/1.png' alt='' />
                         <h5>There are many variations of passages </h5>
                         <h6>Jan 03, 2024   |   1 day ago</h6>

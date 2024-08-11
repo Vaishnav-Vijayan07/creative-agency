@@ -16,45 +16,47 @@ const HeroBanner = () => {
       <div className={styles.content}>
         <h1>THE CREATORS’ CAFÉ</h1>
         <TypeAnimation
-      sequence={[
-        // Same substring at the start will only be typed out once, initially
-        'Dreamers',
-        1000, // wait 1s before replacing "Mice" with "Hamsters"
-        'Doers',
-        1000,
-        'Visionaries',
-        1000,
-        'Innovators',
-        1000,
-        'Hustlers',
-        1000
-      ]}
-      wrapper="h3"
-      speed={50}
-      style={{ fontSize: '3em', color: '#fff', textAlign: 'center', fontWeight: '600'
-       }}
-      repeat={Infinity}
-    />
+          sequence={[
+            // Same substring at the start will only be typed out once, initially
+            'DREAMERS',
+            1000, // wait 1s before replacing "Mice" with "Hamsters"
+            'DOERS',
+            1000,
+            'VISIONARIES',
+            1000,
+            'INNOVATORS',
+            1000,
+            'HUSTLERS',
+            1000
+
+          ]}
+          wrapper="h3"
+          speed={50}
+          style={{
+            fontSize: '4em', color: '#fff', textAlign: 'center', fontWeight: '800'
+          }}
+          repeat={Infinity}
+        />
         <h3>Serving Creators Of Every Kind</h3>
         <p>
-        The Creators' Cafe is a multi-service agency that transforms visions into reality through innovative storytelling, evocative designs, and strategic creativity.
+          The Creators' Cafe is a multi-service agency that transforms visions into reality through innovative storytelling, evocative designs, and strategic creativity.
         </p>
       </div>
 
       <div className={styles.collage_container}>
 
         <div className={styles.collage_sub_container}>
-          <div className={styles.image_1}>
-            <img src="/images/img3.png" />
+          <div className={styles.image_1} data-aos="fade-right">
+            <img src="/images/img3.png"/>
           </div>
-          <div className={styles.image_2}>
-            <img src="/images/img4.png" />
+          <div className={styles.image_2} data-aos="fade-up">
+            <img src="/images/img4.png"  />
           </div>
-          <div className={styles.image_3}>
-            <img src="/images/img2.png" />
+          <div className={styles.image_3} data-aos="fade-down">
+            <img src="/images/img2.png"  />
           </div>
-          <div className={styles.image_4}>
-            <img src="/images/img1.png" />
+          <div className={styles.image_4} data-aos="fade-left">
+            <img src="/images/img1.png"  />
           </div>
         </div>
       </div>
