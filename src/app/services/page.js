@@ -58,11 +58,11 @@ const page = () => {
 
             <div className={styles.our_solutions_container}>
                 <div className={styles.our_solutions}>
-                    <h3 data-aos="fade-up">
+                    {/* <h3 data-aos="fade-up">
                         The Art of <div><span>Strategic</span></div> <br /> Creativity
                     </h3>
                     <p data-aos="fade-up" className={styles.our_solutions_description}>Creative Studio follows a collaborative and iterative approach to creation, with a <br />
-                        focus on understanding and meeting the unique needs of each client.</p>
+                        focus on understanding and meeting the unique needs of each client.</p> */}
 
                     {!isSwiperActive && <div className={styles.card_container}>
 

@@ -52,9 +52,9 @@ const page = () => {
           <div className={styles.image_container}>
 
             {/* <img src='/images/services/service.png' alt='' /> */}
-            <img src={filteredData?.image} alt='' />
+            <img src={filteredData?.image} alt='' data-aos="fade-right"/>
           </div>
-          <div className={styles.bottom_sub}>
+          <div className={styles.bottom_sub} data-aos="fade-left">
 
             <h5>{filteredData?.subheading}</h5>
             <p>{filteredData?.card_description}</p>
@@ -107,25 +107,26 @@ const page = () => {
 
 
       <section className={styles.work_flow}>
-        <h3>Our Workflow in 3 Steps</h3>
+        <h3 data-aos="fade-up">Our Workflow in 3 Steps</h3>
+        <p data-aos="fade-up">At The Creators’ Café, we believe in a streamlined approach to deliver exceptional results. <br /> Our workflow is designed to ensure clarity, efficiency, and collaboration throughout every project.</p>
         <div className={styles.card_container}>
 
           <div className={styles.card_wrapper}>
-            <img src="/images/services/1.png" alt="" />
+            <img src="/images/services/1.png" alt="" data-aos="flip-left" />
             <span>Step 1</span>
             <h6>Discovery and Planning </h6>
             <p>First, we dive deep into understanding your goals, challenges, and vision. This phase involves comprehensive research, client consultations, and identifying key objectives. We collaborate closely with you to outline project milestones, establish timelines, and define deliverables.</p>
           </div>
 
           <div className={styles.card_wrapper}>
-            <img src="/images/services/2.png" alt="" />
+            <img src="/images/services/2.png" alt="" data-aos="flip-left" />
             <span>Step 2</span>
             <h6>Execution and Creativity </h6>
             <p>With a solid plan in place, we move into the execution phase. Whether it’s crafting compelling content, designing captivating visuals, or developing strategic campaigns, we work diligently to meet and exceed expectations.</p>
           </div>
 
           <div className={styles.card_wrapper}>
-            <img src="/images/services/3.png" alt="" />
+            <img src="/images/services/3.png" alt="" data-aos="flip-left" />
             <span>Step 3</span>
             <h6>Review and Refinement </h6>
             <p>We prioritize feedback and iteration to ensure we’re on track to achieve the desired outcomes. During this phase, we conduct thorough reviews, gather insights, and refine our work based on your input. Our goal is to deliver polished, high-quality results that resonate with your audience and align with your brand’s objectives.</p>

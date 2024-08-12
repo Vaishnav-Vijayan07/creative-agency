@@ -30,11 +30,8 @@ const HeroBanner = () => {
             1000
 
           ]}
-          wrapper="h3"
+          wrapper="h2"
           speed={50}
-          style={{
-            fontSize: '4em', color: '#fff', textAlign: 'center', fontWeight: '800'
-          }}
           repeat={Infinity}
         />
         <h3>Serving Creators Of Every Kind</h3>

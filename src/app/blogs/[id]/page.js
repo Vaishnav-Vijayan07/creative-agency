@@ -1,7 +1,14 @@
-import React from 'react'
+"use client"
+import React, { useEffect } from 'react'
 import styles from '../../../styles/BlogDetails.module.scss'
+import AOS from 'aos'
+import "aos/dist/aos.css";
 
 const page = () => {
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
     return (
         <main className={styles.detailed_blogs}>
             <div className={styles.video_container}>
@@ -30,21 +37,21 @@ const page = () => {
                 <h3>Recent Posts</h3>
 
                 <div className={styles.card_list}>
-                    <div className={styles.card}>
+                    <div className={styles.card} data-aos="flip-left">
                         <img src='/blogs/1.png' alt='' />
                         <h5>There are many variations of passages </h5>
                         <h6>Jan 03, 2024   |   1 day ago</h6>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ...</p>
                     </div>
 
-                    <div className={styles.card}>
+                    <div className={styles.card} data-aos="flip-left">
                         <img src='/blogs/1.png' alt='' />
                         <h5>There are many variations of passages </h5>
                         <h6>Jan 03, 2024   |   1 day ago</h6>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ...</p>
                     </div>
 
-                    <div className={styles.card}>
+                    <div className={styles.card} data-aos="flip-left">
                         <img src='/blogs/1.png' alt='' />
                         <h5>There are many variations of passages </h5>
                         <h6>Jan 03, 2024   |   1 day ago</h6>

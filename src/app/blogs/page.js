@@ -30,7 +30,7 @@ const page = () => {
             </div>
 
             <section className={styles.blogs_details}>
-                <h3>Our <div><span>Blogs</span></div></h3>
+                {/* <h3>Our <div><span>Blogs</span></div></h3> */}
                 {/* <p>Creative Studio follows a collaborative and iterative approach to creation, with a <br /> focus on understanding and meeting the unique needs of each client.</p> */}
 
                 <div className={styles.card_list}>
