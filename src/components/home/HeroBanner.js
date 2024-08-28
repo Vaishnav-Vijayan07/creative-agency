@@ -35,9 +35,9 @@ const HeroBanner = () => {
           repeat={Infinity}
         />
         <h3>Serving Creators Of Every Kind</h3>
-        <p>
+        {/* <p>
           The Creators' Cafe is a multi-service agency that transforms visions into reality through innovative storytelling, evocative designs, and strategic creativity.
-        </p>
+        </p> */}
       </div>
 
       <div className={styles.collage_container}>
