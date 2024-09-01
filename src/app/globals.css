@@ -33,40 +33,38 @@ body {
 }
 
 .accordion {
-  background: #EDE4DF;
+  background: #DAB289;
 }
 
 .accordion-body {
-  background: #EDE4DF;
+  background: #DAB289;
   border-top: 1px solid #908d8d98;
   border-bottom: 1px solid #908d8d98;
-
 }
 
 button.accordion-button.collapsed {
   border-bottom: 1px solid #908d8d98;
-
 }
 
 .accordion-collapse.collapse.show {
-  background: #EDE4DF;
+  background: #DAB289;
 }
 
 .accordion-item {
-  background: #EDE4DF;
+  background: #DAB289;
+  border: none !important;
 }
 
 .button.accordion-button {
-  background: #EDE4DF;
+  background: #DAB289;
 }
 
 .accordion-button {
-  background: #EDE4DF !important;
-
+  background: #DAB289 !important;
 }
 
 .accordion-button:not(.collapsed) {
-  background-color: #EDE4DF !important;
+  background-color: #DAB289 !important;
 }
 
 .accordion-button:focus {
@@ -75,7 +73,6 @@ button.accordion-button.collapsed {
   box-shadow: none !important;
   /* Removes the box-shadow applied by Bootstrap */
 }
-
 
 .accordion-button::after {
   background-image: url('/icons/plus_icon.png') !important;

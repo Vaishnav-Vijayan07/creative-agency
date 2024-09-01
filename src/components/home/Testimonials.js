@@ -18,7 +18,7 @@ const Testimonials = () => {
             <div className={styles.testimonials_container}>
                 <div className={styles.side_header}>Testimonials</div>
 
-                <h3 data-aos="fade-up">Stories of Impact, <br /> Innovation, and Enduring <div><span>Partnership</span></div></h3>
+                <h3 data-aos="fade-up"><div><span>Stories</span></div> of Impact, <br /> Innovation, and Enduring Partnership</h3>
                 <p data-aos="fade-up">Dive into the experiences of those who have journeyed with The Creators’ Café, where inspiration meets results.</p>
 
                 {/* <div className={styles.slider_container}> */}

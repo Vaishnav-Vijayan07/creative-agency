@@ -40,7 +40,7 @@ const HeroBanner = () => {
         </p> */}
       </div>
 
-      <div className={styles.collage_container}>
+      {/* <div className={styles.collage_container}>
 
         <div className={styles.collage_sub_container}>
           <div className={styles.image_1} data-aos="fade-right">
@@ -56,7 +56,7 @@ const HeroBanner = () => {
             <img src="/images/img1.png"  />
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
