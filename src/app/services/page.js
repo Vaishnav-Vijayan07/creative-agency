@@ -76,40 +76,6 @@ const page = () => {
                                 <p>{item?.card_description}</p>
                             </div>
                         ))}
-                        {/* <div className={styles.card} onClick={handleClick}>
-                            <h5><span>02 &nbsp;</span> Digital Marketing</h5>
-                            <img src='/images/our_solutions/2.png' alt='' />
-                            <h6>Strategically Amplifying Your Reach</h6>
-                            <p>In the digital age, effective marketing is about more than visibility—it's about meaningful engagement and sustainable growth.</p>
-                        </div>
-
-                        <div className={styles.card} onClick={handleClick}>
-                            <h5><span>03 &nbsp;</span> Advertising & Production</h5>
-                            <img src='/images/our_solutions/3.png' alt='' />
-                            <h6>From Concept to Captivation</h6>
-                            <p>Our advertising and production services are designed to turn your concepts into captivating campaigns.</p>
-                        </div>
-
-                        <div className={styles.card} onClick={handleClick}>
-                            <h5><span>04 &nbsp;</span> Consulting Services</h5>
-                            <img src='/images/our_solutions/4.png' alt='' />
-                            <h6>Guiding Creativity to Success</h6>
-                            <p>Our consulting services offer invaluable guidance in creative direction and campaign development.</p>
-                        </div>
-
-                        <div className={styles.card} onClick={handleClick}>
-                            <h5><span>05 &nbsp;</span> Design and Animation</h5>
-                            <img src='/images/our_solutions/5.png' alt='' />
-                            <h6>Visual Storytelling at Its Finest</h6>
-                            <p>Our design and animation services are dedicated to bringing your brand's visual identity to life.</p>
-                        </div>
-
-                        <div className={styles.card} onClick={handleClick}>
-                            <h5><span>06 &nbsp;</span> Crafting a Lasting Impression</h5>
-                            <img src='/images/our_solutions/6.png' alt='' />
-                            <h6>Molding Ideas into Powerful Stories</h6>
-                            <p>In the competitive landscape of today, effective branding is essential for differentiation and recognition.</p>
-                        </div> */}
                     </div>}
 
                     {isSwiperActive &&

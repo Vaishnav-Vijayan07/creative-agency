@@ -42,11 +42,11 @@ const page = () => {
       </div>
 
       <section className={styles.service_description}>
-        <h3>{filteredData?.subheading}</h3>
+        {/* <h3>{filteredData?.subheading}</h3>
         <p>
           Creative Studio follows a collaborative and iterative approach to creation, with a <br />
           focus on understanding and meeting the unique needs of each client.
-        </p>
+        </p> */}
 
         <div className={styles.bottom_container}>
           <div className={styles.image_container}>
@@ -58,8 +58,6 @@ const page = () => {
 
             <h5>{filteredData?.subheading}</h5>
             <p>{filteredData?.card_description}</p>
-            {/* <br/> */}
-            <p>{lorem}</p>
           </div>
         </div>
       </section>
