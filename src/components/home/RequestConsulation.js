@@ -2,6 +2,10 @@ import React from 'react'
 import styles from '@/styles/RequestConsultation.module.scss'
 
 const RequestConsulation = () => {
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+    }
     return (
         <section className={styles.consult_container}>
             <h3>
@@ -11,7 +15,7 @@ const RequestConsulation = () => {
                 <span><img src='/icons/Star.svg' alt='' /></span>
                 Create
             </h3>
-            
+
 
             <div className={styles.undeline_container}>
                 <div className={styles.left_underline}></div>
@@ -28,21 +32,21 @@ const RequestConsulation = () => {
                     <img src="/gifs/waving.gif" alt="" />
                 </div>
 
-                <form className={styles.form}>
+                <form className={styles.form} onSubmit={handleSubmit}>
                     <h3>Request a Consultation</h3>
                     <p>Take the first step towards empowering your vision. Fill in the following details and we will get in touch at the earliest!</p>
 
                     <div className={styles.form_group}>
                         <div className={styles.input_group}>
                             <label>Your Name</label>
-                            <input type='text' />
+                            <input type='text' required />
                         </div>
                         <div className={styles.input_group}>
                             <label>Email Address</label>
-                            <input type='text' />
+                            <input type='email' required />
                         </div>
 
-                        <button>Submit Request</button>
+                        <button type='submit'>Submit Request</button>
                     </div>
                 </form>
             </div>

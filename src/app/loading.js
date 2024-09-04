@@ -1,10 +1,12 @@
 "use client";
 
+import Spinner from "@/components/layouts/Spinner";
+
 const Loading = () => {
   return (
-    <div className="loading-spinner">
-      <div className="spinner"></div>
-    </div>
+    <>
+      <Spinner />
+    </>
   );
 };
 

@@ -44,7 +44,7 @@ const page = () => {
           <div className={styles.contentRight}>
             <div className={styles.cardContainer} data-aos="fade-left">
               <h5>Our<div><span>Vision</span></div></h5>
-              <p>At The Creators' Cafe, we believe that the greatest wonders can be built when free-flowing creativity seamlessly integrates with strategic planning.
+              <p>At The Creators' Café, we believe that the greatest wonders can be built when free-flowing creativity seamlessly integrates with strategic planning.
                 We strive to be the go-to destination for innovative minds seeking to make a significant impact through their creative endeavours.</p>
               <div className={styles.icon_container}>
                 <img src="/icons/vision.png" />
@@ -64,7 +64,7 @@ const page = () => {
 
         <div className={styles.values_wrapper} data-aos="fade-up">
           <div className={styles.valuesHeading}>
-            <h5>Our<div><span>Values</span></div></h5>
+            <h5>Our Values</h5>
           </div>
           <div className={styles.flexWrapper}>
             <div className={styles.flex_item}>

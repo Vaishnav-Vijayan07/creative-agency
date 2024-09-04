@@ -17,8 +17,8 @@ const Footer = dynamic(() => import("@/components/home/Footer"), {
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Creaters cafe",
-  description: "creaters cafe",
+  title: "Creators Cafe",
+  description: "Creators Cafe",
 };
 
 export default function RootLayout({ children }) {
@@ -28,7 +28,9 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <Suspense fallback={<Loading />}>
           <Navbar />
-          {children}
+          <main style={{ minHeight: "100vh" }}>
+            {children}
+          </main>
           <Footer />
         </Suspense>
       </body>
