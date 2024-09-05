@@ -42,22 +42,24 @@ const page = () => {
       </div>
 
       <section className={styles.service_description}>
-        {/* <h3>{filteredData?.subheading}</h3>
-        <p>
-          Creative Studio follows a collaborative and iterative approach to creation, with a <br />
-          focus on understanding and meeting the unique needs of each client.
-        </p> */}
 
         <div className={styles.bottom_container}>
           <div className={styles.image_container}>
 
             {/* <img src='/images/services/service.png' alt='' /> */}
-            <img src={filteredData?.image} alt='' data-aos="fade-right"/>
+            <img src={filteredData?.image} alt='' data-aos="fade-right" />
           </div>
           <div className={styles.bottom_sub} data-aos="fade-left">
 
             <h5>{filteredData?.subheading}</h5>
-            <p>{filteredData?.card_description}</p>
+            <p>{filteredData?.content_desc}</p>
+
+            <h4>{filteredData?.content_sub_head}</h4>
+            <ul>
+              {filteredData?.content_array?.map((item) => (
+                <li>{item}</li>
+              ))}
+            </ul>
           </div>
         </div>
       </section>
