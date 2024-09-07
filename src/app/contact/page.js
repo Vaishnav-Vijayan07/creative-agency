@@ -20,8 +20,8 @@ const Page = () => {
 
             <div className={styles.contact_us_form}>
                 <div className={styles.details_container}>
-                    <h3>You Will Grow Better When We Are Together!</h3>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <h3>Your Next Big Idea Starts Here!</h3>
+                    <p>We'd love to hear from you! Whether you have questions, need assistance, or just want to chat about how we can bring your ideas to life, our team is here to help.</p>
 
                     <div className={styles.items_wrapper}>
                         <img src="/icons/location.svg" alt="Address Icon" />
@@ -34,7 +34,7 @@ const Page = () => {
 
                     <div className={styles.items_wrapper}>
                         <img src="/icons/mail.svg" alt="Direction Icon" />
-                        <span>hello@minaricreatives.com</span>
+                        <span>hello@thecreatorscafe.in</span>
                     </div>
                 </div>
 

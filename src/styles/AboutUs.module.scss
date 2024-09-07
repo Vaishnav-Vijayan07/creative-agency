@@ -224,7 +224,7 @@
             /* Add space between images */
             box-sizing: border-box;
 
-            transition: transform 0.3s ease-in-out;
+            transition: transform 0.7s ease-in-out;
 
             &:hover {
               transform: scale(1.05);
@@ -552,6 +552,7 @@
       font-weight: 400;
       line-height: 28px;
       text-align: left;
+      letter-spacing: 0.7px;
 
       @media only screen and (max-width: 600px) {
         line-height: 22px;
@@ -620,7 +621,7 @@
       justify-content: center;
       background: linear-gradient(to bottom, #8E8D79, #DAB289);
 
-      transition: transform 0.5s ease-in-out;
+      transition: transform 0.7s ease-in-out;
       cursor: pointer;
 
       &:hover {
@@ -712,7 +713,7 @@
           transform: skew(7deg);
 
           @media only screen and (max-width:768px) {
-            font-size: 12px;
+            font-size: 14px;
           }
         }
       }

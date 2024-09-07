@@ -9,9 +9,12 @@ import "aos/dist/aos.css";
 const Portfolio = () => {
 
     useEffect(() => {
-        AOS.init();
+        AOS.init({
+          duration: 700,
+          easing: 'ease', 
+        });
         AOS.refresh();
-    }, []);
+      }, []);
     return (
         <main className={styles.portfolio_container}>
             <div style={{ height: "100%" }}>

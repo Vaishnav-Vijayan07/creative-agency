@@ -37,7 +37,7 @@ export default function Home() {
                 <span className={styles.capsule}>
                     Fashion
                 </span> <span className={styles.capsule}>
-                    Culture, and Entertainment
+                    Culture and Entertainment
                 </span> <span className={styles.capsule}>
                     Travel, Lifestyle and Luxury
                 </span>

@@ -10,50 +10,50 @@ const FAQs = () => {
             <div className={styles.faqs_accordion}>
                 <Accordion defaultActiveKey="0">
                     <Accordion.Item eventKey="0">
-                        <Accordion.Header className={styles.accordion_heading}>What services does Creatorś Café offer?</Accordion.Header>
+                        <Accordion.Header className={styles.accordion_heading}>What services does The Creators' Café offer?</Accordion.Header>
                         <Accordion.Body className={styles.accordion_paragraph}>
-                            Creators Cafe offers a comprehensive range of services including content writing (articles, blogs, website content), digital marketing (SEO, social media, content marketing), advertising and production (video production, digital ads, campaigns), consulting services (creative direction, campaign development), design and animation (graphic design, illustrations, animations), and branding (research, strategy, identity, messaging).
+                            The Creators' Café offers a comprehensive range of services including content writing (articles, blogs, website content), digital marketing (SEO, social media, content marketing), advertising and production (video production, digital ads, campaigns), consulting services (creative direction, campaign development), design and animation (graphic design, illustrations, animations), and branding (research, strategy, identity, messaging).
                         </Accordion.Body>
                     </Accordion.Item>
                     <Accordion.Item eventKey="1">
-                        <Accordion.Header className={styles.accordion_heading}>How does Creatorś Café approach projects?</Accordion.Header>
+                        <Accordion.Header className={styles.accordion_heading}>How does The Creators' Café approach projects?</Accordion.Header>
                         <Accordion.Body className={styles.accordion_paragraph}>
-                            At Creators Cafe, we begin by understanding your unique vision and goals. We tailor our creative solutions to align with your specific needs, ensuring every project reflects your brand’s identity and resonates deeply with your audience. Our process combines strategic planning with innovative execution to deliver impactful results.
+                            At The Creators' Café, we begin by understanding your unique vision and goals. We tailor our creative solutions to align with your specific needs, ensuring every project reflects your brand’s identity and resonates deeply with your audience. Our process combines strategic planning with innovative execution to deliver impactful results.
                         </Accordion.Body>
                     </Accordion.Item>
 
                     <Accordion.Item eventKey="2">
-                        <Accordion.Header className={styles.accordion_heading}>Can Creatorś Café handle projects of all sizes?</Accordion.Header>
+                        <Accordion.Header className={styles.accordion_heading}>Can The Creators' Café handle projects of all sizes?</Accordion.Header>
                         <Accordion.Body className={styles.accordion_paragraph}>
-                            Yes, Creators Cafe caters to businesses of all sizes, from startups to established enterprises. We believe every idea has potential when executed with creativity and strategy. Whether you’re looking for a small-scale campaign or a comprehensive branding overhaul, we are equipped to deliver tailored solutions that meet your objectives.
+                            Yes, The Creators' Café caters to businesses of all sizes, from startups to established enterprises. We believe every idea has potential when executed with creativity and strategy. Whether you’re looking for a small-scale campaign or a comprehensive branding overhaul, we are equipped to deliver tailored solutions that meet your objectives.
                         </Accordion.Body>
                     </Accordion.Item>
 
                     <Accordion.Item eventKey="3">
-                        <Accordion.Header className={styles.accordion_heading}>What industries does Creatorś Café specialize in?</Accordion.Header>
+                        <Accordion.Header className={styles.accordion_heading}>What industries does The Creators' Café specialize in?</Accordion.Header>
                         <Accordion.Body className={styles.accordion_paragraph}>
-                            Creators Cafe has experience across various industries including technology, healthcare, education, finance, hospitality, and more. Our versatile team has the expertise to adapt our creative strategies to fit the unique demands and trends of different sectors, ensuring relevance and effectiveness in our work.
+                            The Creators' Café has experience across various industries including technology, healthcare, education, finance, hospitality, and more. Our versatile team has the expertise to adapt our creative strategies to fit the unique demands and trends of different sectors, ensuring relevance and effectiveness in our work.
                         </Accordion.Body>
                     </Accordion.Item>
 
                     <Accordion.Item eventKey="4">
-                        <Accordion.Header className={styles.accordion_heading}>How does Creatorś Café ensure quality and client satisfaction?</Accordion.Header>
+                        <Accordion.Header className={styles.accordion_heading}>How does The Creators' Café ensure quality and client satisfaction?</Accordion.Header>
                         <Accordion.Body className={styles.accordion_paragraph}>
-                            Quality and client satisfaction are at the core of everything we do at Creatorś Café. We maintain open communication with our clients throughout the project lifecycle, ensuring transparency and alignment with their expectations. Our team is committed to delivering high-quality work that not only meets but exceeds client objectives, fostering long-term partnerships built on trust and success.
+                            Quality and client satisfaction are at the core of everything we do at The Creators' Café. We maintain open communication with our clients throughout the project lifecycle, ensuring transparency and alignment with their expectations. Our team is committed to delivering high-quality work that not only meets but exceeds client objectives, fostering long-term partnerships built on trust and success.
                         </Accordion.Body>
                     </Accordion.Item>
 
                     <Accordion.Item eventKey="5">
-                        <Accordion.Header className={styles.accordion_heading}>What is the typical turnaround time for projects at Creatorś Café?</Accordion.Header>
+                        <Accordion.Header className={styles.accordion_heading}>What is the typical turnaround time for projects at The Creators' Café?</Accordion.Header>
                         <Accordion.Body className={styles.accordion_paragraph}>
-                            The turnaround time for projects at Creatorś Café varies based on the scope and complexity of the work. We strive to deliver timely results without compromising on quality. During the initial consultation, we discuss timelines and milestones to ensure expectations are clear and realistic for both parties.
+                            The turnaround time for projects at The Creators' Café varies based on the scope and complexity of the work. We strive to deliver timely results without compromising on quality. During the initial consultation, we discuss timelines and milestones to ensure expectations are clear and realistic for both parties.
                         </Accordion.Body>
                     </Accordion.Item>
 
                     <Accordion.Item eventKey="6">
-                        <Accordion.Header className={styles.accordion_heading}>How can I get started with Creatorś Café?</Accordion.Header>
+                        <Accordion.Header className={styles.accordion_heading}>How can I get started with The Creators' Café?</Accordion.Header>
                         <Accordion.Body className={styles.accordion_paragraph}>
-                            Getting started with Creatorś Café is simple. You can reach out to us through our website contact form or by directly emailing/calling our team. We'll schedule an initial consultation to discuss your project requirements, goals, and timelines. From there, we'll outline a customized plan tailored to your needs and begin transforming your ideas into reality.
+                            Getting started with The Creators' Café is simple. You can reach out to us through our website contact form or by directly emailing/calling our team. We'll schedule an initial consultation to discuss your project requirements, goals, and timelines. From there, we'll outline a customized plan tailored to your needs and begin transforming your ideas into reality.
                         </Accordion.Body>
                     </Accordion.Item>
                 </Accordion>

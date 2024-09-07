@@ -9,7 +9,10 @@ import "aos/dist/aos.css";
 
 const page = () => {
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      duration: 700,
+      easing: 'ease',
+    });
     AOS.refresh();
   }, []);
   return (
@@ -125,6 +128,8 @@ const page = () => {
           <h6 data-aos="fade-up">Founder’s Corner</h6>
           {/* <h3 data-aos="fade-up">Meet Apoorva</h3> */}
           <p data-aos="fade-up">Hi! I’m Apoorva, the founder of The Creators’ Café. Early in my career, I realized the importance of having the right support and guidance to achieve success. However, I also noticed that such support and guidance were not always easy to find. Many ideas and visions fail to materialize due to this lack. So, I made it my mission to provide the support and guidance needed for those seeking to grow and flourish in their creative endeavors.
+            <br />
+            <br />
             With over a decade of experience in the media and entertainment industry, I’ve had the privilege of diversifying my skills and knowledge base and working with a prominent set of clients across various industries. Starting as a writer and artist, I’ve expanded my expertise to include marketing, business development, content development, and creative production, among other areas.
             My aim is to use my experience and learnings to help solopreneurs, small businesses, and established enterprises propel their short-term and long-term growth.
           </p>

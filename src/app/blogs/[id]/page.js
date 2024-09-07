@@ -6,9 +6,12 @@ import "aos/dist/aos.css";
 
 const page = () => {
     useEffect(() => {
-        AOS.init();
+        AOS.init({
+          duration: 700,
+          easing: 'ease', 
+        });
         AOS.refresh();
-    }, []);
+      }, []);
     return (
         <main className={styles.detailed_blogs}>
             <div className={styles.video_container}>

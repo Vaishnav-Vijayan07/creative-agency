@@ -13,9 +13,12 @@ const page = () => {
     };
 
     useEffect(() => {
-        AOS.init();
+        AOS.init({
+          duration: 700,
+          easing: 'ease', 
+        });
         AOS.refresh();
-    }, []);
+      }, []);
     return (
         <section className={styles.blogs_container}>
             <div className={styles.video_container}>

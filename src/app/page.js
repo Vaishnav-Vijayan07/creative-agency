@@ -55,7 +55,10 @@ const FAQs = dynamic(() => import("@/components/home/FAQs"), {
 
 export default function Home() {
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      duration: 700,
+      easing: 'ease', 
+    });
     AOS.refresh();
   }, []);
 

@@ -16,7 +16,7 @@ const page = () => {
     // Ensure AOS is re-initialized after setting data
     setTimeout(() => {
       AOS.init({
-        duration: 600,
+        duration: 700,
         easing: 'ease-in-out',
       });
       AOS.refresh();
@@ -65,7 +65,7 @@ const page = () => {
       </section>
 
       <section className={styles.we_offer}>
-        <h3 data-aos="fade-up">What we offer ?</h3>
+        <h3 data-aos="fade-up">Our Expertise at Your Service</h3>
         <div className={styles.card_container}>
           {
             filteredData?.card_contents?.map((item) => (

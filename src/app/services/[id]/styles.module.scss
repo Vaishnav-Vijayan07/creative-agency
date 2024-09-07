@@ -163,7 +163,7 @@
                     object-fit: contain;
                     border-radius: 20px;
 
-                    transition: transform 0.5s ease-in-out;
+                    transition: transform 0.7s ease-in-out;
 
                     &:hover {
                         transform: scale(1.05);
@@ -432,7 +432,7 @@
                     width: 100%;
                     object-fit: cover;
 
-                    transition: transform 0.5s ease-in-out;
+                    transition: transform 0.7s ease-in-out;
 
                     &:hover {
                         transform: scale(1.05);
@@ -532,10 +532,10 @@
 
                 p {
                     font-family: Plus Jakarta Sans;
-                    font-size: 18px;
+                    font-size: 20px;
                     font-weight: 400;
-                    line-height: 34px;
                     color: #FFFFFF;
+                    text-align: left;
                 }
 
                 .form_group {

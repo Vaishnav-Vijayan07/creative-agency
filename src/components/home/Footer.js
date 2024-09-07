@@ -22,14 +22,14 @@ const Footer = () => {
                 <Link href={"/contact"}><li>Contact Us</li></Link>
             </ul>
 
-            <p className={styles.copyright_text}>Copyright © 2024 Creators’ Café. All Rights Reserved.</p>
+            <p className={styles.copyright_text}>Copyright © 2024 The Creators’ Café. &nbsp; All Rights Reserved.</p>
 
             <div className={styles.curved_rectangle}>
-                <img src="/icons/fb.png" alt="" />
-                <img src="/icons/yt.png" alt="" />
+                {/* <img src="/icons/fb.png" alt="" /> */}
+                {/* <img src="/icons/yt.png" alt="" /> */}
                 <img src="/icons/insta.png" alt="" />
                 <img src="/icons/linkedin.png" alt="" />
-                <img src="/icons/x.png" alt="" />
+                {/* <img src="/icons/x.png" alt="" /> */}
             </div>
             <div className={styles.normal_rectangle}></div>
         </section>

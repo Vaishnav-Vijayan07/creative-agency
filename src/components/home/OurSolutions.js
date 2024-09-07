@@ -102,7 +102,7 @@ const OurSolutions = () => {
             {data?.map((item) => (
 
               <SwiperSlide key={"1"} className={styles.card} onClick={() => handleClick(item)}>
-                <h5><span>0{item?.id} &nbsp;</span> {item?.heading}</h5>
+                <h5><span>0{item?.id}</span> {item?.heading}</h5>
                 <img src={item?.image} alt='' />
                 <h6>{item?.subheading}</h6>
                 <p>{item?.card_description}</p>
