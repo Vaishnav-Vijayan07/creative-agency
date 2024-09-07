@@ -38,8 +38,6 @@ export default function Home() {
                     Fashion
                 </span> <span className={styles.capsule}>
                     Culture and Entertainment
-                </span> <span className={styles.capsule}>
-                    Travel, Lifestyle and Luxury
                 </span>
             </div>
         </div>
