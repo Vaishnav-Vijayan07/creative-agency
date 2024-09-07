@@ -5,12 +5,13 @@
     padding-top: 30px;
 
     @media only screen and (max-width: 768px) {
-        padding: 50px;
+        padding: 50px 0;
+        margin: 70px 30px;
     }
 
-    @media only screen and (max-width: 600px) {
-        padding: 50px 30px;
-    }
+    // @media only screen and (max-width: 600px) {
+    //     padding: 50px 30px;
+    // }
 
     h3 {
         text-align: center;
@@ -33,6 +34,7 @@
         padding-top: 0;
         padding-bottom: 60px;
         background-color: #DAB289 !important;
+
         .accordion_heading {
             font-family: Plus Jakarta Sans;
             font-size: 18px;
