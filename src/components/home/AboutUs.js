@@ -10,9 +10,9 @@ const AboutUs = () => {
   }
   return (
     <div className={styles.aboutus_section}>
-      <div className={styles.aboutus_heading} data-aos="fade-up">
-        <h4>Bespoke Creative Solutions</h4>
-        <p>
+      <div className={styles.aboutus_heading}>
+        <h4 data-aos="fade-up">Bespoke Creative Solutions</h4>
+        <p data-aos="fade-up">
           We are a multi-service creative agency, partnering with individuals and businesses of all sizes to bring your ideas to life. We offer the right support to transform your vision into a compelling, marketable solution.
         </p>
       </div>

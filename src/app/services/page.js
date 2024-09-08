@@ -20,9 +20,12 @@ const page = () => {
     };
 
     useEffect(() => {
-        AOS.init();
+        AOS.init({
+          duration: 700,
+          easing: 'ease', 
+        });
         AOS.refresh();
-    }, []);
+      }, []);
 
     useEffect(() => {
         const handleResize = () => {
