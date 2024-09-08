@@ -31,11 +31,21 @@ const Navbar = () => {
         onClick={handleClick}
       />
       <ul className={styles.nav_items}>
-        <li className={pathname == '/' ? styles.active : ''}><Link key={'home-nav'} href={"/"} >Home</Link></li>
-        <li className={pathname == "/about-us" ? styles.active : ''}><Link key={'about-nav'} href={"/about-us"} >About Us</Link></li>
-        <li className={pathname == '/services' ? styles.active : ''}><Link key={'services-nav'} href={"/services"} >Services</Link></li>
-        <li className={pathname == '/portfolio' ? styles.active : ''}><Link key={'portfolio-nav'} href={"/portfolio"} >Portfolio</Link></li>
-        <li className={pathname == '/blogs' ? styles.active : ''}><Link key={'blog-nav'} href={"/blogs"} >Blog</Link></li>
+        <li className={pathname === '/' ? styles.active : ''}>
+          <Link key={'home-nav'} href="/">Home</Link>
+        </li>
+        <li className={pathname.startsWith('/about-us') ? styles.active : ''}>
+          <Link key={'about-nav'} href="/about-us">About Us</Link>
+        </li>
+        <li className={pathname.startsWith('/services') ? styles.active : ''}>
+          <Link key={'services-nav'} href="/services">Services</Link>
+        </li>
+        <li className={pathname.startsWith('/portfolio') ? styles.active : ''}>
+          <Link key={'portfolio-nav'} href="/portfolio">Portfolio</Link>
+        </li>
+        <li className={pathname.startsWith('/blogs') ? styles.active : ''}>
+          <Link key={'blog-nav'} href="/blogs">Blog</Link>
+        </li>
       </ul>
       <Link key={'blog-nav'} href={"/contact"} className={styles.contact_button}>Contact Us</Link>
       <Image src={"/icons/menu.png"}
@@ -48,11 +58,12 @@ const Navbar = () => {
 
       <Sidebar visible={visible} onHide={() => setVisible(false)}>
         <ul className={styles.nav_items_2}>
-          <li><Link key={'home-nav'} onClick={() => setVisible(false)} href={"/"} >Home</Link></li>
-          <li><Link key={'about-nav'} href={"/about-us"} onClick={() => setVisible(false)} >About Us</Link></li>
-          <li><Link key={'services-nav'} href={"/services"}onClick={() => setVisible(false)} >Services</Link></li>
-          <li><Link key={'portfolio-nav'} href={"/portfolio"}onClick={() => setVisible(false)} >Portfolio</Link></li>
-          <li><Link key={'blog-nav'} href={"/blogs"} onClick={() => setVisible(false)}>Blog</Link></li>
+          <li className={pathname === '/' ? styles.active : ''}><Link key={'home-nav'}  onClick={() => setVisible(false)} href={"/"} >Home</Link></li>
+          <li className={pathname.startsWith('/about-us') ? styles.active : ''}><Link key={'about-nav'} href={"/about-us"} onClick={() => setVisible(false)} >About Us</Link></li>
+          <li className={pathname.startsWith('/services') ? styles.active : ''}><Link key={'services-nav'} href={"/services"} onClick={() => setVisible(false)} >Services</Link></li>
+          <li className={pathname.startsWith('/portfolio') ? styles.active : ''}><Link key={'portfolio-nav'} href={"/portfolio"} onClick={() => setVisible(false)} >Portfolio</Link></li>
+          <li className={pathname.startsWith('/blog') ? styles.active : ''}><Link key={'blog-nav'} href={"/blogs"} onClick={() => setVisible(false)}>Blog</Link></li>
+          <li className={pathname.startsWith('/contact') ? styles.active : ''}><Link key={'contact-nav'} href={"/contact"} onClick={() => setVisible(false)}>Contact</Link></li>
         </ul>
       </Sidebar>
     </nav>

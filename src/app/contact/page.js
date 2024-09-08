@@ -23,10 +23,10 @@ const Page = () => {
                     <h3>Your Next Big Idea Starts Here!</h3>
                     <p>We'd love to hear from you! Whether you have questions, need assistance, or just want to chat about how we can bring your ideas to life, our team is here to help.</p>
 
-                    <div className={styles.items_wrapper}>
+                    {/* <div className={styles.items_wrapper}>
                         <img src="/icons/location.svg" alt="Address Icon" />
                         <span>2nd Floor, Imperial Trade Centre, MG Road, Bangalore, Karnataka, India 684589</span>
-                    </div>
+                    </div> */}
                     <div className={styles.items_wrapper}>
                         <img src="/icons/phone.png" alt="Direction Icon" />
                         <span>+91-8356847683</span>

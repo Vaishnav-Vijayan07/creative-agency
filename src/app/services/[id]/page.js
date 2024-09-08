@@ -13,20 +13,23 @@ const page = () => {
   const filterData = () => {
     const [filtered] = data?.filter((item) => item.id == id);
     setFilteredData(filtered);
-    // Ensure AOS is re-initialized after setting data
+
     setTimeout(() => {
       AOS.init({
         duration: 700,
         easing: 'ease-in-out',
       });
       AOS.refresh();
-    }, 100); // Adjust the delay as needed
+    }, 100);
   };
 
   useEffect(() => {
     filterData()
   }, [])
 
+  const handleSubmit = (e) => {
+    e.preventDefault()
+  }
 
   return (
     <main className={`${styles.services_container} services_container`}>
@@ -139,21 +142,21 @@ const page = () => {
             <img src="/gifs/waving.gif" alt="" />
           </div>
 
-          <form className={styles.form}>
-            <h3>Request a consultation</h3>
-            <p>Fill in the following details to have discussion with us about your idea. We will get in touch.</p>
+          <form className={styles.form} onSubmit={handleSubmit}>
+            <h3>Request a Consultation</h3>
+            <p>Take the first step towards empowering your vision. Fill in the following details and we will get in touch at the earliest!</p>
 
             <div className={styles.form_group}>
               <div className={styles.input_group}>
                 <label>Your Name</label>
-                <input type='text' />
+                <input type='text' required />
               </div>
               <div className={styles.input_group}>
                 <label>Email Address</label>
-                <input type='text' />
+                <input type='email' required />
               </div>
 
-              <button>Submit Request</button>
+              <button type='submit'>Submit Request</button>
             </div>
           </form>
         </div>

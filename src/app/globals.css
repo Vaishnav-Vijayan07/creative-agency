@@ -123,3 +123,7 @@ button.accordion-button.collapsed {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+.accordion-button:not(.collapsed){
+  box-shadow: none !important;
+}
