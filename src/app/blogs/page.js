@@ -53,7 +53,7 @@ const page = () => {
         <div className={styles.card_list}>
           {blogs?.slice(0, 3)?.map((blog) => (
             <div className={styles.card} onClick={() =>handleClick(blog?.id)} data-aos="flip-left" key="1">
-              <img src={`${process.env.NEXT_PUBLIC__URL}${blog?.Image.url}`} alt="" />
+              <img src={`${process.env.NEXT_PUBLIC__URL}${blog?.Image?.url}`} alt="" />
               <h5>{blog?.Title} </h5>
               <h6>
                 {formatDateString(blog?.Date)} | {daysAgo(blog?.Date)}
