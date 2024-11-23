@@ -45,11 +45,11 @@ const page = () => {
       sendRequest();
       sendRequest2();
     }
-    // AOS.init({
-    //   duration: 700,
-    //   easing: "ease",
-    // });
-    // AOS.refresh();
+    AOS.init({
+      duration: 700,
+      easing: "ease",
+    });
+    AOS.refresh();
   }, [id]);
   return (
     <main className={styles.detailed_blogs}>

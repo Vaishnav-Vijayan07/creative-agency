@@ -12,6 +12,11 @@ const page = () => {
   const [teamData, setTeamData] = useState([]);
   useEffect(() => {
     fetchTeamData();
+    AOS.init({
+      duration: 700,
+      easing: "ease",
+    });
+    AOS.refresh();
   }, []);
 
   const fetchTeamData = async () => {
