@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
   --main_color: #6c3e24;
@@ -23,21 +23,23 @@
   padding: 0;
   margin: 0;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   color: var(--black_color);
-  background-color: #EDE4DF !important;
+  background-color: #ede4df !important;
   overflow-x: hidden;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 }
 
 .accordion {
-  background: #DAB289;
+  background: #dab289;
 }
 
 .accordion-body {
-  background: #DAB289;
+  background: #dab289;
   border-top: 1px solid #908d8d98;
   border-bottom: 1px solid #908d8d98;
 }
@@ -47,24 +49,24 @@ button.accordion-button.collapsed {
 }
 
 .accordion-collapse.collapse.show {
-  background: #DAB289;
+  background: #dab289;
 }
 
 .accordion-item {
-  background: #DAB289;
+  background: #dab289;
   border: none !important;
 }
 
 .button.accordion-button {
-  background: #DAB289;
+  background: #dab289;
 }
 
 .accordion-button {
-  background: #DAB289 !important;
+  background: #dab289 !important;
 }
 
 .accordion-button:not(.collapsed) {
-  background-color: #DAB289 !important;
+  background-color: #dab289 !important;
 }
 
 .accordion-button:focus {
@@ -75,7 +77,7 @@ button.accordion-button.collapsed {
 }
 
 .accordion-button::after {
-  background-image: url('/icons/plus_icon.png') !important;
+  background-image: url("/icons/plus_icon.png") !important;
   width: 24px;
   height: 24px;
 }
@@ -86,7 +88,7 @@ button.accordion-button.collapsed {
 
 .swiper-slide.swiper-slide-active {
   opacity: 1 !important;
-  background-color: #38261C;
+  background-color: #38261c;
   /* margin-top: 0px !important; */
   transform: translateY(0) !important;
 }
@@ -98,7 +100,7 @@ button.accordion-button.collapsed {
 }
 
 .accordion-button:not(.collapsed) {
-  color: #6C3E24 !important;
+  color: #6c3e24 !important;
 }
 
 .loading-spinner {
@@ -120,10 +122,14 @@ button.accordion-button.collapsed {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
-.accordion-button:not(.collapsed){
+.accordion-button:not(.collapsed) {
   box-shadow: none !important;
 }
