@@ -14,13 +14,13 @@ const page = () => {
     const [filtered] = data?.filter((item) => item.id == id);
     setFilteredData(filtered);
 
-    setTimeout(() => {
-      AOS.init({
-        duration: 700,
-        easing: 'ease-in-out',
-      });
-      AOS.refresh();
-    }, 100);
+    // setTimeout(() => {
+    //   AOS.init({
+    //     duration: 700,
+    //     easing: 'ease-in-out',
+    //   });
+    //   AOS.refresh();
+    // }, 100);
   };
 
   useEffect(() => {

@@ -17,8 +17,12 @@ const Footer = dynamic(() => import("@/components/home/Footer"), {
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Creators Cafe",
-  description: "Creators Cafe",
+  title: "The Creators’ Café",
+  description: "The Creators’ Café",
+  icons: {
+    icon: "/favicon.ico"
+  },
+
 };
 
 export default function RootLayout({ children }) {

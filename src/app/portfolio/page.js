@@ -9,11 +9,11 @@ import "aos/dist/aos.css";
 const Portfolio = () => {
 
     useEffect(() => {
-        AOS.init({
-          duration: 700,
-          easing: 'ease', 
-        });
-        AOS.refresh();
+        // AOS.init({
+        //   duration: 700,
+        //   easing: 'ease', 
+        // });
+        // AOS.refresh();
       }, []);
     return (
         <main className={styles.portfolio_container}>

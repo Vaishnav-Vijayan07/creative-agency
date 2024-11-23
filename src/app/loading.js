@@ -1,5 +1,4 @@
 "use client";
-
 import Spinner from "@/components/layouts/Spinner";
 
 const Loading = () => {

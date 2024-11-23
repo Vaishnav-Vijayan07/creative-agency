@@ -34,11 +34,11 @@ const BlogsPage = () => {
   // Initialize AOS and fetch blogs
   useEffect(() => {
     fetchBlogs();
-    AOS.init({
-      duration: 700,
-      easing: "ease",
-    });
-    AOS.refresh();
+    // AOS.init({
+    //   duration: 700,
+    //   easing: "ease",
+    // });
+    // AOS.refresh();
   }, []);
 
   return (

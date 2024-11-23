@@ -20,11 +20,11 @@ const page = () => {
     };
 
     useEffect(() => {
-        AOS.init({
-          duration: 700,
-          easing: 'ease', 
-        });
-        AOS.refresh();
+        // AOS.init({
+        //   duration: 700,
+        //   easing: 'ease', 
+        // });
+        // AOS.refresh();
       }, []);
 
     useEffect(() => {
