@@ -13,7 +13,7 @@ const Portfolio = () => {
     });
     // AOS.refresh();
     const handleRouteChange = () => {
-      AOS.refresh();
+    //   AOS.refresh();
     };
 
     Router.events.on("routeChangeComplete", handleRouteChange);
