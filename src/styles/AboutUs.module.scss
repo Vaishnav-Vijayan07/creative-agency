@@ -665,16 +665,19 @@
     display: flex;
     flex-wrap: wrap;
     column-gap: 40px;
-    row-gap: 50px;
-    justify-content: flex-start;
+    row-gap: 80px;
+    justify-content: center;
 
     .image_container {
       position: relative;
-      flex: 1 1 200px;
+      // flex: 1 1 200px;
       max-width: calc(33.33% - 40px);
       display: flex;
       justify-content: center;
       align-items: center;
+
+      flex: 0 0 calc((100% - 80px) / 3); /* Ensures three items per row */
+      box-sizing: border-box; /* Ensures padding doesn't affect the width */
 
       img {
         width: 100%;
