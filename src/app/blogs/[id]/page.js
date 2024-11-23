@@ -5,7 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useParams } from "next/navigation";
 import axios from "axios";
-import { daysAgo, formatDateString } from "@/app/constants/functions";
+import { daysAgo, formatDateString, truncateText } from "@/app/constants/functions";
 import { useRouter } from "next/navigation";
 
 const page = () => {
@@ -87,7 +87,7 @@ const page = () => {
               <h6>
                 {formatDateString(blog?.Date)} | {daysAgo(blog?.Date)}
               </h6>
-              <p>{blog?.Content}</p>
+              <p>{truncateText(blog?.Content)}</p>
             </div>
           ))}
         </div>

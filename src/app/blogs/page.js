@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import axios from "axios";
-import { daysAgo, formatDateString } from "../constants/functions";
+import { daysAgo, formatDateString, truncateText } from "../constants/functions";
 
 const page = () => {
   const router = useRouter();
@@ -50,15 +50,16 @@ const page = () => {
         {/* <h3>Our <div><span>Blogs</span></div></h3> */}
         {/* <p>Creative Studio follows a collaborative and iterative approach to creation, with a <br /> focus on understanding and meeting the unique needs of each client.</p> */}
 
+        {blogs?.length == 0 && <h3>No Blogs Found...</h3>}
         <div className={styles.card_list}>
           {blogs?.slice(0, 3)?.map((blog) => (
-            <div className={styles.card} onClick={() =>handleClick(blog?.id)} data-aos="flip-left" key="1">
+            <div className={styles.card} onClick={() => handleClick(blog?.id)} data-aos="flip-left" key="1">
               <img src={`${process.env.NEXT_PUBLIC__URL}${blog?.Image?.url}`} alt="" />
               <h5>{blog?.Title} </h5>
               <h6>
                 {formatDateString(blog?.Date)} | {daysAgo(blog?.Date)}
               </h6>
-              <p>{blog?.Content}</p>
+              <p>{truncateText(blog?.Content)}</p>
             </div>
           ))}
         </div>

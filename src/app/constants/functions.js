@@ -30,3 +30,8 @@ export function daysAgo(dateString) {
     // Return the result
     return daysDifference <= 0 ? "Today" : `${daysDifference} days ago`;
 }
+
+export function truncateText(text, limit = 100) {
+  if (text.length <= limit) return text;
+  return `${text.substring(0, limit)}...`;
+}
