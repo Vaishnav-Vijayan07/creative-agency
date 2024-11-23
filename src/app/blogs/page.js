@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useEffect, useState } from "react";
 import styles from "@/styles/Blogs.module.scss";
 import { useRouter } from "next/navigation";
@@ -7,65 +8,75 @@ import "aos/dist/aos.css";
 import axios from "axios";
 import { daysAgo, formatDateString, truncateText } from "../constants/functions";
 
-const page = () => {
+const BlogsPage = () => {
   const router = useRouter();
-
   const [blogs, setBlogs] = useState([]);
-  const handleClick = (id) => {
-    router.push("/blogs/" + id); // Navigate to the /about page
+  const [loading, setLoading] = useState(false);
+
+  // Handle blog click
+  const handleBlogClick = (id) => {
+    router.push(`/blogs/${id}`);
   };
 
-  const sendRequest = async () => {
+  // Fetch blogs
+  const fetchBlogs = async () => {
+    setLoading(true);
     try {
-      const response = await axios.get(`${process.env.NEXT_PUBLIC_BACKEND_URL}blogs`).then((response) => {
-        setBlogs(response.data);
-      });
+      const response = await axios.get(`${process.env.NEXT_PUBLIC_BACKEND_URL}blogs`);
+      setBlogs(response.data);
     } catch (err) {
-      console.log("err===>", err);
+      console.error("Error fetching blogs:", err);
+    } finally {
+      setLoading(false);
     }
   };
 
+  // Initialize AOS and fetch blogs
   useEffect(() => {
-    sendRequest();
+    fetchBlogs();
     AOS.init({
       duration: 700,
       easing: "ease",
     });
     AOS.refresh();
   }, []);
+
   return (
     <section className={styles.blogs_container}>
+      {/* Background Video */}
       <div className={styles.video_container}>
         <video autoPlay muted loop poster="/images/background.png" playsInline className={styles.video} id="background-video">
           <source src="/video/bg_video.mp4" type="video/mp4" />
         </video>
       </div>
 
+      {/* Header Content */}
       <div className={styles.content}>
         <p className={styles.aboutus_para}>Articles, Events, News</p>
         <h1>Blogs</h1>
       </div>
 
+      {/* Blogs Section */}
       <section className={styles.blogs_details}>
-        {/* <h3>Our <div><span>Blogs</span></div></h3> */}
-        {/* <p>Creative Studio follows a collaborative and iterative approach to creation, with a <br /> focus on understanding and meeting the unique needs of each client.</p> */}
-
-        {blogs?.length == 0 && <h3>No Blogs Found...</h3>}
-        <div className={styles.card_list}>
-          {blogs?.slice(0, 3)?.map((blog) => (
-            <div className={styles.card} onClick={() => handleClick(blog?.id)} data-aos="flip-left" key="1">
-              <img src={`${process.env.NEXT_PUBLIC__URL}${blog?.Image?.url}`} alt="" />
-              <h5>{blog?.Title} </h5>
-              <h6>
-                {formatDateString(blog?.Date)} | {daysAgo(blog?.Date)}
-              </h6>
-              <p>{truncateText(blog?.Content)}</p>
-            </div>
-          ))}
-        </div>
+        {blogs?.length > 0 && !loading ? (
+          <div className={styles.card_list}>
+            {blogs.slice(0, 3).map((blog) => (
+              <div className={styles.card} onClick={() => handleBlogClick(blog?.id)} data-aos="flip-left" key={blog.id}>
+                <img src={`${process.env.NEXT_PUBLIC__URL}${blog?.Image?.url}`} alt={blog?.Title || "Blog Image"} />
+                <h5>{blog?.Title}</h5>
+                <h6>
+                  {formatDateString(blog?.Date)} | {daysAgo(blog?.Date)}
+                </h6>
+                <p>{truncateText(blog?.Content, 100)}</p>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <h3>No Blogs Found...</h3>
+        )}
       </section>
     </section>
   );
 };
 
-export default page;
+export default BlogsPage;
