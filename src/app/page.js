@@ -1,13 +1,13 @@
-"use client"
+"use client";
 import Image from "next/image";
 import styles from "./page.module.css";
 import Head from "next/head";
 import dynamic from "next/dynamic";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
@@ -51,15 +51,26 @@ const RequestConsulation = dynamic(() => import("@/components/home/RequestConsul
 const FAQs = dynamic(() => import("@/components/home/FAQs"), {
   loading: () => <></>,
   ssr: false,
-})
+});
 
 export default function Home() {
   useEffect(() => {
     AOS.init({
       duration: 700,
-      easing: 'ease', 
+      easing: "ease",
     });
-    AOS.refresh();
+    // AOS.refresh();
+
+    const handleRouteChange = () => {
+      AOS.refresh();
+    };
+
+    Router.events.on("routeChangeComplete", handleRouteChange);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      Router.events.off("routeChangeComplete", handleRouteChange);
+    };
   }, []);
 
   const [loading, setLoading] = useState(false);
@@ -79,7 +90,6 @@ export default function Home() {
       Router.events.off("routeChangeError", end);
     };
   }, []);
-
 
   return (
     <>

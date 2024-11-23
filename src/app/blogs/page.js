@@ -7,6 +7,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import axios from "axios";
 import { daysAgo, formatDateString, truncateText } from "../constants/functions";
+import { Router } from "next/router";
 
 const BlogsPage = () => {
   const router = useRouter();
@@ -38,7 +39,17 @@ const BlogsPage = () => {
       duration: 700,
       easing: "ease",
     });
-    AOS.refresh();
+    // AOS.refresh();
+    const handleRouteChange = () => {
+      AOS.refresh();
+    };
+
+    Router.events.on('routeChangeComplete', handleRouteChange);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      Router.events.off('routeChangeComplete', handleRouteChange);
+    };
   }, []);
 
   return (

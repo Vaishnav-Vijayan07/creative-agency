@@ -7,6 +7,7 @@ import CountUp from "react-countup";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import axios from "axios";
+import { Router } from "next/router";
 
 const page = () => {
   const [teamData, setTeamData] = useState([]);
@@ -16,7 +17,17 @@ const page = () => {
       duration: 700,
       easing: "ease",
     });
-    AOS.refresh();
+    // AOS.refresh();
+    const handleRouteChange = () => {
+      AOS.refresh();
+    };
+
+    Router.events.on('routeChangeComplete', handleRouteChange);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      Router.events.off('routeChangeComplete', handleRouteChange);
+    };
   }, []);
 
   const fetchTeamData = async () => {

@@ -9,6 +9,7 @@ import AOS from 'aos'
 import "aos/dist/aos.css";
 
 import { data } from '@/data/services';
+import { Router } from 'next/router';
 
 const page = () => {
     // const router = useRouter();
@@ -24,7 +25,17 @@ const page = () => {
           duration: 700,
           easing: 'ease', 
         });
-        AOS.refresh();
+        // AOS.refresh();
+        const handleRouteChange = () => {
+            AOS.refresh();
+          };
+      
+          Router.events.on('routeChangeComplete', handleRouteChange);
+      
+          // Cleanup event listener on component unmount
+          return () => {
+            Router.events.off('routeChangeComplete', handleRouteChange);
+          };
       }, []);
 
     useEffect(() => {

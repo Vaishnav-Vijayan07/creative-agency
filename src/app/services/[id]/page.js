@@ -1,14 +1,15 @@
-"use client"
-import React, { useEffect, useState } from 'react'
-import styles from './styles.module.scss'
-import { useParams } from 'next/navigation'
-import { data, lorem } from '@/data/services'
-import AOS from 'aos'
+"use client";
+import React, { useEffect, useState } from "react";
+import styles from "./styles.module.scss";
+import { useParams } from "next/navigation";
+import { data, lorem } from "@/data/services";
+import AOS from "aos";
 import "aos/dist/aos.css";
+import { Router } from "next/router";
 
 const page = () => {
-  const { id } = useParams()
-  const [filteredData, setFilteredData] = useState({})
+  const { id } = useParams();
+  const [filteredData, setFilteredData] = useState({});
 
   const filterData = () => {
     const [filtered] = data?.filter((item) => item.id == id);
@@ -17,19 +18,29 @@ const page = () => {
     setTimeout(() => {
       AOS.init({
         duration: 700,
-        easing: 'ease-in-out',
+        easing: "ease-in-out",
       });
-      AOS.refresh();
+      // AOS.refresh();
+      const handleRouteChange = () => {
+        AOS.refresh();
+      };
+
+      Router.events.on("routeChangeComplete", handleRouteChange);
+
+      // Cleanup event listener on component unmount
+      return () => {
+        Router.events.off("routeChangeComplete", handleRouteChange);
+      };
     }, 100);
   };
 
   useEffect(() => {
-    filterData()
-  }, [])
+    filterData();
+  }, []);
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-  }
+    e.preventDefault();
+  };
 
   return (
     <main className={`${styles.services_container} services_container`}>
@@ -45,15 +56,12 @@ const page = () => {
       </div>
 
       <section className={styles.service_description}>
-
         <div className={styles.bottom_container}>
           <div className={styles.image_container}>
-
             {/* <img src='/images/services/service.png' alt='' /> */}
-            <img src={filteredData?.image} alt='' data-aos="fade-right" />
+            <img src={filteredData?.image} alt="" data-aos="fade-right" />
           </div>
           <div className={styles.bottom_sub} data-aos="fade-left">
-
             <h5>{filteredData?.subheading}</h5>
             <p>{filteredData?.content_desc}</p>
 
@@ -70,14 +78,12 @@ const page = () => {
       <section className={styles.we_offer}>
         <h3 data-aos="fade-up">Our Expertise at Your Service</h3>
         <div className={styles.card_container}>
-          {
-            filteredData?.card_contents?.map((item) => (
-              <div className={styles.card_wrapper} data-aos="flip-left">
-                <h3>{item?.name}</h3>
-                <p>{item?.description}</p>
-              </div>
-            ))
-          }
+          {filteredData?.card_contents?.map((item) => (
+            <div className={styles.card_wrapper} data-aos="flip-left">
+              <h3>{item?.name}</h3>
+              <p>{item?.description}</p>
+            </div>
+          ))}
 
           {/* <div className={styles.card_wrapper} data-aos="flip-left">
             <h3>Email Marketing</h3>
@@ -103,38 +109,47 @@ const page = () => {
             <h3>Content Marketing</h3>
             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
           </div> */}
-
         </div>
-
       </section>
-
 
       <section className={styles.work_flow}>
         <h3 data-aos="fade-up">Our Workflow in 3 Steps</h3>
-        <p data-aos="fade-up">At The Creators’ Café, we believe in a streamlined approach to deliver exceptional results. <br /> Our workflow is designed to ensure clarity, efficiency, and collaboration throughout every project.</p>
+        <p data-aos="fade-up">
+          At The Creators’ Café, we believe in a streamlined approach to deliver exceptional results. <br /> Our workflow is
+          designed to ensure clarity, efficiency, and collaboration throughout every project.
+        </p>
         <div className={styles.card_container}>
-
           <div className={styles.card_wrapper}>
             <img src="/images/services/1.png" alt="" data-aos="flip-left" />
             <span>Step 1</span>
             <h6>Discovery and Planning </h6>
-            <p>First, we dive deep into understanding your goals, challenges, and vision. This phase involves comprehensive research, client consultations, and identifying key objectives. We collaborate closely with you to outline project milestones, establish timelines, and define deliverables.</p>
+            <p>
+              First, we dive deep into understanding your goals, challenges, and vision. This phase involves comprehensive
+              research, client consultations, and identifying key objectives. We collaborate closely with you to outline project
+              milestones, establish timelines, and define deliverables.
+            </p>
           </div>
 
           <div className={styles.card_wrapper}>
             <img src="/images/services/2.png" alt="" data-aos="flip-left" />
             <span>Step 2</span>
             <h6>Execution and Creativity </h6>
-            <p>With a solid plan in place, we move into the execution phase. Whether it’s crafting compelling content, designing captivating visuals, or developing strategic campaigns, we work diligently to meet and exceed expectations.</p>
+            <p>
+              With a solid plan in place, we move into the execution phase. Whether it’s crafting compelling content, designing
+              captivating visuals, or developing strategic campaigns, we work diligently to meet and exceed expectations.
+            </p>
           </div>
 
           <div className={styles.card_wrapper}>
             <img src="/images/services/3.png" alt="" data-aos="flip-left" />
             <span>Step 3</span>
             <h6>Review and Refinement </h6>
-            <p>We prioritize feedback and iteration to ensure we’re on track to achieve the desired outcomes. During this phase, we conduct thorough reviews, gather insights, and refine our work based on your input. Our goal is to deliver polished, high-quality results that resonate with your audience and align with your brand’s objectives.</p>
+            <p>
+              We prioritize feedback and iteration to ensure we’re on track to achieve the desired outcomes. During this phase, we
+              conduct thorough reviews, gather insights, and refine our work based on your input. Our goal is to deliver polished,
+              high-quality results that resonate with your audience and align with your brand’s objectives.
+            </p>
           </div>
-
         </div>
 
         <div className={styles.form_container}>
@@ -144,26 +159,28 @@ const page = () => {
 
           <form className={styles.form} onSubmit={handleSubmit}>
             <h3>Request a Consultation</h3>
-            <p>Take the first step towards empowering your vision. Fill in the following details and we will get in touch at the earliest!</p>
+            <p>
+              Take the first step towards empowering your vision. Fill in the following details and we will get in touch at the
+              earliest!
+            </p>
 
             <div className={styles.form_group}>
               <div className={styles.input_group}>
                 <label>Your Name</label>
-                <input type='text' required />
+                <input type="text" required />
               </div>
               <div className={styles.input_group}>
                 <label>Email Address</label>
-                <input type='email' required />
+                <input type="email" required />
               </div>
 
-              <button type='submit'>Submit Request</button>
+              <button type="submit">Submit Request</button>
             </div>
           </form>
         </div>
-
       </section>
     </main>
-  )
-}
+  );
+};
 
-export default page
+export default page;

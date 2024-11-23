@@ -7,6 +7,7 @@ import { useParams } from "next/navigation";
 import axios from "axios";
 import { daysAgo, formatDateString, truncateText } from "@/app/constants/functions";
 import { useRouter } from "next/navigation";
+import { Router } from "next/router";
 
 const page = () => {
   const { id } = useParams();
@@ -35,7 +36,6 @@ const page = () => {
     }
   };
 
-
   const handleClick = (id) => {
     router.push("/blogs/" + id); // Navigate to the /about page
   };
@@ -49,7 +49,17 @@ const page = () => {
       duration: 700,
       easing: "ease",
     });
-    AOS.refresh();
+    // AOS.refresh();
+    const handleRouteChange = () => {
+      AOS.refresh();
+    };
+
+    Router.events.on("routeChangeComplete", handleRouteChange);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      Router.events.off("routeChangeComplete", handleRouteChange);
+    };
   }, [id]);
   return (
     <main className={styles.detailed_blogs}>
