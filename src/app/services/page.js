@@ -82,7 +82,7 @@ const page = () => {
 
                         {data?.map((item) => (
 
-                            <div className={styles.card} onClick={() => handleClick(item)} data-aos="flip-right">
+                            <div className={styles.card} onClick={() => handleClick(item)} key={item?.id} data-aos="flip-right">
                                 <h5><span>0{item?.id} &nbsp;</span> {item?.heading}</h5>
                                 <img src={item?.image} alt='' />
                                 {/* <img src='/images/our_solutions/1.png' alt='' /> */}

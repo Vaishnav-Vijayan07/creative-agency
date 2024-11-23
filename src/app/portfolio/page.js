@@ -40,7 +40,7 @@ const Portfolio = () => {
 
       <div className={styles.portfolio_container}>
         <div className={styles.top_section}>
-          <div className={styles.header_container} data-aos="fade-up">
+          <div className={styles.header_container} data-aos="fade-up" key='p_1'>
             <h3>
               Journey Through <br /> Our
               <div>
@@ -52,7 +52,7 @@ const Portfolio = () => {
         </div>
         <div className={styles.slider_container}>
           <div className={styles.slider}>
-            <div data-aos="flip-left">
+            <div data-aos="flip-left" key='p_2'>
               <div key={"1"} className={styles.card}>
                 <div className={styles.card_content}>
                   <span>Branding</span>
@@ -63,7 +63,7 @@ const Portfolio = () => {
               <p>Abrevia - Architects Startup </p>
             </div>
 
-            <div data-aos="flip-left">
+            <div data-aos="flip-left" key='p_3'>
               <div key={"2"} className={styles.card}>
                 <div className={styles.card_content}>
                   <span>Design</span>
@@ -74,7 +74,7 @@ const Portfolio = () => {
               <p>Omnihub - Website Solution</p>
             </div>
 
-            <div data-aos="flip-left">
+            <div data-aos="flip-left" key='p_4'>
               <div key={"1"} className={styles.card}>
                 <div className={styles.card_content}>
                   <span>Branding</span>
@@ -85,7 +85,7 @@ const Portfolio = () => {
               <p>Abrevia - Architects Startup </p>
             </div>
 
-            <div data-aos="flip-left">
+            <div data-aos="flip-left" key='p_5'>
               <div key={"2"} className={styles.card}>
                 <div className={styles.card_content}>
                   <span>Design</span>
@@ -96,7 +96,7 @@ const Portfolio = () => {
               <p>Omnihub - Website Solution</p>
             </div>
 
-            <div data-aos="flip-left">
+            <div data-aos="flip-left" key='p_6'>
               <div key={"1"} className={styles.card}>
                 <div className={styles.card_content}>
                   <span>Branding</span>
@@ -107,7 +107,7 @@ const Portfolio = () => {
               <p>Abrevia - Architects Startup </p>
             </div>
 
-            <div data-aos="flip-left">
+            <div data-aos="flip-left" key='p_7'>
               <div key={"2"} className={styles.card}>
                 <div className={styles.card_content}>
                   <span>Design</span>
