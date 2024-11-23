@@ -102,7 +102,7 @@ const Testimonials = () => {
               {/* <div className={`${styles.card} ${styles.card_active}`}> */}
               <div className={styles.avatar_container}>
                 <div className={styles.avatar_image}>
-                  <img src={`${process.env.NEXT_PUBLIC__URL}${item?.Image.url}`} alt="" />
+                  <img src={`${process.env.NEXT_PUBLIC__URL}${item?.Image?.url}`} alt="avatar" />
                 </div>
                 <div className={styles.username_container}>
                   <span>{item?.Name}</span>
