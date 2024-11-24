@@ -4,102 +4,31 @@ import styles from "@/styles/PortfolioPage.module.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Router } from "next/router";
+import axios from "axios";
 
 const Portfolio = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 4; // Number of items to display per page
-  const items = [
-    {
-      id: 1,
-      title: "Abrevia - Architects Startup",
-      categories: ["Branding", "Digital Marketing", "Design", "Content Writing"],
-      image: "/images/portfolio/portfolio_1.png",
-    },
-    {
-      id: 2,
-      title: "Omnihub - Website Solution",
-      categories: ["Design", "Content Writing"],
-      image: "/images/portfolio/portfolio_2.png",
-    },
-    {
-      id: 3,
-      title: "Abrevia - Architects Startup",
-      categories: ["Branding", "Digital Marketing"],
-      image: "/images/portfolio/portfolio_1.png",
-    },
-    {
-      id: 4,
-      title: "Omnihub - Website Solution",
-      categories: ["Design", "Content Writing"],
-      image: "/images/portfolio/portfolio_2.png",
-    },
-    {
-      id: 5,
-      title: "Abrevia - Architects Startup",
-      categories: ["Branding", "Digital Marketing"],
-      image: "/images/portfolio/portfolio_1.png",
-    },
-    {
-      id: 7,
-      title: "Omnihub - Website Solution",
-      categories: ["Design", "Content Writing"],
-      image: "/images/portfolio/portfolio_2.png",
-    },
-    {
-      id: 8,
-      title: "Omnihub - Website Solution",
-      categories: ["Design", "Content Writing"],
-      image: "/images/portfolio/portfolio_2.png",
-    },
-    {
-      id: 9,
-      title: "Omnihub - Website Solution",
-      categories: ["Design", "Content Writing"],
-      image: "/images/portfolio/portfolio_2.png",
-    },
-    {
-      id: 10,
-      title: "Omnihub - Website Solution",
-      categories: ["Design", "Content Writing"],
-      image: "/images/portfolio/portfolio_2.png",
-    },
-    {
-      id: 11,
-      title: "Omnihub - Website Solution",
-      categories: ["Design", "Content Writing"],
-      image: "/images/portfolio/portfolio_2.png",
-    },
-    {
-      id: 12,
-      title: "Omnihub - Website Solution",
-      categories: ["Design", "Content Writing"],
-      image: "/images/portfolio/portfolio_2.png",
-    },
-    {
-      id: 13,
-      title: "Omnihub - Website Solution",
-      categories: ["Design", "Content Writing"],
-      image: "/images/portfolio/portfolio_2.png",
-    },
-    {
-      id: 14,
-      title: "Omnihub - Website Solution",
-      categories: ["Design", "Content Writing"],
-      image: "/images/portfolio/portfolio_2.png",
-    },
-    {
-      id: 15,
-      title: "Omnihub - Website Solution",
-      categories: ["Design", "Content Writing"],
-      image: "/images/portfolio/portfolio_2.png",
-    },
-  ];
 
-  const totalPages = Math.ceil(items.length / itemsPerPage);
+  const [portfolios, setPortfolios] = useState([]);
+
+  const sendRequest = async () => {
+    try {
+      const result = await axios.get(`${process.env.NEXT_PUBLIC_BACKEND_URL}portfolios`);
+      const data = result.data;
+      console.log("data =>", data);
+      setPortfolios(data);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  const totalPages = Math.ceil(portfolios?.length / itemsPerPage);
 
   // Items to display on the current page
-  const currentItems = items.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
+  const currentItems = portfolios?.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
   useEffect(() => {
+    sendRequest();
     AOS.init({
       duration: 700,
       easing: "ease",
@@ -157,17 +86,17 @@ const Portfolio = () => {
         </div>
         <div className={styles.slider_container}>
           <div className={styles.slider}>
-            {currentItems.map((item) => (
+            {currentItems?.map((item) => (
               <div data-aos="flip-left" key={item.id}>
                 <div className={styles.card}>
                   <div className={styles.card_content}>
-                    {item.categories.map((category, index) => (
-                      <span key={index}>{category}</span>
+                    {item?.Categories?.map((category, index) => (
+                      <span key={index}>{category?.name}</span>
                     ))}
                   </div>
-                  <img src={item.image} alt="portfolio" />
+                  <img src={`${process.env.NEXT_PUBLIC__URL}${item?.Image?.url}`} alt="portfolio" />
                 </div>
-                <p>{item.title}</p>
+                <p>{item?.Title}</p>
               </div>
             ))}
           </div>
