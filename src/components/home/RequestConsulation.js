@@ -110,7 +110,9 @@ const RequestConsulation = () => {
               <input type="email" name="email" value={formState.email} onChange={handleChange} required className="input" />
             </div>
 
-            <button type="submit" disabled={loading}>Submit Request</button>
+            <button type="submit" disabled={loading}>
+              Submit Request
+            </button>
           </div>
         </form>
       </div>
