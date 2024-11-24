@@ -1,7 +1,5 @@
 "use client";
-import Image from "next/image";
 import styles from "./page.module.css";
-import Head from "next/head";
 import dynamic from "next/dynamic";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "swiper/css";
