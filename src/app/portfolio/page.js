@@ -1,11 +1,104 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "@/styles/PortfolioPage.module.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Router } from "next/router";
 
 const Portfolio = () => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 4; // Number of items to display per page
+  const items = [
+    {
+      id: 1,
+      title: "Abrevia - Architects Startup",
+      categories: ["Branding", "Digital Marketing", "Design", "Content Writing"],
+      image: "/images/portfolio/portfolio_1.png",
+    },
+    {
+      id: 2,
+      title: "Omnihub - Website Solution",
+      categories: ["Design", "Content Writing"],
+      image: "/images/portfolio/portfolio_2.png",
+    },
+    {
+      id: 3,
+      title: "Abrevia - Architects Startup",
+      categories: ["Branding", "Digital Marketing"],
+      image: "/images/portfolio/portfolio_1.png",
+    },
+    {
+      id: 4,
+      title: "Omnihub - Website Solution",
+      categories: ["Design", "Content Writing"],
+      image: "/images/portfolio/portfolio_2.png",
+    },
+    {
+      id: 5,
+      title: "Abrevia - Architects Startup",
+      categories: ["Branding", "Digital Marketing"],
+      image: "/images/portfolio/portfolio_1.png",
+    },
+    {
+      id: 7,
+      title: "Omnihub - Website Solution",
+      categories: ["Design", "Content Writing"],
+      image: "/images/portfolio/portfolio_2.png",
+    },
+    {
+      id: 8,
+      title: "Omnihub - Website Solution",
+      categories: ["Design", "Content Writing"],
+      image: "/images/portfolio/portfolio_2.png",
+    },
+    {
+      id: 9,
+      title: "Omnihub - Website Solution",
+      categories: ["Design", "Content Writing"],
+      image: "/images/portfolio/portfolio_2.png",
+    },
+    {
+      id: 10,
+      title: "Omnihub - Website Solution",
+      categories: ["Design", "Content Writing"],
+      image: "/images/portfolio/portfolio_2.png",
+    },
+    {
+      id: 11,
+      title: "Omnihub - Website Solution",
+      categories: ["Design", "Content Writing"],
+      image: "/images/portfolio/portfolio_2.png",
+    },
+    {
+      id: 12,
+      title: "Omnihub - Website Solution",
+      categories: ["Design", "Content Writing"],
+      image: "/images/portfolio/portfolio_2.png",
+    },
+    {
+      id: 13,
+      title: "Omnihub - Website Solution",
+      categories: ["Design", "Content Writing"],
+      image: "/images/portfolio/portfolio_2.png",
+    },
+    {
+      id: 14,
+      title: "Omnihub - Website Solution",
+      categories: ["Design", "Content Writing"],
+      image: "/images/portfolio/portfolio_2.png",
+    },
+    {
+      id: 15,
+      title: "Omnihub - Website Solution",
+      categories: ["Design", "Content Writing"],
+      image: "/images/portfolio/portfolio_2.png",
+    },
+  ];
+
+  const totalPages = Math.ceil(items.length / itemsPerPage);
+
+  // Items to display on the current page
+  const currentItems = items.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
   useEffect(() => {
     AOS.init({
       duration: 700,
@@ -13,7 +106,7 @@ const Portfolio = () => {
     });
     // AOS.refresh();
     const handleRouteChange = () => {
-    //   AOS.refresh();
+      //   AOS.refresh();
     };
 
     Router.events.on("routeChangeComplete", handleRouteChange);
@@ -23,6 +116,18 @@ const Portfolio = () => {
       Router.events.off("routeChangeComplete", handleRouteChange);
     };
   }, []);
+
+  const handleNextPage = () => {
+    if (currentPage < totalPages) {
+      setCurrentPage(currentPage + 1);
+    }
+  };
+
+  const handlePrevPage = () => {
+    if (currentPage > 1) {
+      setCurrentPage(currentPage - 1);
+    }
+  };
   return (
     <main className={styles.portfolio_container}>
       <div style={{ height: "100%" }}>
@@ -40,7 +145,7 @@ const Portfolio = () => {
 
       <div className={styles.portfolio_container}>
         <div className={styles.top_section}>
-          <div className={styles.header_container} data-aos="fade-up" key='p_1'>
+          <div className={styles.header_container} data-aos="fade-up" key="p_1">
             <h3>
               Journey Through <br /> Our
               <div>
@@ -52,85 +157,38 @@ const Portfolio = () => {
         </div>
         <div className={styles.slider_container}>
           <div className={styles.slider}>
-            <div data-aos="flip-left" key='p_2'>
-              <div key={"1"} className={styles.card}>
-                <div className={styles.card_content}>
-                  <span>Branding</span>
-                  <span>Digital Marketing</span>
+            {currentItems.map((item) => (
+              <div data-aos="flip-left" key={item.id}>
+                <div className={styles.card}>
+                  <div className={styles.card_content}>
+                    {item.categories.map((category, index) => (
+                      <span key={index}>{category}</span>
+                    ))}
+                  </div>
+                  <img src={item.image} alt="portfolio" />
                 </div>
-                <img src="/images/portfolio/portfolio_1.png" alt="portfolio" />
+                <p>{item.title}</p>
               </div>
-              <p>Abrevia - Architects Startup </p>
-            </div>
-
-            <div data-aos="flip-left" key='p_3'>
-              <div key={"2"} className={styles.card}>
-                <div className={styles.card_content}>
-                  <span>Design</span>
-                  <span>Content Writing</span>
-                </div>
-                <img src="/images/portfolio/portfolio_2.png" alt="portfolio" />
-              </div>
-              <p>Omnihub - Website Solution</p>
-            </div>
-
-            <div data-aos="flip-left" key='p_4'>
-              <div key={"1"} className={styles.card}>
-                <div className={styles.card_content}>
-                  <span>Branding</span>
-                  <span>Digital Marketing</span>
-                </div>
-                <img src="/images/portfolio/portfolio_1.png" alt="portfolio" />
-              </div>
-              <p>Abrevia - Architects Startup </p>
-            </div>
-
-            <div data-aos="flip-left" key='p_5'>
-              <div key={"2"} className={styles.card}>
-                <div className={styles.card_content}>
-                  <span>Design</span>
-                  <span>Content Writing</span>
-                </div>
-                <img src="/images/portfolio/portfolio_2.png" alt="portfolio" />
-              </div>
-              <p>Omnihub - Website Solution</p>
-            </div>
-
-            <div data-aos="flip-left" key='p_6'>
-              <div key={"1"} className={styles.card}>
-                <div className={styles.card_content}>
-                  <span>Branding</span>
-                  <span>Digital Marketing</span>
-                </div>
-                <img src="/images/portfolio/portfolio_1.png" alt="portfolio" />
-              </div>
-              <p>Abrevia - Architects Startup </p>
-            </div>
-
-            <div data-aos="flip-left" key='p_7'>
-              <div key={"2"} className={styles.card}>
-                <div className={styles.card_content}>
-                  <span>Design</span>
-                  <span>Content Writing</span>
-                </div>
-                <img src="/images/portfolio/portfolio_2.png" alt="portfolio" />
-              </div>
-              <p>Omnihub - Website Solution</p>
-            </div>
+            ))}
           </div>
 
           <div className={styles.button_container}>
-            <div className={styles.button_wrapper}>
-              <div className={styles.button_container}>
+            <div className={`${styles.button_wrapper}`} onClick={handlePrevPage}>
+              <div className={`${styles.button_container} ${currentPage === 1 ? styles.disabled : ""}`}>
                 <img className={styles.left_image} src="/icons/arrow.png" alt="" />
               </div>
-              <span>PREVIOUS PAGE</span>
+              <span className={styles.button_text}>PREVIOUS PAGE</span>
             </div>
-            <div className={styles.button_wrapper}>
-              <div className={styles.button_container}>
+
+            {/* Page Indicator */}
+            <span className={styles.page_indicator}>
+              Page {currentPage} of {totalPages}
+            </span>
+            <div className={`${styles.button_wrapper}`} onClick={handleNextPage}>
+              <div className={`${styles.button_container} ${currentPage === totalPages ? styles.disabled : ""}`}>
                 <img src="/icons/arrow.png" alt="" />
               </div>
-              <span>NEXT PAGE</span>
+              <span className={styles.button_text}>NEXT PAGE</span>
             </div>
           </div>
         </div>
