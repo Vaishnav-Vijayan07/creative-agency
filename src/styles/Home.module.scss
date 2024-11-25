@@ -7,7 +7,11 @@
   @media only screen and (max-width: 768px) {
     padding: 40px;
     margin-top: 80px;
+  }
 
+  @media only screen and (max-width: 600px) {
+    padding: 20px;
+    margin-top: 40px;
   }
 }
 
@@ -77,7 +81,6 @@
     @media (max-width: 768px) {
       font-size: 16px;
       line-height: 28px;
-
     }
 
     @media (max-width: 600px) {
@@ -137,7 +140,6 @@
   @media only screen and (max-width: 500px) {
     margin-top: 20px;
   }
-
 }
 
 #aboutus_image2 {
@@ -170,7 +172,6 @@
     font-size: 10px;
     padding: 10px 8px;
     line-height: normal;
-
   }
 
   img {
@@ -179,7 +180,6 @@
 
     @media only screen and (max-width: 500px) {
       width: 14px;
-
     }
   }
 
@@ -206,7 +206,6 @@
     padding: 25px;
   }
 
-
   h3 {
     font-family: Poppins;
     font-size: 38px;
@@ -222,7 +221,6 @@
       font-size: 26px;
       line-height: 36px;
     }
-
   }
 
   .capsule_container {
@@ -241,7 +239,6 @@
       min-width: 600px;
       // overflow: hidden;
     }
-
 
     :first-child {
       margin-left: 20px;
@@ -275,7 +272,6 @@
       @media screen and (max-width: 768px) {
         padding: 6px 22px;
       }
-
     }
   }
 
@@ -289,7 +285,7 @@
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     text-orientation: mixed;
-    background-color: #DE8D60;
+    background-color: #de8d60;
     position: absolute;
     top: 150px;
     left: 0;
@@ -323,7 +319,9 @@
       // padding-top: 100px;
     }
 
-
+    @media only screen and (max-width: 600px) {
+      padding: 100px 20px 0px 20px;
+    }
 
     &::after {
       content: "";
@@ -333,9 +331,8 @@
       left: 0;
       top: 0;
       z-index: -1;
-      background: #6C3E24;
+      background: #6c3e24;
       clip-path: polygon(100% 1.5%, 100% 92%, 0% 96%, 0% 4%);
-
     }
 
     &::before {
@@ -346,14 +343,12 @@
       left: 0;
       top: 0;
       z-index: -2;
-      background: #B2987D;
-      ;
+      background: #b2987d;
       clip-path: polygon(100% 0%, 100% 92%, 0% 96%, 0% 5%);
 
       @media only screen and (max-width: 800px) {
         clip-path: polygon(100% 0%, 100% 92%, 0% 96%, 0% 4%);
       }
-
     }
 
     h3 {
@@ -372,7 +367,7 @@
 
       div {
         display: inline-block;
-        background: #DAB289;
+        background: #dab289;
         transform: skew(-20deg);
         font-style: normal;
         padding: 0px 10px;
@@ -399,7 +394,6 @@
       font-weight: 400;
       margin-left: 30px;
       margin-right: 30px;
-
     }
 
     .card_container {
@@ -415,7 +409,7 @@
         display: flex;
         gap: 16px;
         flex-direction: column;
-        background-color: #B1977C;
+        background-color: #b1977c;
         border-radius: 35px;
         padding-top: 30px;
         box-sizing: border-box;
@@ -446,11 +440,10 @@
           column-gap: 6px;
 
           span {
-            color: #3E3E3E;
+            color: #3e3e3e;
             font-family: Poppins;
             font-weight: 700;
             text-align: left;
-
           }
         }
 
@@ -459,7 +452,6 @@
           object-fit: cover;
           // max-width: 400px;
           transition: transform 0.7s ease-in-out;
-
         }
 
         h6 {
@@ -468,7 +460,6 @@
           font-weight: 600;
           text-align: left;
           color: #fff;
-
         }
 
         p {
@@ -477,7 +468,6 @@
           font-weight: 300;
           text-align: left;
           color: #fff;
-
         }
       }
     }

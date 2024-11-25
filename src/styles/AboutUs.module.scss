@@ -87,14 +87,12 @@
   }
 }
 
-
 .aboutus_para {
   font-family: Poppins;
   font-size: 20px !important;
   font-weight: 500;
   line-height: 42px;
   text-align: center;
-
 }
 
 .aboutus_description {
@@ -105,6 +103,10 @@
   width: 100%;
   justify-content: center;
   align-items: center;
+
+  @media only screen and (max-width: 600px) {
+    padding: 50px 20px;
+  }
 
   .logo_image {
     filter: invert(1) brightness(0) saturate(100%);
@@ -124,7 +126,6 @@
     @media only screen and (max-width: 600px) {
       font-size: 28px;
     }
-
   }
 
   p {
@@ -256,7 +257,7 @@
             margin-top: 10px;
             align-self: flex-end;
             box-sizing: border-box;
-            background: #8E8D79;
+            background: #8e8d79;
             margin-right: 10px;
             border-radius: 11px;
 
@@ -287,14 +288,12 @@
             box-sizing: border-box;
             margin-right: 10px;
             border-radius: 11px;
-            background: #DAB289;
+            background: #dab289;
 
             @media only screen and (max-width: 768px) {
               border-radius: 7px;
             }
           }
-
-
         }
       }
     }
@@ -313,7 +312,7 @@
 
       .cardContainer {
         position: relative;
-        background-color: #B1977C;
+        background-color: #b1977c;
         padding: 50px 30px;
         border-radius: 10px;
 
@@ -325,7 +324,7 @@
 
           div {
             display: inline-block;
-            background: #DAB289;
+            background: #dab289;
             transform: skew(-7deg);
             font-style: normal;
             padding: 0px 5px;
@@ -350,7 +349,7 @@
 
         .icon_container {
           position: absolute;
-          background-color: #6C3E24;
+          background-color: #6c3e24;
           top: -8%;
           padding: 8px 10px;
           border-radius: 10px;
@@ -367,19 +366,18 @@
   .values_wrapper {
     margin-top: 60px;
     padding: 60px 50px;
-    background-color: #DAB289;
+    background-color: #dab289;
     position: relative;
     border-radius: 10px;
 
-    @media only screen and (max-width:600px) {
+    @media only screen and (max-width: 600px) {
       padding: 60px 30px;
-
     }
 
     .valuesHeading {
       position: absolute;
       top: -20px;
-      background-color: #6C3E24;
+      background-color: #6c3e24;
       padding: 10px 20px;
       border-radius: 10px;
 
@@ -391,7 +389,7 @@
 
         div {
           display: inline-block;
-          background: #DAB289;
+          background: #dab289;
           transform: skew(-7deg);
           font-style: normal;
           padding: 0px 5px;
@@ -415,7 +413,7 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          background-color: #6C3E24;
+          background-color: #6c3e24;
           height: min-content;
           border-radius: 50%;
           width: 30px;
@@ -461,7 +459,6 @@
   }
 }
 
-
 .about_us_count {
   position: relative;
   display: flex;
@@ -475,7 +472,6 @@
 
   @media only screen and (max-width: 600px) {
     padding: 25% 8%;
-
   }
 
   &::after {
@@ -486,11 +482,9 @@
     left: 0;
     top: 0;
     z-index: -1;
-    background: #6C3E24;
+    background: #6c3e24;
     // clip-path: polygon(100% 2%, 100% 92%, 0 98%, 0% 4%);
     clip-path: polygon(100% 2%, 100% 95%, 0 99%, 0% 4%);
-
-
   }
 
   &::before {
@@ -502,18 +496,16 @@
     top: 0;
     z-index: -1;
     // background: #FAFAFA;
-    background: linear-gradient(to bottom, #B2987D, transparent);
+    background: linear-gradient(to bottom, #b2987d, transparent);
     clip-path: polygon(100% 0%, 100% 91%, 0% 100%, 0% 4%);
-
   }
 
   .content_wrappper {
     width: 50%;
-    color: #FAFAFA;
+    color: #fafafa;
 
     @media only screen and (max-width: 900px) {
       width: 100%;
-
     }
 
     h6 {
@@ -526,9 +518,7 @@
 
       @media only screen and (max-width: 600px) {
         font-size: 26px;
-
       }
-
     }
 
     h3 {
@@ -557,7 +547,6 @@
       @media only screen and (max-width: 600px) {
         line-height: 22px;
       }
-
     }
 
     .button_wrapper {
@@ -566,7 +555,7 @@
       gap: 20px;
 
       button {
-        background: #B1977C;
+        background: #b1977c;
         padding: 10px 20px;
         border: none;
         border-radius: 20px;
@@ -577,7 +566,7 @@
           font-size: 28px;
           font-weight: 700;
           text-align: left;
-          color: #FAFAFAFA;
+          color: #fafafafa;
         }
 
         p {
@@ -585,12 +574,9 @@
           font-size: 16px;
           font-weight: 400;
           text-align: left;
-
         }
       }
-
     }
-
   }
 
   .image_wrapper {
@@ -603,7 +589,6 @@
       width: 100%;
       justify-content: center;
       margin-top: 100px;
-
     }
 
     // background: linear-gradient(to bottom, #8E8D79, #DAB289);
@@ -619,7 +604,7 @@
       display: flex;
       align-items: flex-end;
       justify-content: center;
-      background: linear-gradient(to bottom, #8E8D79, #DAB289);
+      background: linear-gradient(to bottom, #8e8d79, #dab289);
 
       transition: transform 0.7s ease-in-out;
       cursor: pointer;
@@ -651,13 +636,17 @@
   padding: 120px 80px;
   padding-bottom: 0;
 
+  @media screen and (max-width: 600px) {
+    padding: 80px 20px;
+    padding-bottom: 0;
+  }
+
   h3 {
     font-family: Poppins;
     font-size: 36px;
     font-weight: 600;
     line-height: 72px;
     text-align: center;
-
   }
 
   .team_container {
@@ -689,7 +678,7 @@
         position: absolute;
         bottom: -30px;
         left: 30px;
-        background-color: #DAB289;
+        background-color: #dab289;
         transform: skew(-7deg);
         padding: 8px 20px;
         border-radius: 10px;
@@ -702,7 +691,7 @@
           text-align: left;
           transform: skew(7deg);
 
-          @media only screen and (max-width:768px) {
+          @media only screen and (max-width: 768px) {
             font-size: 16px;
           }
         }
@@ -715,7 +704,7 @@
           text-align: center;
           transform: skew(7deg);
 
-          @media only screen and (max-width:768px) {
+          @media only screen and (max-width: 768px) {
             font-size: 14px;
           }
         }
@@ -744,8 +733,6 @@
       }
     }
   }
-
-
 }
 
 .gallery_section {
@@ -762,5 +749,4 @@
   img {
     width: 100%;
   }
-
 }

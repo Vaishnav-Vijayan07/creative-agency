@@ -9,6 +9,11 @@
         margin: 70px 30px;
     }
 
+    @media only screen and (max-width: 600px) {
+        padding: 30px 0;
+        margin: 60px 20px;
+    }
+
     // @media only screen and (max-width: 600px) {
     //     padding: 50px 30px;
     // }
@@ -18,8 +23,9 @@
         font-family: Poppins;
         font-size: 34px;
         font-weight: 600;
-        line-height: 72px;
+        line-height: 40px;
         text-align: center;
+        margin: 0 10px;
 
         @media only screen and (max-width: 768px) {
             line-height: 52px;
@@ -35,6 +41,9 @@
         padding-bottom: 60px;
         background-color: #DAB289 !important;
 
+        @media only screen and (max-width: 768px) {
+            padding: 20px;
+        }
         .accordion_heading {
             font-family: Plus Jakarta Sans;
             font-size: 18px;
