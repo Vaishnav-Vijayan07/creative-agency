@@ -19,7 +19,7 @@ const page = () => {
     });
     // AOS.refresh();
     const handleRouteChange = () => {
-      // AOS.refresh();
+      AOS.refresh();
     };
 
     Router.events.on('routeChangeComplete', handleRouteChange);
@@ -28,7 +28,7 @@ const page = () => {
     return () => {
       Router.events.off('routeChangeComplete', handleRouteChange);
     };
-  }, []);
+  }, [Router.events]);
 
   const fetchTeamData = async () => {
     try {

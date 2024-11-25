@@ -10,8 +10,8 @@ import "aos/dist/aos.css";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-
 import { data } from "@/data/services";
+import { Router } from "next/router";
 
 const ServicesPage = () => {
   const router = useRouter();
@@ -31,12 +31,12 @@ const ServicesPage = () => {
       AOS.refresh();
     };
 
-    router.events?.on("routeChangeComplete", handleRouteChange);
+    Router.events?.on("routeChangeComplete", handleRouteChange);
 
     return () => {
-      router.events?.off("routeChangeComplete", handleRouteChange);
+      Router.events?.off("routeChangeComplete", handleRouteChange);
     };
-  }, [router.events]);
+  }, [Router.events]);
 
   // Handle screen resize to toggle Swiper
   useEffect(() => {

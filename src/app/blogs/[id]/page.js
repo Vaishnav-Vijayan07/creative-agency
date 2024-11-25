@@ -49,9 +49,8 @@ const page = () => {
       duration: 700,
       easing: "ease",
     });
-    // AOS.refresh();
     const handleRouteChange = () => {
-      // AOS.refresh();
+      AOS.refresh();
     };
 
     Router.events.on("routeChangeComplete", handleRouteChange);
@@ -60,7 +59,7 @@ const page = () => {
     return () => {
       Router.events.off("routeChangeComplete", handleRouteChange);
     };
-  }, [id]);
+  }, [id, Router.events]);
   return (
     <main className={styles.detailed_blogs}>
       <div className={styles.video_container}>

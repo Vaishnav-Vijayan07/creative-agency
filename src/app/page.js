@@ -60,7 +60,7 @@ export default function Home() {
     // AOS.refresh();
 
     const handleRouteChange = () => {
-      // AOS.refresh();
+      AOS.refresh();
     };
 
     Router.events.on("routeChangeComplete", handleRouteChange);
@@ -69,7 +69,7 @@ export default function Home() {
     return () => {
       Router.events.off("routeChangeComplete", handleRouteChange);
     };
-  }, []);
+  }, [Router.events]);
 
   const [loading, setLoading] = useState(false);
   useEffect(() => {

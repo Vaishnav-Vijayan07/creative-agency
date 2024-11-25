@@ -22,7 +22,7 @@ const page = () => {
       });
       // AOS.refresh();
       const handleRouteChange = () => {
-        // AOS.refresh();
+        AOS.refresh();
       };
 
       Router.events.on("routeChangeComplete", handleRouteChange);
@@ -36,7 +36,7 @@ const page = () => {
 
   useEffect(() => {
     filterData();
-  }, []);
+  }, [Router.events]);
 
   const handleSubmit = (e) => {
     e.preventDefault();

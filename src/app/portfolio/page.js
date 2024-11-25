@@ -35,7 +35,7 @@ const Portfolio = () => {
     });
     // AOS.refresh();
     const handleRouteChange = () => {
-      //   AOS.refresh();
+        AOS.refresh();
     };
 
     Router.events.on("routeChangeComplete", handleRouteChange);
@@ -44,7 +44,7 @@ const Portfolio = () => {
     return () => {
       Router.events.off("routeChangeComplete", handleRouteChange);
     };
-  }, []);
+  }, [Router.events]);
 
   const handleNextPage = () => {
     if (currentPage < totalPages) {

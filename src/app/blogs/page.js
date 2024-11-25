@@ -39,7 +39,6 @@ const BlogsPage = () => {
       duration: 700,
       easing: "ease",
     });
-    // AOS.refresh();
     const handleRouteChange = () => {
       AOS.refresh();
     };
@@ -50,7 +49,7 @@ const BlogsPage = () => {
     return () => {
       Router.events.off('routeChangeComplete', handleRouteChange);
     };
-  }, []);
+  }, [Router.events]);
 
   return (
     <section className={styles.blogs_container}>
