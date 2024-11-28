@@ -1,13 +1,10 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import styles from "../../../styles/BlogDetails.module.scss";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { useParams } from "next/navigation";
 import axios from "axios";
 import { daysAgo, formatDateString, truncateText } from "@/app/constants/functions";
 import { useRouter } from "next/navigation";
-import { Router } from "next/router";
 
 const page = () => {
   const { id } = useParams();
@@ -45,21 +42,7 @@ const page = () => {
       sendRequest();
       sendRequest2();
     }
-    AOS.init({
-      duration: 700,
-      easing: "ease",
-    });
-    const handleRouteChange = () => {
-      AOS.refresh();
-    };
-
-    Router.events.on("routeChangeComplete", handleRouteChange);
-
-    // Cleanup event listener on component unmount
-    return () => {
-      Router.events.off("routeChangeComplete", handleRouteChange);
-    };
-  }, [id, Router.events]);
+  }, [id]);
   return (
     <main className={styles.detailed_blogs}>
       <div className={styles.video_container}>

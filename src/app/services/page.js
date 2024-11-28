@@ -5,13 +5,10 @@ import styles from "@/styles/Services.module.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import { useRouter } from "next/navigation";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { data } from "@/data/services";
-import { Router } from "next/router";
 
 const ServicesPage = () => {
   const router = useRouter();
@@ -20,23 +17,6 @@ const ServicesPage = () => {
   const handleClick = (item) => {
     router.push(`/services/${item?.id}`);
   };
-
-  // Initialize AOS
-  useEffect(() => {
-    AOS.init({
-      duration: 700,
-      easing: "ease",
-    });
-    const handleRouteChange = () => {
-      AOS.refresh();
-    };
-
-    Router.events?.on("routeChangeComplete", handleRouteChange);
-
-    return () => {
-      Router.events?.off("routeChangeComplete", handleRouteChange);
-    };
-  }, [Router.events]);
 
   // Handle screen resize to toggle Swiper
   useEffect(() => {
@@ -99,8 +79,8 @@ const ServicesPage = () => {
               spaceBetween={20}
               slidesPerView={1}
               modules={[Pagination, Navigation]}
-            //   pagination={{ clickable: true }}
-            //   navigation
+              //   pagination={{ clickable: true }}
+              //   navigation
               breakpoints={{
                 320: { slidesPerView: 1, spaceBetween: 10 },
                 640: { slidesPerView: 2, spaceBetween: 15 },

@@ -1,9 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import styles from "@/styles/PortfolioPage.module.scss";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { Router } from "next/router";
 import axios from "axios";
 
 const Portfolio = () => {
@@ -29,22 +26,7 @@ const Portfolio = () => {
   const currentItems = portfolios?.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
   useEffect(() => {
     sendRequest();
-    AOS.init({
-      duration: 700,
-      easing: "ease",
-    });
-    // AOS.refresh();
-    const handleRouteChange = () => {
-        AOS.refresh();
-    };
-
-    Router.events.on("routeChangeComplete", handleRouteChange);
-
-    // Cleanup event listener on component unmount
-    return () => {
-      Router.events.off("routeChangeComplete", handleRouteChange);
-    };
-  }, [Router.events]);
+  }, []);
 
   const handleNextPage = () => {
     if (currentPage < totalPages) {

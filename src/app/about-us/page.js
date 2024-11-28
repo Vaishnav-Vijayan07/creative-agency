@@ -2,33 +2,14 @@
 import AboutUsBanner from "@/components/aboutus/AboutUsBanner";
 import React, { useEffect, useState } from "react";
 import styles from "@/styles/AboutUs.module.scss";
-import Image from "next/image";
 import CountUp from "react-countup";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import axios from "axios";
-import { Router } from "next/router";
 
 const page = () => {
   const [teamData, setTeamData] = useState([]);
   useEffect(() => {
     fetchTeamData();
-    AOS.init({
-      duration: 700,
-      easing: "ease",
-    });
-    // AOS.refresh();
-    const handleRouteChange = () => {
-      AOS.refresh();
-    };
-
-    Router.events.on('routeChangeComplete', handleRouteChange);
-
-    // Cleanup event listener on component unmount
-    return () => {
-      Router.events.off('routeChangeComplete', handleRouteChange);
-    };
-  }, [Router.events]);
+  }, []);
 
   const fetchTeamData = async () => {
     try {

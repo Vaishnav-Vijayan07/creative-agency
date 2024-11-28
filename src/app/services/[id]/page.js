@@ -2,10 +2,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./styles.module.scss";
 import { useParams } from "next/navigation";
-import { data, lorem } from "@/data/services";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { Router } from "next/router";
+import { data } from "@/data/services";
 
 const page = () => {
   const { id } = useParams();
@@ -14,29 +11,11 @@ const page = () => {
   const filterData = () => {
     const [filtered] = data?.filter((item) => item.id == id);
     setFilteredData(filtered);
-
-    setTimeout(() => {
-      AOS.init({
-        duration: 700,
-        easing: "ease-in-out",
-      });
-      // AOS.refresh();
-      const handleRouteChange = () => {
-        AOS.refresh();
-      };
-
-      Router.events.on("routeChangeComplete", handleRouteChange);
-
-      // Cleanup event listener on component unmount
-      return () => {
-        Router.events.off("routeChangeComplete", handleRouteChange);
-      };
-    }, 100);
   };
 
   useEffect(() => {
     filterData();
-  }, [Router.events]);
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
