@@ -1,13 +1,15 @@
+// app/layout.js
 "use client";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import dynamic from "next/dynamic";
 import { Suspense, useEffect } from "react";
 import Loading from "./loading";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "aos/dist/aos.css";
 import AOS from "aos";
+import Head from "next/head";
 
 const Navbar = dynamic(() => import("@/components/layouts/Navbar"), {
   loading: () => <></>,
@@ -21,26 +23,25 @@ const Footer = dynamic(() => import("@/components/home/Footer"), {
 
 const inter = Inter({ subsets: ["latin"] });
 
-// export const metadata = {
-//   title: "The Creators’ Café",
-//   description: "The Creators’ Café",
-//   icons: {
-//     icon: "/favicon.ico",
-//   },
-// };
-
 export default function RootLayout({ children }) {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration (in ms)
-      easing: "ease-in-out", // Easing function for the animation
-      once: false, // Allow the animation to repeat every time the element enters the viewport
-      mirror: true, // Optionally mirror animations in both directions (when scrolling up or down)
+      duration: 1000,
+      easing: "ease-in-out",
+      once: false,
+      mirror: true,
     });
   }, []);
+
   return (
     <html lang="en">
-      <head></head>
+      <head>
+        <meta name="description" content="Welcome to The Creators’ Café" />
+        <meta property="og:title" content="Home Page - The Creators’ Café" />
+        <meta property="og:description" content="Join a community of creatives" />
+        <meta property="og:image" content="/images/og-image.jpg" />
+        <title>The Creators’ Café</title>
+      </head>
       <body className={inter.className}>
         <ToastContainer />
         <Suspense fallback={<Loading />}>
