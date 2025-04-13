@@ -36,11 +36,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <meta name="description" content="Welcome to The Creators’ Café" />
-        <meta property="og:title" content="Home Page - The Creators’ Café" />
+        <meta name="description" content="Welcome to Avyanka Media" />
+        <meta property="og:title" content="Home Page - Avyanka Media" />
         <meta property="og:description" content="Join a community of creatives" />
         <meta property="og:image" content="/images/og-image.jpg" />
-        <title>The Creators’ Café</title>
+        <title>Avyanka Media</title>
       </head>
       <body className={inter.className}>
         <ToastContainer />
