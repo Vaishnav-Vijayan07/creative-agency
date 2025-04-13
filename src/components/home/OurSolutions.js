@@ -42,7 +42,7 @@ const OurSolutions = () => {
         <h3 data-aos="fade-up">
           The Art of <br /> <div><span>Strategic</span></div> Creativity
         </h3>
-        <p data-aos="fade-up" className={styles.our_solutions_description}>The Creators’ Café follows a collaborative and iterative approach to creation, with a focus on understanding and meeting the unique needs of each client. </p>
+        <p data-aos="fade-up" className={styles.our_solutions_description}>Avyanka Media follows a collaborative and iterative approach to creation, with a focus on understanding and meeting the unique needs of each client. </p>
 
         {!isSwiperActive && <div className={styles.card_container}>
 

@@ -94,7 +94,7 @@ const page = () => {
       <section className={styles.work_flow}>
         <h3 data-aos="fade-up">Our Workflow in 3 Steps</h3>
         <p data-aos="fade-up">
-          At The Creators’ Café, we believe in a streamlined approach to deliver exceptional results. <br /> Our workflow is
+          At Avyanka Media, we believe in a streamlined approach to deliver exceptional results. <br /> Our workflow is
           designed to ensure clarity, efficiency, and collaboration throughout every project.
         </p>
         <div className={styles.card_container}>

@@ -33,7 +33,7 @@ const page = () => {
                 <h3 data-aos="fade-right">Our Story</h3>
               </div>
               <p data-aos="fade-right">
-                Welcome to The Creators’ Café! Our journey began with a simple yet profound belief: An idea as small as a mustard
+                Welcome to Avyanka Media! Our journey began with a simple yet profound belief: An idea as small as a mustard
                 seed has the potential to move mountains. Our job is to help you bring these ideas to life.{" "}
               </p>
             </div>
@@ -62,7 +62,7 @@ const page = () => {
                 </div>
               </h5>
               <p>
-                At The Creators' Café, we believe that the greatest wonders can be built when free-flowing creativity seamlessly
+                At Avyanka Media, we believe that the greatest wonders can be built when free-flowing creativity seamlessly
                 integrates with strategic planning. We strive to be the go-to destination for innovative minds seeking to make a
                 significant impact through their creative endeavours.
               </p>
@@ -168,18 +168,22 @@ const page = () => {
           <h6 data-aos="fade-up">Founder’s Corner</h6>
           {/* <h3 data-aos="fade-up">Meet Apoorva</h3> */}
           <p data-aos="fade-up">
-            Hi! I’m Apoorva, the founder of The Creators’ Café. Early in my career, I realized the importance of having the right
-            support and guidance to achieve success. However, I also noticed that such support and guidance were not always easy
-            to find. Many ideas and visions fail to materialize due to this lack. So, I made it my mission to provide the support
-            and guidance needed for those seeking to grow and flourish in their creative endeavors.
+            Hi! I’m Apoorva, the founder of Avyanka Media. Early in my career, I learned something simple yet powerful — the right
+            support can make all the difference between an idea that stays a dream and one that transforms into reality. But too
+            often, that support and guidance are missing. I started Avyanka Media to bridge that gap — to empower individuals and
+            businesses with the creative, strategic, and executional backing they need to grow, thrive, and make their mark.
             <br />
             <br />
-            With over a decade of experience in the media and entertainment industry, I’ve had the privilege of diversifying my
-            skills and knowledge base and working with a prominent set of clients across various industries. Starting as a writer
-            and artist, I’ve expanded my expertise to include marketing, business development, content development, and creative
-            production, among other areas. My aim is to use my experience and learnings to help solopreneurs, small businesses,
-            and established enterprises propel their short-term and long-term growth.
+            With over a decade of experience in the media and entertainment industry, I’ve had the privilege of working across
+            disciplines — from writing and content development to marketing, business strategy, and creative production. This
+            journey has allowed me to collaborate with a wide spectrum of clients and develop a versatile, solution-driven
+            approach. Today, my mission is to help solopreneurs, small businesses, and established enterprises turn their ideas
+            into impactful stories, build strong brand identities, and unlock long-term growth. Let’s build something meaningful
+            together.
           </p>
+          <a href="mailto:example@email.com">
+            <button className={styles.connect_button}>Let’s Connect</button>
+          </a>
 
           <div className={styles.button_wrapper} data-aos="fade-up">
             <button>

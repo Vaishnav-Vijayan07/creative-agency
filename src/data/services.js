@@ -4,7 +4,7 @@ export const data = [
         heading: "Content Writing",
         subheading: "Molding Ideas Into Powerful Stories",
         card_description: "Our content writing services encompass a wide spectrum of needs, ensuring every word captivates and communicates effectively.",
-        content_desc: "At The Creators’ Café, we believe that content is the cornerstone of effective communication in today’s digital world. Our content writing services are designed to amplify your brand’s voice, engage your audience, and drive meaningful results. We combine creativity with strategic insight to produce content that not only captures attention but also converts.",
+        content_desc: "At Avyanka Media, we believe that content is the cornerstone of effective communication in today’s digital world. Our content writing services are designed to amplify your brand’s voice, engage your audience, and drive meaningful results. We combine creativity with strategic insight to produce content that not only captures attention but also converts.",
         content_sub_head: "Why Choose Our Content Writing Services?",
         content_array: ["Tailored Content Strategy",
             "Experienced Writers",
@@ -58,7 +58,7 @@ export const data = [
                 "description": "Partnering with influential personalities in your industry to promote your brand, products, or services. This strategy leverages the influencer’s credibility and large following to reach a wider audience and build trust with potential customers."
             }
         ],
-        content_desc: "In today’s fast-paced digital landscape, a robust online presence is crucial for business success. At The Creators’ Café, we offer comprehensive digital marketing services designed to elevate your brand, connect with your target audience, and drive measurable growth. ",
+        content_desc: "In today’s fast-paced digital landscape, a robust online presence is crucial for business success. At Avyanka Media, we offer comprehensive digital marketing services designed to elevate your brand, connect with your target audience, and drive measurable growth. ",
         content_sub_head: "Why Choose Our Digital Marketing Services?",
         content_array: ["Holistic Approach",
             "Tailored Strategies",
@@ -191,7 +191,7 @@ export const data = [
                 "description": "Designing visually appealing and informative slide decks for business presentations, lectures, or conferences."
             }
         ],
-        content_desc: "At The Creators’ Café, we offer creative and visually stunning design and animation services that bring your ideas to life and captivate your audience. Our talented team of designers and animators works collaboratively to create impactful visuals and dynamic animations that enhance your brand’s presence and engage your target market.",
+        content_desc: "At Avyanka Media, we offer creative and visually stunning design and animation services that bring your ideas to life and captivate your audience. Our talented team of designers and animators works collaboratively to create impactful visuals and dynamic animations that enhance your brand’s presence and engage your target market.",
         content_sub_head: "Why Choose Our Design and Animation Services?",
         content_array: ["Creative Excellence",
             "Customized Solutions",
@@ -229,7 +229,7 @@ export const data = [
                 "description": "Developing compelling and consistent brand messages that resonate with target audiences. Brand messaging services define the brand’s voice, tone, key messages, and storytelling approach across various communication channels to build brand awareness, credibility, and emotional connection with customers."
             }
         ],
-        content_desc: "At The Creators’ Café, we offer creative and visually stunning design and animation services that bring your ideas to life and captivate your audience. Our talented team of designers and animators works collaboratively to create impactful visuals and dynamic animations that enhance your brand’s presence and engage your target market.",
+        content_desc: "At Avyanka Media, we offer creative and visually stunning design and animation services that bring your ideas to life and captivate your audience. Our talented team of designers and animators works collaboratively to create impactful visuals and dynamic animations that enhance your brand’s presence and engage your target market.",
         content_sub_head: "Why Choose Our Branding Services?",
         content_array: ["Strategic Insight",
             "Tailored Solutions",

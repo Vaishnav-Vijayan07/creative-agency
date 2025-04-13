@@ -44,7 +44,7 @@ const Testimonials = () => {
           of Impact, <br /> Innovation, and Enduring Partnership
         </h3>
         <p data-aos="fade-up">
-          Dive into the experiences of those who have journeyed with The Creators’ Café, where inspiration meets results.
+          Dive into the experiences of those who have journeyed with Avyanka Media, where inspiration meets results.
         </p>
 
         {/* <div className={styles.slider_container}> */}

@@ -12,7 +12,7 @@ const AboutUsBanner = () => {
       </div>
 
       <div className={styles.content}>
-        <p className={styles.aboutus_para}>About The Creators’ Café </p>
+        <p className={styles.aboutus_para}>About Avyanka Media </p>
         <h1>Behind the Scenes</h1>
       </div>
     </div>

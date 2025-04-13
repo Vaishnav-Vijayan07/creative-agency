@@ -4,7 +4,7 @@ import styles from '@/styles/Spinner.module.scss'; // Make sure to create this C
 
 const Spinner = () => {
   return (
-    <div style={{ height: "100vh", display: 'flex', justifyContent: 'center', alignItems: "center" }}>
+    <div style={{ height: "100vh", display: 'flex', justifyContent: 'center', alignItems: "center", backgroundColor:"rgba(147, 88, 0, 0.57)" }}>
       <div className={styles.spinner}>
         <div className={styles.doubleBounce1}></div>
         <div className={styles.doubleBounce2}></div>

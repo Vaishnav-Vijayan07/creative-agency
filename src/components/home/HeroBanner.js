@@ -7,28 +7,37 @@ const HeroBanner = () => {
   return (
     <div style={{ height: "100%" }}>
       <div className={styles.video_container}>
-        <video muted autoPlay loop playsInline preload="metadata" poster="/images/background.png" aria-label="Video player" className={styles.video} id="background-video">
+        <video
+          muted
+          autoPlay
+          loop
+          playsInline
+          preload="metadata"
+          poster="/images/background.png"
+          aria-label="Video player"
+          className={styles.video}
+          id="background-video"
+        >
           <source src="/video/bg_video.mp4" type="video/mp4" />
           This video is not supported in this browser
         </video>
       </div>
 
       <div className={styles.content}>
-        <h1>THE CREATORS’ CAFÉ</h1>
+        <h1>AVYANKA MEDIA</h1>
         <TypeAnimation
           sequence={[
             // Same substring at the start will only be typed out once, initially
-            'DREAMERS',
+            "DREAMERS",
             1000, // wait 1s before replacing "Mice" with "Hamsters"
-            'DOERS',
+            "DOERS",
             1000,
-            'VISIONARIES',
+            "VISIONARIES",
             1000,
-            'INNOVATORS',
+            "INNOVATORS",
             1000,
-            'HUSTLERS',
-            1000
-
+            "HUSTLERS",
+            1000,
           ]}
           wrapper="h2"
           speed={50}
@@ -36,7 +45,7 @@ const HeroBanner = () => {
         />
         <h3>Serving Creators of Every Kind</h3>
         {/* <p>
-          The Creators' Cafe is a multi-service agency that transforms visions into reality through innovative storytelling, evocative designs, and strategic creativity.
+          Avyanka Media is a multi-service agency that transforms visions into reality through innovative storytelling, evocative designs, and strategic creativity.
         </p> */}
       </div>
 
