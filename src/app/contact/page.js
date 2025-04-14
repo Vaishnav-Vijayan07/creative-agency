@@ -100,7 +100,7 @@ const Page = () => {
 
           <div className={styles.items_wrapper}>
             <img src="/icons/mail.svg" alt="Direction Icon" />
-            <span>hello@thecreatorscafe.in</span>
+            <span>hello@avyankamedia.com</span>
           </div>
         </div>
 

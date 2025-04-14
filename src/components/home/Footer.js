@@ -9,7 +9,7 @@ const Footer = () => {
       <div className={styles.details_container}>
         <img src="/images/logo.png" alt="" />
         <h6> Let’s get started.</h6>
-        <h5>+91-8356847683 / hello@thecreatorscafe.in</h5>
+        <h5>+91-8356847683 / hello@avyankamedia.com</h5>
         <div className={styles.under_line}></div>
       </div>
 

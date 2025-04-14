@@ -182,7 +182,7 @@ const page = () => {
             into impactful stories, build strong brand identities, and unlock long-term growth. Let’s build something meaningful
             together.
           </p>
-          <a href="mailto:example@email.com">
+          <a href="mailto:hello@avyankamedia.com">
             <button className={styles.connect_button}>Let’s Connect</button>
           </a>
 
