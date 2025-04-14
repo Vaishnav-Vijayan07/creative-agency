@@ -33,8 +33,8 @@ const page = () => {
                 <h3 data-aos="fade-right">Our Story</h3>
               </div>
               <p data-aos="fade-right">
-                Welcome to Avyanka Media! Our journey began with a simple yet profound belief: An idea as small as a mustard
-                seed has the potential to move mountains. Our job is to help you bring these ideas to life.{" "}
+                Welcome to Avyanka Media! Our journey began with a simple yet profound belief: An idea as small as a mustard seed
+                has the potential to move mountains. Our job is to help you bring these ideas to life.{" "}
               </p>
             </div>
             <div className={styles.image_wrapper} data-aos="fade-right">
@@ -151,13 +151,14 @@ const page = () => {
           <div className={styles.flex_item}>
             <div className={styles.headingContainer}>
               <div className={styles.logoContainer}>
-                <img src="/icons/aboutus/creativity.png" alt="" />
+                <img src="/icons/aboutus/collab.svg" alt="" />
               </div>
-              <span>Creativity:</span>
+              <span>Collaboration:</span>
             </div>
             <p>
-              We are passionate about turning imaginative ideas into reality and believe that creativity has the power to
-              transform brands and businesses.
+              We work closely with our clients, blending our expertise with their vision to create exceptional results. By
+              fostering open communication and teamwork, we ensure that every project is a true partnership, achieving greater
+              outcomes together.
             </p>
           </div>
         </div>
