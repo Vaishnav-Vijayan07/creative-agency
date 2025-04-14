@@ -83,7 +83,7 @@ const RequestConsulation = () => {
         <img
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/276bb2fbc4f3857773b1e87b5c7a554527ec17a3a056d879a4ef6f36bf95124f?"
-          class="img"
+          className="img"
         />
         <div className={styles.right_underline}></div>
       </div>
